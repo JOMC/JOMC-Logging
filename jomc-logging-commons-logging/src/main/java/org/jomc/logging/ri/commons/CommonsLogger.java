@@ -44,6 +44,10 @@ import org.apache.commons.logging.LogFactory;
  * <li>{@code org.jomc.logging.Logger} {@code 1.0}<blockquote>
  * Object applies to Multiton scope.</blockquote></li>
  * </ul></p>
+ * <p><b>Properties</b><ul>
+ * <li>"{@link #getName name}"<blockquote>
+ * Property of type {@code java.lang.String} with value "org.jomc.logging.Logger".</blockquote></li>
+ * </ul></p>
  *
  * @author <a href="mailto:schulte2005@users.sourceforge.net">Christian Schulte</a> 1.0
  * @version $Id$
@@ -53,7 +57,7 @@ import org.apache.commons.logging.LogFactory;
 @javax.annotation.Generated
 (
     value = "org.jomc.tools.JavaSources",
-    comments = "See http://jomc.sourceforge.net/jomc-tools"
+    comments = "See http://jomc.sourceforge.net/jomc/1.0-alpha-1-SNAPSHOT/jomc-tools"
 )
 // SECTION-END
 public class CommonsLogger
@@ -66,7 +70,7 @@ public class CommonsLogger
     @javax.annotation.Generated
     (
         value = "org.jomc.tools.JavaSources",
-        comments = "See http://jomc.sourceforge.net/jomc-tools"
+        comments = "See http://jomc.sourceforge.net/jomc/1.0-alpha-1-SNAPSHOT/jomc-tools"
     )
     public CommonsLogger()
     {
@@ -222,7 +226,7 @@ public class CommonsLogger
     @javax.annotation.Generated
     (
         value = "org.jomc.tools.JavaSources",
-        comments = "See http://jomc.sourceforge.net/jomc-tools"
+        comments = "See http://jomc.sourceforge.net/jomc/1.0-alpha-1-SNAPSHOT/jomc-tools"
     )
     public java.lang.String getName() throws org.jomc.ObjectManagementException
     {
