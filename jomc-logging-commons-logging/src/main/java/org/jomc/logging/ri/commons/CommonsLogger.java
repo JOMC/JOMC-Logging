@@ -37,12 +37,11 @@ package org.jomc.logging.ri.commons;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
-// SECTION-START[Implementation Comment]
+// SECTION-START[Documentation]
 /**
  * Commons logging system implementation.
  * <p><b>Specifications</b><ul>
- * <li>{@code org.jomc.logging.Logger} {@code 1.0}<blockquote>
- * Object applies to Multiton scope.</blockquote></li>
+ * <li>{@code org.jomc.logging.Logger} {@code 1.0}</li>
  * </ul></p>
  * <p><b>Properties</b><ul>
  * <li>"{@link #getName name}"<blockquote>
@@ -66,7 +65,7 @@ public class CommonsLogger
 {
     // SECTION-START[Constructors]
 
-    /** Default implementation constructor. */
+    /** Creates a new {@code CommonsLogger} instance. */
     @javax.annotation.Generated
     (
         value = "org.jomc.tools.JavaSources",

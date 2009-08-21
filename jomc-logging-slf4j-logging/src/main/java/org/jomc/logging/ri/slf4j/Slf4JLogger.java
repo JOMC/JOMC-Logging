@@ -36,12 +36,11 @@ package org.jomc.logging.ri.slf4j;
 
 import org.jomc.logging.Logger;
 
-// SECTION-START[Implementation Comment]
+// SECTION-START[Documentation]
 /**
  * Slf4J logging system implementation.
  * <p><b>Specifications</b><ul>
- * <li>{@code org.jomc.logging.Logger} {@code 1.0}<blockquote>
- * Object applies to Multiton scope.</blockquote></li>
+ * <li>{@code org.jomc.logging.Logger} {@code 1.0}</li>
  * </ul></p>
  * <p><b>Properties</b><ul>
  * <li>"{@link #getName name}"<blockquote>
@@ -63,7 +62,7 @@ public class Slf4JLogger implements Logger
 {
     // SECTION-START[Constructors]
 
-    /** Default implementation constructor. */
+    /** Creates a new {@code Slf4JLogger} instance. */
     @javax.annotation.Generated
     (
         value = "org.jomc.tools.JavaSources",
@@ -74,23 +73,6 @@ public class Slf4JLogger implements Logger
         // SECTION-START[Default Constructor]
         super();
         // SECTION-END
-    }
-    // SECTION-END
-    // SECTION-START[Properties]
-
-    /**
-     * Gets the value of the {@code name} property.
-     * @return Name of the component events are logged for.
-     * @throws org.jomc.ObjectManagementException if getting the property instance fails.
-     */
-    @javax.annotation.Generated
-    (
-        value = "org.jomc.tools.JavaSources",
-        comments = "See http://jomc.sourceforge.net/jomc/1.0-alpha-1-SNAPSHOT/jomc-tools"
-    )
-    public java.lang.String getName() throws org.jomc.ObjectManagementException
-    {
-        return (java.lang.String) org.jomc.ObjectManagerFactory.getObjectManager().getProperty( this, "name" );
     }
     // SECTION-END
     // SECTION-START[Slf4JLogger]
@@ -225,5 +207,26 @@ public class Slf4JLogger implements Logger
         return org.slf4j.LoggerFactory.getLogger( this.getName() );
     }
 
+    // SECTION-END
+    // SECTION-START[Dependencies]
+    // SECTION-END
+    // SECTION-START[Properties]
+
+    /**
+     * Gets the value of the {@code name} property.
+     * @return Name of the component events are logged for.
+     * @throws org.jomc.ObjectManagementException if getting the property instance fails.
+     */
+    @javax.annotation.Generated
+    (
+        value = "org.jomc.tools.JavaSources",
+        comments = "See http://jomc.sourceforge.net/jomc/1.0-alpha-1-SNAPSHOT/jomc-tools"
+    )
+    public java.lang.String getName() throws org.jomc.ObjectManagementException
+    {
+        return (java.lang.String) org.jomc.ObjectManagerFactory.getObjectManager().getProperty( this, "name" );
+    }
+    // SECTION-END
+    // SECTION-START[Messages]
     // SECTION-END
 }

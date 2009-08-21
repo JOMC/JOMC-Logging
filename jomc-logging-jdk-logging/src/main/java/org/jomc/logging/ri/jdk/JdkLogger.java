@@ -36,12 +36,11 @@ package org.jomc.logging.ri.jdk;
 
 import java.util.logging.Level;
 
-// SECTION-START[Implementation Comment]
+// SECTION-START[Documentation]
 /**
  * JDK logging system implementation.
  * <p><b>Specifications</b><ul>
- * <li>{@code org.jomc.logging.Logger} {@code 1.0}<blockquote>
- * Object applies to Multiton scope.</blockquote></li>
+ * <li>{@code org.jomc.logging.Logger} {@code 1.0}</li>
  * </ul></p>
  * <p><b>Properties</b><ul>
  * <li>"{@link #getName name}"<blockquote>
@@ -65,7 +64,7 @@ public class JdkLogger
 {
     // SECTION-START[Constructors]
 
-    /** Default implementation constructor. */
+    /** Creates a new {@code JdkLogger} instance. */
     @javax.annotation.Generated
     (
         value = "org.jomc.tools.JavaSources",

@@ -36,16 +36,15 @@ package org.jomc.logging.ri.commons;
 
 import java.util.logging.Level;
 
-// SECTION-START[Implementation Comment]
+// SECTION-START[Documentation]
 /**
  * {@code ObjectManagementLister} backed by commons logging.
  * <p><b>Specifications</b><ul>
- * <li>{@code org.jomc.spi.Listener} {@code 1.0}<blockquote>
- * Object applies to Singleton scope.</blockquote></li>
+ * <li>{@code org.jomc.spi.Listener} {@code 1.0}</li>
  * </ul></p>
  * <p><b>Dependencies</b><ul>
  * <li>"{@link #getLogger Logger}"<blockquote>
- * Dependency on {@code org.jomc.logging.Logger} at specification level 1.0 applying to Multiton scope bound to an instance.</blockquote></li>
+ * Dependency on {@code org.jomc.logging.Logger} at specification level 1.0 bound to an instance.</blockquote></li>
  * </ul></p>
  *
  * @author <a href="mailto:schulte2005@users.sourceforge.net">Christian Schulte</a> 1.0
@@ -99,7 +98,7 @@ public class CommonsObjectManagementListener
     // SECTION-END
     // SECTION-START[Constructors]
 
-    /** Default implementation constructor. */
+    /** Creates a new {@code CommonsObjectManagementListener} instance. */
     @javax.annotation.Generated
     (
         value = "org.jomc.tools.JavaSources",
@@ -119,7 +118,7 @@ public class CommonsObjectManagementListener
      * <p>This method returns the "{@code JOMC Logging Commons Logging}" object of the {@code org.jomc.logging.Logger} specification at specification level 1.0.</p>
      * <p><b>Properties</b><dl>
      * <dt>"{@code name}"</dt>
-     * <dd>Property of type {@code java.lang.String} with value "org.jomc.ObjectManager".
+     * <dd>Property of type {@code $property.getType().value()} with value "org.jomc.ObjectManager".
      * </dd>
      * </dl>
      * @return The {@code Logger} dependency.

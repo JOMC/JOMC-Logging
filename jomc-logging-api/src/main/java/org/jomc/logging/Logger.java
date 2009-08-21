@@ -34,14 +34,15 @@
 // SECTION-END
 package org.jomc.logging;
 
-// SECTION-START[Specification Comment]
+// SECTION-START[Documentation]
 /**
  * Logs events for a specific component.
- * <p>This specification applies to Multiton scope.
+ * <p>This specification declares a multiplicity of {@code One}.
  * An application assembler is required to provide no more than one implementation of this specification (including none).
  * Use of class {@link org.jomc.ObjectManager ObjectManager} is supported for getting that implementation.<pre>
  * Logger object = (Logger) ObjectManagerFactory.getObjectManager().getObject( Logger.class );
- * </pre></p>
+ * </pre>
+ * </p>
  *
  * @author <a href="mailto:schulte2005@users.sourceforge.net">Christian Schulte</a> 1.0
  * @version $Id$

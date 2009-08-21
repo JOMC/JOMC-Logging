@@ -36,12 +36,12 @@ package org.jomc.logging.it;
 
 import org.jomc.logging.Logger;
 
-// SECTION-START[Implementation Comment]
+// SECTION-START[Documentation]
 /**
  * Logging system test suite.
  * <p><b>Dependencies</b><ul>
  * <li>"{@link #getLogger Logger}"<blockquote>
- * Dependency on {@code org.jomc.logging.Logger} at specification level 1.0 applying to Multiton scope bound to an instance.</blockquote></li>
+ * Dependency on {@code org.jomc.logging.Logger} at specification level 1.0 bound to an instance.</blockquote></li>
  * </ul></p>
  *
  * @author <a href="mailto:schulte2005@users.sourceforge.net">Christian Schulte</a> 1.0
@@ -59,7 +59,7 @@ public class LoggerTest
 {
     // SECTION-START[Constructors]
 
-    /** Default implementation constructor. */
+    /** Creates a new {@code LoggerTest} instance. */
     @javax.annotation.Generated
     (
         value = "org.jomc.tools.JavaSources",
@@ -73,6 +73,7 @@ public class LoggerTest
     }
     // SECTION-END
     // SECTION-START[LoggerTest]
+
     /**
      * Tests the {@link Logger#isInfoEnabled() isXxxEnabled()} methods to not
      * throw any exceptions.
@@ -127,7 +128,7 @@ public class LoggerTest
      * <p>This method returns any available object of the {@code org.jomc.logging.Logger} specification at specification level 1.0.</p>
      * <p><b>Properties</b><dl>
      * <dt>"{@code name}"</dt>
-     * <dd>Property of type {@code java.lang.String} with value "org.jomc.logging.it.LoggerTest".
+     * <dd>Property of type {@code $property.getType().value()} with value "org.jomc.logging.it.LoggerTest".
      * </dd>
      * </dl>
      * @return Implementation tests are performed with.
@@ -142,5 +143,9 @@ public class LoggerTest
     {
         return (org.jomc.logging.Logger) org.jomc.ObjectManagerFactory.getObjectManager().getDependency( this, "Logger" );
     }
+    // SECTION-END
+    // SECTION-START[Properties]
+    // SECTION-END
+    // SECTION-START[Messages]
     // SECTION-END
 }
