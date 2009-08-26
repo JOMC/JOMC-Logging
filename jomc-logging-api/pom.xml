@@ -44,7 +44,7 @@
   <groupId>org.jomc.logging</groupId>
   <artifactId>jomc-logging-api</artifactId>
   <name>JOMC Logging API</name>
-  <description><![CDATA[Logging system application programming interface.]]></description>
+  <description>Logging system application programming interface.</description>
   <build>
     <resources>
       <resource>
@@ -64,11 +64,4 @@
       </plugin>
     </plugins>
   </build>
-  <dependencies>
-    <dependency>
-      <groupId>javax.annotation</groupId>
-      <artifactId>jsr250-api</artifactId>
-      <scope>compile</scope>
-    </dependency>
-  </dependencies>
 </project>

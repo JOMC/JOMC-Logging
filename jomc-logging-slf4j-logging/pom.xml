@@ -44,7 +44,7 @@
   <groupId>org.jomc.logging</groupId>
   <artifactId>jomc-logging-slf4j-logging</artifactId>
   <name>JOMC Logging Slf4J Logging</name>
-  <description><![CDATA[Slf4J logging system implementation.]]></description>
+  <description>Slf4J logging system implementation.</description>
   <build>
     <resources>
       <resource>
@@ -103,7 +103,6 @@
     </plugins>
   </build>
   <dependencies>
-
     <dependency>
       <groupId>org.jomc</groupId>
       <artifactId>jomc-api</artifactId>
@@ -120,33 +119,24 @@
       <scope>compile</scope>
     </dependency>
     <dependency>
-      <groupId>org.jomc</groupId>
-      <artifactId>jomc-ri</artifactId>
-      <scope>runtime</scope>
-    </dependency>
-
-    <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>slf4j-api</artifactId>
       <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.jomc</groupId>
+      <artifactId>jomc-ri</artifactId>
+      <scope>runtime</scope>
     </dependency>
     <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>slf4j-jdk14</artifactId>
       <scope>test</scope>
     </dependency>
-
     <dependency>
       <groupId>org.jomc.logging</groupId>
       <artifactId>jomc-logging-it</artifactId>
       <scope>test</scope>
-    </dependency>
-
-    <dependency>
-      <groupId>javax.annotation</groupId>
-      <artifactId>jsr250-api</artifactId>
-      <scope>compile</scope>
-      <optional>true</optional>
     </dependency>
   </dependencies>
 </project>

@@ -34,6 +34,7 @@
 // SECTION-END
 package org.jomc.logging.it;
 
+import junit.framework.TestCase;
 import org.jomc.logging.Logger;
 
 // SECTION-START[Documentation]
@@ -55,7 +56,7 @@ import org.jomc.logging.Logger;
     comments = "See http://jomc.sourceforge.net/jomc/1.0-alpha-1-SNAPSHOT/jomc-tools"
 )
 // SECTION-END
-public class LoggerTest
+public class LoggerTest extends TestCase
 {
     // SECTION-START[Constructors]
 

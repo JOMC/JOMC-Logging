@@ -44,7 +44,7 @@
   <groupId>org.jomc.logging</groupId>
   <artifactId>jomc-logging-jdk-logging</artifactId>
   <name>JOMC Logging JDK Logging</name>
-  <description><![CDATA[JDK logging system implementation.]]></description>
+  <description>JDK logging system implementation.</description>
   <build>
     <resources>
       <resource>
@@ -103,7 +103,6 @@
     </plugins>
   </build>
   <dependencies>
-
     <dependency>
       <groupId>org.jomc</groupId>
       <artifactId>jomc-api</artifactId>
@@ -124,18 +123,10 @@
       <artifactId>jomc-ri</artifactId>
       <scope>runtime</scope>
     </dependency>
-
     <dependency>
       <groupId>org.jomc.logging</groupId>
       <artifactId>jomc-logging-it</artifactId>
       <scope>test</scope>
-    </dependency>
-
-    <dependency>
-      <groupId>javax.annotation</groupId>
-      <artifactId>jsr250-api</artifactId>
-      <scope>compile</scope>
-      <optional>true</optional>
     </dependency>
   </dependencies>
 </project>

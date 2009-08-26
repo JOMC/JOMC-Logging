@@ -44,7 +44,7 @@
   <groupId>org.jomc.logging</groupId>
   <artifactId>jomc-logging-it</artifactId>
   <name>JOMC Logging Test Suite</name>
-  <description><![CDATA[Logging system test suite.]]></description>
+  <description>Logging system test suite.</description>
   <build>
     <resources>
       <resource>
@@ -119,7 +119,6 @@
     </plugins>
   </build>
   <dependencies>
-
     <dependency>
       <groupId>org.jomc</groupId>
       <artifactId>jomc-api</artifactId>
@@ -131,16 +130,42 @@
       <scope>compile</scope>
     </dependency>
     <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
       <groupId>org.jomc</groupId>
       <artifactId>jomc-ri</artifactId>
       <scope>runtime</scope>
     </dependency>
-
+    <!--
+    Included with provided scope for creating the assembly.
+    -->
     <dependency>
       <groupId>javax.annotation</groupId>
       <artifactId>jsr250-api</artifactId>
-      <scope>compile</scope>
-      <optional>true</optional>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>javax.xml.bind</groupId>
+      <artifactId>jaxb-api</artifactId>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>javax.xml.stream</groupId>
+      <artifactId>stax-api</artifactId>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>javax.activation</groupId>
+      <artifactId>activation</artifactId>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.sun.xml.bind</groupId>
+      <artifactId>jaxb-impl</artifactId>
+      <scope>provided</scope>
     </dependency>
   </dependencies>
 </project>
