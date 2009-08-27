@@ -179,9 +179,9 @@
           <version>1.0-alpha-4</version>
         </plugin>
         <plugin>
-          <groupId>net.sourceforge.mjarsigner</groupId>
-          <artifactId>jarsigner-maven-plugin</artifactId>
-          <version>1.0-beta-3</version>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-jarsigner-plugin</artifactId>
+          <version>1.1</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
@@ -667,30 +667,6 @@
 
     </dependencies>
   </dependencyManagement>
-  <repositories>
-    <repository>
-      <id>http://mjarsigner.sourceforge.net/maven2/releases</id>
-      <url>http://mjarsigner.sourceforge.net/maven2/releases</url>
-      <releases>
-        <enabled>true</enabled>
-      </releases>
-      <snapshots>
-        <enabled>false</enabled>
-      </snapshots>
-    </repository>
-  </repositories>
-  <pluginRepositories>
-    <pluginRepository>
-      <id>http://mjarsigner.sourceforge.net/maven2/releases</id>
-      <url>http://mjarsigner.sourceforge.net/maven2/releases</url>
-      <releases>
-        <enabled>true</enabled>
-      </releases>
-      <snapshots>
-        <enabled>false</enabled>
-      </snapshots>
-    </pluginRepository>
-  </pluginRepositories>
   <distributionManagement>
     <repository>
       <id>http://jomc.sourceforge.net/maven2/releases</id>
@@ -803,8 +779,8 @@
             </executions>
           </plugin>
           <plugin>
-            <groupId>net.sourceforge.mjarsigner</groupId>
-            <artifactId>jarsigner-maven-plugin</artifactId>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-jarsigner-plugin</artifactId>
             <executions>
               <execution>
                 <id>sign</id>
