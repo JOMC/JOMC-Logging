@@ -40,7 +40,7 @@ import org.jomc.logging.Logger;
 /**
  * Log4J logging system implementation.
  * <p><b>Specifications</b><ul>
- * <li>{@code org.jomc.logging.Logger} {@code 1.0}</li>
+ * <li>{@code org.jomc.logging.Logger} {@code 1.0} {@code Multiton}</li>
  * </ul></p>
  * <p><b>Properties</b><ul>
  * <li>"{@link #getName name}"<blockquote>
