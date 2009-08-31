@@ -40,7 +40,7 @@ import java.util.logging.Level;
 /**
  * {@code ObjectManagementLister} backed by JDK logging.
  * <p><b>Specifications</b><ul>
- * <li>{@code org.jomc.spi.Listener} {@code 1.0}</li>
+ * <li>{@code org.jomc.spi.Listener} {@code 1.0} {@code Multiton}</li>
  * </ul></p>
  * <p><b>Dependencies</b><ul>
  * <li>"{@link #getLogger Logger}"<blockquote>
