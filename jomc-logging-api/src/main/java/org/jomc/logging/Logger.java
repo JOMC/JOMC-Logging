@@ -51,11 +51,8 @@ package org.jomc.logging;
  */
 // SECTION-END
 // SECTION-START[Annotations]
-@javax.annotation.Generated
-(
-    value = "org.jomc.tools.JavaSources",
-    comments = "See http://jomc.sourceforge.net/jomc/1.0-alpha-1-SNAPSHOT/jomc-tools"
-)
+@javax.annotation.Generated( value = "org.jomc.tools.JavaSources",
+                             comments = "See http://jomc.sourceforge.net/jomc/1.0-alpha-1-SNAPSHOT/jomc-tools" )
 // SECTION-END
 public interface Logger
 {
@@ -63,8 +60,7 @@ public interface Logger
     /**
      * Getter for property {@code debugEnabled}.
      *
-     * @return {@code true} if logging debug messages is enabled; {@code false}
-     * if logging debug messages is disabled.
+     * @return {@code true} if logging debug messages is enabled; {@code false} if logging debug messages is disabled.
      */
     boolean isDebugEnabled();
 
@@ -93,8 +89,7 @@ public interface Logger
     /**
      * Getter for property {@code errorEnabled}.
      *
-     * @return {@code true} if logging error messages is enabled; {@code false}
-     * if logging error messages is disabled.
+     * @return {@code true} if logging error messages is enabled; {@code false} if logging error messages is disabled.
      */
     boolean isErrorEnabled();
 
@@ -123,8 +118,7 @@ public interface Logger
     /**
      * Getter for property {@code fatalEnabled}.
      *
-     * @return {@code true} if logging fatal messages is enabled; {@code false}
-     * if logging fatal messages is disabled.
+     * @return {@code true} if logging fatal messages is enabled; {@code false} if logging fatal messages is disabled.
      */
     boolean isFatalEnabled();
 
@@ -153,8 +147,7 @@ public interface Logger
     /**
      * Getter for property {@code infoEnabled}.
      *
-     * @return {@code true} if logging info messages is enabled; {@code false}
-     * if logging info messages is disabled.
+     * @return {@code true} if logging info messages is enabled; {@code false} if logging info messages is disabled.
      */
     boolean isInfoEnabled();
 
@@ -183,8 +176,7 @@ public interface Logger
     /**
      * Getter for property {@code traceEnabled}.
      *
-     * @return {@code true} if logging trace messages is enabled; {@code false}
-     * if logging trace messages is disabled.
+     * @return {@code true} if logging trace messages is enabled; {@code false} if logging trace messages is disabled.
      */
     boolean isTraceEnabled();
 
@@ -213,8 +205,8 @@ public interface Logger
     /**
      * Getter for property {@code warnEnabled}.
      *
-     * @return {@code true} if logging warning messages is enabled;
-     * {@code false} if logging warning messages is disabled.
+     * @return {@code true} if logging warning messages is enabled; {@code false} if logging warning messages is
+     * disabled.
      */
     boolean isWarnEnabled();
 
