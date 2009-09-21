@@ -218,9 +218,11 @@ public class CommonsLogger
      */
     @javax.annotation.Generated( value = "org.jomc.tools.JavaSources",
                                  comments = "See http://jomc.sourceforge.net/jomc/1.0-alpha-1-SNAPSHOT/jomc-tools" )
-    public java.lang.String getName() throws org.jomc.ObjectManagementException
+    public java.lang.String getName()
     {
-        return (java.lang.String) org.jomc.ObjectManagerFactory.getObjectManager().getProperty( this, "name" );
+        final java.lang.String _p = (java.lang.String) org.jomc.ObjectManagerFactory.getObjectManager().getProperty( this, "name" );
+        assert _p != null : "'name' property not found.";
+        return _p;
     }
     // SECTION-END
     // SECTION-START[Messages]
