@@ -35,7 +35,6 @@
 package org.jomc.logging.it;
 
 import junit.framework.TestCase;
-import org.jomc.logging.Logger;
 
 // SECTION-START[Documentation]
 /**
