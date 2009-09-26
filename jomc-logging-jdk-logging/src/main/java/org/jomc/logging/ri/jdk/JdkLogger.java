@@ -78,17 +78,17 @@ public class JdkLogger
         return this.getLogger().isLoggable( Level.FINE );
     }
 
-    public void debug( String message )
+    public void debug( final String message )
     {
         this.log( Level.FINE, message, null );
     }
 
-    public void debug( Throwable throwable )
+    public void debug( final Throwable throwable )
     {
         this.log( Level.FINE, throwable.getMessage(), throwable );
     }
 
-    public void debug( String message, Throwable throwable )
+    public void debug( final String message, final Throwable throwable )
     {
         this.log( Level.FINE, message, throwable );
     }
@@ -98,17 +98,17 @@ public class JdkLogger
         return this.getLogger().isLoggable( Level.SEVERE );
     }
 
-    public void error( String message )
+    public void error( final String message )
     {
         this.log( Level.SEVERE, message, null );
     }
 
-    public void error( Throwable throwable )
+    public void error( final Throwable throwable )
     {
         this.log( Level.SEVERE, throwable.getMessage(), throwable );
     }
 
-    public void error( String message, Throwable throwable )
+    public void error( final String message, final Throwable throwable )
     {
         this.log( Level.SEVERE, message, throwable );
     }
@@ -118,17 +118,17 @@ public class JdkLogger
         return this.getLogger().isLoggable( Level.SEVERE );
     }
 
-    public void fatal( String message )
+    public void fatal( final String message )
     {
         this.log( Level.SEVERE, message, null );
     }
 
-    public void fatal( Throwable throwable )
+    public void fatal( final Throwable throwable )
     {
         this.log( Level.SEVERE, throwable.getMessage(), throwable );
     }
 
-    public void fatal( String message, Throwable throwable )
+    public void fatal( final String message, final Throwable throwable )
     {
         this.log( Level.SEVERE, message, throwable );
     }
@@ -138,17 +138,17 @@ public class JdkLogger
         return this.getLogger().isLoggable( Level.INFO );
     }
 
-    public void info( String message )
+    public void info( final String message )
     {
         this.log( Level.INFO, message, null );
     }
 
-    public void info( Throwable throwable )
+    public void info( final Throwable throwable )
     {
         this.log( Level.INFO, throwable.getMessage(), throwable );
     }
 
-    public void info( String message, Throwable throwable )
+    public void info( final String message, final Throwable throwable )
     {
         this.log( Level.INFO, message, throwable );
     }
@@ -158,17 +158,17 @@ public class JdkLogger
         return this.getLogger().isLoggable( Level.FINEST );
     }
 
-    public void trace( String message )
+    public void trace( final String message )
     {
         this.log( Level.FINEST, message, null );
     }
 
-    public void trace( Throwable throwable )
+    public void trace( final Throwable throwable )
     {
         this.log( Level.FINEST, throwable.getMessage(), throwable );
     }
 
-    public void trace( String message, Throwable throwable )
+    public void trace( final String message, final Throwable throwable )
     {
         this.log( Level.FINEST, message, throwable );
     }
@@ -178,17 +178,17 @@ public class JdkLogger
         return this.getLogger().isLoggable( Level.WARNING );
     }
 
-    public void warn( String message )
+    public void warn( final String message )
     {
         this.log( Level.WARNING, message, null );
     }
 
-    public void warn( Throwable throwable )
+    public void warn( final Throwable throwable )
     {
         this.log( Level.WARNING, throwable.getMessage(), throwable );
     }
 
-    public void warn( String message, Throwable throwable )
+    public void warn( final String message, final Throwable throwable )
     {
         this.log( Level.WARNING, message, throwable );
     }

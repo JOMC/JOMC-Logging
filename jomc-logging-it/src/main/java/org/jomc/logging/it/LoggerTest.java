@@ -69,8 +69,9 @@ public class LoggerTest extends TestCase
     // SECTION-START[LoggerTest]
 
     /**
-     * Tests the {@link Logger#isInfoEnabled() isXxxEnabled()} methods to not
-     * throw any exceptions.
+     * Tests the {@link Logger#isInfoEnabled() isXxxEnabled()} methods to not throw any exceptions.
+     *
+     * @throws Exception if testing fails.
      */
     public void testIsEnabled() throws Exception
     {
@@ -84,7 +85,11 @@ public class LoggerTest extends TestCase
         this.getLogger().isWarnEnabled();
     }
 
-    /** Tests the various logger methods to not throw any exceptions. */
+    /**
+     * Tests the various logger methods to not throw any exceptions.
+     *
+     * @throws Exception if testing fails.
+     */
     public void testLog() throws Exception
     {
         assert this.getLogger() != null;

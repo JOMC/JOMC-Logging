@@ -75,7 +75,7 @@
                     stateless="true">
 
       <documentation defaultLanguage="en">
-        <text language="en"><![CDATA[{@code ObjectManagementLister} backed by JDK logging.]]></text>
+        <text language="en"><![CDATA[{@code Listener} backed by JDK logging.]]></text>
       </documentation>
       <authors>
         <author name="Christian Schulte" version="1.0" mail="cs@jomc.org"

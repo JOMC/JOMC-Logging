@@ -38,7 +38,7 @@ import java.util.logging.Level;
 
 // SECTION-START[Documentation]
 /**
- * {@code ObjectManagementLister} backed by Slf4J logging.
+ * {@code Listener} backed by Slf4J logging.
  * <p><b>Specifications</b><ul>
  * <li>{@code org.jomc.spi.Listener} {@code 1.0} {@code Multiton}</li>
  * </ul></p>

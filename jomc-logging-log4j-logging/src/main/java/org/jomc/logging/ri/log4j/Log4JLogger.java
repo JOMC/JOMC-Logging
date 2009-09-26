@@ -94,17 +94,17 @@ public class Log4JLogger implements Logger
         return this.getLogger().isEnabledFor( org.apache.log4j.Level.DEBUG );
     }
 
-    public void debug( String string )
+    public void debug( final String string )
     {
         this.getLogger().debug( string );
     }
 
-    public void debug( Throwable throwable )
+    public void debug( final Throwable throwable )
     {
         this.getLogger().debug( throwable.getMessage(), throwable );
     }
 
-    public void debug( String message, Throwable throwable )
+    public void debug( final String message, final Throwable throwable )
     {
         this.getLogger().debug( message, throwable );
     }
@@ -114,17 +114,17 @@ public class Log4JLogger implements Logger
         return this.getLogger().isEnabledFor( org.apache.log4j.Level.ERROR );
     }
 
-    public void error( String string )
+    public void error( final String string )
     {
         this.getLogger().error( string );
     }
 
-    public void error( Throwable throwable )
+    public void error( final Throwable throwable )
     {
         this.getLogger().error( throwable.getMessage(), throwable );
     }
 
-    public void error( String message, Throwable throwable )
+    public void error( final String message, final Throwable throwable )
     {
         this.getLogger().error( message, throwable );
     }
@@ -134,17 +134,17 @@ public class Log4JLogger implements Logger
         return this.getLogger().isEnabledFor( org.apache.log4j.Level.FATAL );
     }
 
-    public void fatal( String string )
+    public void fatal( final String string )
     {
         this.getLogger().fatal( string );
     }
 
-    public void fatal( Throwable throwable )
+    public void fatal( final Throwable throwable )
     {
         this.getLogger().fatal( throwable.getMessage(), throwable );
     }
 
-    public void fatal( String message, Throwable throwable )
+    public void fatal( final String message, final Throwable throwable )
     {
         this.getLogger().fatal( message, throwable );
     }
@@ -154,17 +154,17 @@ public class Log4JLogger implements Logger
         return this.getLogger().isEnabledFor( org.apache.log4j.Level.INFO );
     }
 
-    public void info( String string )
+    public void info( final String string )
     {
         this.getLogger().info( string );
     }
 
-    public void info( Throwable throwable )
+    public void info( final Throwable throwable )
     {
         this.getLogger().info( throwable.getMessage(), throwable );
     }
 
-    public void info( String message, Throwable throwable )
+    public void info( final String message, final Throwable throwable )
     {
         this.getLogger().info( message, throwable );
     }
@@ -174,17 +174,17 @@ public class Log4JLogger implements Logger
         return this.getLogger().isEnabledFor( org.apache.log4j.Level.TRACE );
     }
 
-    public void trace( String string )
+    public void trace( final String string )
     {
         this.getLogger().trace( string );
     }
 
-    public void trace( Throwable throwable )
+    public void trace( final Throwable throwable )
     {
         this.getLogger().trace( throwable.getMessage(), throwable );
     }
 
-    public void trace( String message, Throwable throwable )
+    public void trace( final String message, final Throwable throwable )
     {
         this.getLogger().trace( message, throwable );
     }
@@ -194,17 +194,17 @@ public class Log4JLogger implements Logger
         return this.getLogger().isEnabledFor( org.apache.log4j.Level.WARN );
     }
 
-    public void warn( String string )
+    public void warn( final String string )
     {
         this.getLogger().warn( string );
     }
 
-    public void warn( Throwable throwable )
+    public void warn( final Throwable throwable )
     {
         this.getLogger().warn( throwable.getMessage(), throwable );
     }
 
-    public void warn( String message, Throwable throwable )
+    public void warn( final String message, final Throwable throwable )
     {
         this.getLogger().warn( message, throwable );
     }

@@ -79,17 +79,17 @@ public class CommonsLogger
         return this.getLogger().isDebugEnabled();
     }
 
-    public void debug( String message )
+    public void debug( final String message )
     {
         this.getLogger().debug( message );
     }
 
-    public void debug( Throwable throwable )
+    public void debug( final Throwable throwable )
     {
         this.getLogger().debug( throwable.getMessage(), throwable );
     }
 
-    public void debug( String message, Throwable throwable )
+    public void debug( final String message, final Throwable throwable )
     {
         this.getLogger().debug( message, throwable );
     }
@@ -99,17 +99,17 @@ public class CommonsLogger
         return this.getLogger().isErrorEnabled();
     }
 
-    public void error( String message )
+    public void error( final String message )
     {
         this.getLogger().error( message );
     }
 
-    public void error( Throwable throwable )
+    public void error( final Throwable throwable )
     {
         this.getLogger().error( throwable.getMessage(), throwable );
     }
 
-    public void error( String message, Throwable throwable )
+    public void error( final String message, final Throwable throwable )
     {
         this.getLogger().error( message, throwable );
     }
@@ -119,17 +119,17 @@ public class CommonsLogger
         return this.getLogger().isFatalEnabled();
     }
 
-    public void fatal( String message )
+    public void fatal( final String message )
     {
         this.getLogger().fatal( message );
     }
 
-    public void fatal( Throwable throwable )
+    public void fatal( final Throwable throwable )
     {
         this.getLogger().fatal( throwable.getMessage(), throwable );
     }
 
-    public void fatal( String message, Throwable throwable )
+    public void fatal( final String message, final Throwable throwable )
     {
         this.getLogger().fatal( message, throwable );
     }
@@ -139,17 +139,17 @@ public class CommonsLogger
         return this.getLogger().isInfoEnabled();
     }
 
-    public void info( String message )
+    public void info( final String message )
     {
         this.getLogger().info( message );
     }
 
-    public void info( Throwable throwable )
+    public void info( final Throwable throwable )
     {
         this.getLogger().info( throwable.getMessage(), throwable );
     }
 
-    public void info( String message, Throwable throwable )
+    public void info( final String message, final Throwable throwable )
     {
         this.getLogger().info( message, throwable );
     }
@@ -159,17 +159,17 @@ public class CommonsLogger
         return this.getLogger().isTraceEnabled();
     }
 
-    public void trace( String message )
+    public void trace( final String message )
     {
         this.getLogger().trace( message );
     }
 
-    public void trace( Throwable throwable )
+    public void trace( final Throwable throwable )
     {
         this.getLogger().trace( throwable.getMessage(), throwable );
     }
 
-    public void trace( String message, Throwable throwable )
+    public void trace( final String message, final Throwable throwable )
     {
         this.getLogger().trace( message, throwable );
     }
@@ -179,17 +179,17 @@ public class CommonsLogger
         return this.getLogger().isWarnEnabled();
     }
 
-    public void warn( String message )
+    public void warn( final String message )
     {
         this.getLogger().warn( message );
     }
 
-    public void warn( Throwable throwable )
+    public void warn( final Throwable throwable )
     {
         this.getLogger().warn( throwable.getMessage(), throwable );
     }
 
-    public void warn( String message, Throwable throwable )
+    public void warn( final String message, final Throwable throwable )
     {
         this.getLogger().warn( message, throwable );
     }
