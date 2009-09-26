@@ -40,6 +40,16 @@
     <author email="cs@jomc.org">Christian Schulte</author>
   </properties>
   <body>
+    <!-- ******************************************************************* -->
     <release version="1.0-alpha-1" date="2009-09-22"/>
+    <!-- ******************************************************************* -->
+    <release version="1.0-alpha-2" date="2009-09-26">
+      <action dev="schulte2005" type="update"><![CDATA[
+      Maven POM updates.<ul>
+      <li>Updated JOMC dependencies from 1.0-alpha-1 to 1.0-alpha-2.</li>
+      <li>Updated jomc-build-resources dependency from 1.1 to 1.2.</li>
+      </ul>]]>
+      </action>
+    </release>
   </body>
 </document>
