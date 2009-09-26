@@ -268,7 +268,7 @@
         <plugin>
           <groupId>org.jomc</groupId>
           <artifactId>maven-jomc-plugin</artifactId>
-          <version>1.0-alpha-1</version>
+          <version>1.0-alpha-2</version>
           <executions>
             <execution>
               <id>main-java-sources</id>
