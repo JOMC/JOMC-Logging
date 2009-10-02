@@ -53,7 +53,7 @@ import java.util.logging.Level;
 // SECTION-END
 // SECTION-START[Annotations]
 @javax.annotation.Generated( value = "org.jomc.tools.JavaSources",
-                             comments = "See http://jomc.sourceforge.net/jomc/1.0-alpha-2/jomc-tools" )
+                             comments = "See http://jomc.sourceforge.net/jomc/1.0-alpha-3/jomc-tools" )
 // SECTION-END
 public class Slf4JObjectManagementListener
 implements
@@ -97,7 +97,7 @@ implements
 
     /** Creates a new {@code Slf4JObjectManagementListener} instance. */
     @javax.annotation.Generated( value = "org.jomc.tools.JavaSources",
-                                 comments = "See http://jomc.sourceforge.net/jomc/1.0-alpha-2/jomc-tools" )
+                                 comments = "See http://jomc.sourceforge.net/jomc/1.0-alpha-3/jomc-tools" )
     public Slf4JObjectManagementListener()
     {
         // SECTION-START[Default Constructor]
@@ -113,14 +113,14 @@ implements
      * <p>That specification does not apply to any scope. A new object is returned whenever requested and bound to this instance.</p>
      * <p><b>Properties</b><dl>
      * <dt>"{@code name}"</dt>
-     * <dd>Property of type {@code java.lang.String} with value "org.jomc.ObjectManager".
+     * <dd>Property of type {@code java.lang.String}.
      * </dd>
      * </dl>
      * @return The {@code Logger} dependency.
      * @throws org.jomc.ObjectManagementException if getting the dependency instance fails.
      */
     @javax.annotation.Generated( value = "org.jomc.tools.JavaSources",
-                                 comments = "See http://jomc.sourceforge.net/jomc/1.0-alpha-2/jomc-tools" )
+                                 comments = "See http://jomc.sourceforge.net/jomc/1.0-alpha-3/jomc-tools" )
     private org.jomc.logging.Logger getLogger()
     {
         final org.jomc.logging.Logger _d = (org.jomc.logging.Logger) org.jomc.ObjectManagerFactory.getObjectManager().getDependency( this, "Logger" );

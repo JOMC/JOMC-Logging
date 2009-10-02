@@ -43,8 +43,10 @@ import org.jomc.logging.Logger;
  * <li>{@code org.jomc.logging.Logger} {@code 1.0} {@code Multiton}</li>
  * </ul></p>
  * <p><b>Properties</b><ul>
- * <li>"{@link #getName name}"<blockquote>
- * Property of type {@code java.lang.String} with value "org.jomc.logging.Logger".</blockquote></li>
+ * <li>"{@link #getName name}"
+ * <blockquote>Property of type {@code java.lang.String}.
+ * <p>Name of the component events are logged for.</p>
+ * </blockquote></li>
  * </ul></p>
  *
  * @author <a href="mailto:cs@jomc.org">Christian Schulte</a> 1.0
@@ -53,7 +55,7 @@ import org.jomc.logging.Logger;
 // SECTION-END
 // SECTION-START[Annotations]
 @javax.annotation.Generated( value = "org.jomc.tools.JavaSources",
-                             comments = "See http://jomc.sourceforge.net/jomc/1.0-alpha-2/jomc-tools" )
+                             comments = "See http://jomc.sourceforge.net/jomc/1.0-alpha-3/jomc-tools" )
 // SECTION-END
 public class Slf4JLogger implements Logger
 {
@@ -61,7 +63,7 @@ public class Slf4JLogger implements Logger
 
     /** Creates a new {@code Slf4JLogger} instance. */
     @javax.annotation.Generated( value = "org.jomc.tools.JavaSources",
-                                 comments = "See http://jomc.sourceforge.net/jomc/1.0-alpha-2/jomc-tools" )
+                                 comments = "See http://jomc.sourceforge.net/jomc/1.0-alpha-3/jomc-tools" )
     public Slf4JLogger()
     {
         // SECTION-START[Default Constructor]
@@ -212,7 +214,7 @@ public class Slf4JLogger implements Logger
      * @throws org.jomc.ObjectManagementException if getting the property instance fails.
      */
     @javax.annotation.Generated( value = "org.jomc.tools.JavaSources",
-                                 comments = "See http://jomc.sourceforge.net/jomc/1.0-alpha-2/jomc-tools" )
+                                 comments = "See http://jomc.sourceforge.net/jomc/1.0-alpha-3/jomc-tools" )
     public java.lang.String getName()
     {
         final java.lang.String _p = (java.lang.String) org.jomc.ObjectManagerFactory.getObjectManager().getProperty( this, "name" );
