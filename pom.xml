@@ -268,7 +268,7 @@
         <plugin>
           <groupId>org.jomc</groupId>
           <artifactId>maven-jomc-plugin</artifactId>
-          <version>1.0-alpha-3</version>
+          <version>1.0-alpha-4</version>
           <executions>
             <execution>
               <id>main-java-sources</id>
@@ -609,17 +609,17 @@
       <dependency>
         <groupId>org.jomc</groupId>
         <artifactId>jomc-api</artifactId>
-        <version>1.0-alpha-3</version>
+        <version>1.0-alpha-4</version>
       </dependency>
       <dependency>
         <groupId>org.jomc</groupId>
         <artifactId>jomc-spi</artifactId>
-        <version>1.0-alpha-3</version>
+        <version>1.0-alpha-4</version>
       </dependency>
       <dependency>
         <groupId>org.jomc</groupId>
         <artifactId>jomc-ri</artifactId>
-        <version>1.0-alpha-3</version>
+        <version>1.0-alpha-4</version>
       </dependency>
 
       <!-- JOMC Logging -->
@@ -635,7 +635,7 @@
       </dependency>
       <dependency>
         <groupId>org.jomc.logging</groupId>
-        <artifactId>jomc-logging-commons-logggging</artifactId>
+        <artifactId>jomc-logging-commons-logging</artifactId>
         <version>1.0-alpha-1-SNAPSHOT</version>
       </dependency>
       <dependency>
