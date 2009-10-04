@@ -69,7 +69,7 @@ public class LoggerTest extends TestCase
     // SECTION-START[LoggerTest]
 
     /**
-     * Tests the {@link Logger#isInfoEnabled() isXxxEnabled()} methods to not throw any exceptions.
+     * Tests the {@link org.jomc.logging.Logger#isInfoEnabled() isXxxEnabled()} methods to not throw any exceptions.
      *
      * @throws Exception if testing fails.
      */
