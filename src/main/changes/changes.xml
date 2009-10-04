@@ -42,6 +42,7 @@
   <body>
     <!-- ******************************************************************* -->
     <release version="1.0-alpha-1" date="2009-09-22"/>
+
     <!-- ******************************************************************* -->
     <release version="1.0-alpha-2" date="2009-09-26">
       <action dev="schulte2005" type="update"><![CDATA[
@@ -49,6 +50,13 @@
       <li>Updated JOMC dependencies from 1.0-alpha-1 to 1.0-alpha-2.</li>
       <li>Updated jomc-build-resources dependency from 1.1 to 1.2.</li>
       </ul>]]>
+      </action>
+    </release>
+
+    <!-- ******************************************************************* -->
+    <release version="1.0-alpha-3" date="2009-10-04">
+      <action dev="schulte2005" type="update"><![CDATA[
+      Build updates.]]>
       </action>
     </release>
   </body>

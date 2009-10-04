@@ -58,6 +58,7 @@
     </testResources>
     <plugins>
       <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-dependency-plugin</artifactId>
         <executions>
           <execution>
@@ -71,7 +72,7 @@
                 <artifactItem>
                   <groupId>org.jomc.logging</groupId>
                   <artifactId>jomc-logging-it</artifactId>
-                  <version>${jomcLoggingVersion}</version>
+                  <version>${pom.version}</version>
                   <type>jar</type>
                 </artifactItem>
               </artifactItems>
@@ -80,9 +81,6 @@
             </configuration>
           </execution>
         </executions>
-      </plugin>
-      <plugin>
-        <artifactId>maven-pmd-plugin</artifactId>
       </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
@@ -120,6 +118,11 @@
       <groupId>commons-logging</groupId>
       <artifactId>commons-logging</artifactId>
       <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.jomc</groupId>
+      <artifactId>jomc-ri</artifactId>
+      <scope>runtime</scope>
     </dependency>
     <dependency>
       <groupId>org.jomc.logging</groupId>
