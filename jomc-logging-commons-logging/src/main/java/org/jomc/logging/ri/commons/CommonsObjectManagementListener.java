@@ -53,7 +53,7 @@ import java.util.logging.Level;
 // SECTION-END
 // SECTION-START[Annotations]
 @javax.annotation.Generated( value = "org.jomc.tools.JavaSources",
-                             comments = "See http://jomc.sourceforge.net/jomc/1.0-alpha-4/jomc-tools" )
+                             comments = "See http://jomc.sourceforge.net/jomc/1.0-alpha-5/jomc-tools" )
 // SECTION-END
 public class CommonsObjectManagementListener
     implements
@@ -97,7 +97,7 @@ public class CommonsObjectManagementListener
 
     /** Creates a new {@code CommonsObjectManagementListener} instance. */
     @javax.annotation.Generated( value = "org.jomc.tools.JavaSources",
-                                 comments = "See http://jomc.sourceforge.net/jomc/1.0-alpha-4/jomc-tools" )
+                                 comments = "See http://jomc.sourceforge.net/jomc/1.0-alpha-5/jomc-tools" )
     public CommonsObjectManagementListener()
     {
         // SECTION-START[Default Constructor]
@@ -120,7 +120,7 @@ public class CommonsObjectManagementListener
      * @throws org.jomc.ObjectManagementException if getting the dependency instance fails.
      */
     @javax.annotation.Generated( value = "org.jomc.tools.JavaSources",
-                                 comments = "See http://jomc.sourceforge.net/jomc/1.0-alpha-4/jomc-tools" )
+                                 comments = "See http://jomc.sourceforge.net/jomc/1.0-alpha-5/jomc-tools" )
     private org.jomc.logging.Logger getLogger()
     {
         final org.jomc.logging.Logger _d = (org.jomc.logging.Logger) org.jomc.ObjectManagerFactory.getObjectManager().getDependency( this, "Logger" );
