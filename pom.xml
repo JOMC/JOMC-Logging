@@ -621,7 +621,7 @@
       <dependency>
         <groupId>org.jomc.logging</groupId>
         <artifactId>jomc-logging-commons-logging</artifactId>
-        <version>1.0-alpha-1-SNAPSHOT</version>
+        <version>1.0-alpha-4-SNAPSHOT</version>
       </dependency>
       <dependency>
         <groupId>org.jomc.logging</groupId>
