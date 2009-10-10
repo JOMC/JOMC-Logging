@@ -59,5 +59,12 @@
       Build updates.]]>
       </action>
     </release>
+
+    <!-- ******************************************************************* -->
+    <release version="1.0-alpha-4" date="2009-10-10">
+      <action dev="schulte2005" type="update"><![CDATA[
+      Corrected dependency management in parent pom.]]>
+      </action>
+    </release>
   </body>
 </document>
