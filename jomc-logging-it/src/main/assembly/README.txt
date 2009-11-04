@@ -1,9 +1,9 @@
 
-  ${pom.organization.name} - ${pom.name} - README.txt
-  Version ${pom.version} Build ${buildNumber}
-  ${pom.url}
+  ${project.organization.name} - ${project.name} - README.txt
+  Version ${project.version} Build ${buildNumber}
+  ${project.url}
 
-  ${pom.description}
+  ${project.description}
 
     See the output of the 'testsuite' application for further information.
     For launching that application use of the scripts found in the 'bin'

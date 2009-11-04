@@ -72,7 +72,7 @@
                 <artifactItem>
                   <groupId>org.jomc.logging</groupId>
                   <artifactId>jomc-logging-it</artifactId>
-                  <version>${pom.version}</version>
+                  <version>${project.version}</version>
                   <type>jar</type>
                 </artifactItem>
               </artifactItems>

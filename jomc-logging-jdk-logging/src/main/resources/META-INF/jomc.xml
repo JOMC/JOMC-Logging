@@ -35,26 +35,26 @@
 <module xmlns="http://jomc.org/model"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://jomc.org/model http://jomc.org/model/jomc-1.0.xsd"
-        name="${pom.name}"
-        version="${pom.version}"
-        vendor="${pom.organization.name}"
+        name="${project.name}"
+        version="${project.version}"
+        vendor="${project.organization.name}"
         modelVersion="1.0">
 
   <documentation defaultLanguage="en">
-    <text language="en"><![CDATA[${pom.description}]]></text>
+    <text language="en"><![CDATA[${project.description}]]></text>
   </documentation>
 
   <implementations>
     <!-- ******************************************************************* -->
     <implementation identifier="org.jomc.logging.ri.jdk.JdkLogger"
                     class="org.jomc.logging.ri.jdk.JdkLogger"
-                    name="${pom.name}"
-                    version="${pom.version}"
-                    vendor="${pom.organization.name}"
+                    name="${project.name}"
+                    version="${project.version}"
+                    vendor="${project.organization.name}"
                     stateless="true">
 
       <documentation defaultLanguage="en">
-        <text language="en"><![CDATA[${pom.description}]]></text>
+        <text language="en"><![CDATA[${project.description}]]></text>
       </documentation>
       <authors>
         <author name="Christian Schulte" version="1.0" mail="cs@jomc.org"
@@ -69,9 +69,9 @@
     <!-- ******************************************************************* -->
     <implementation identifier="org.jomc.logging.ri.jdk.JdkObjectManagementListener"
                     class="org.jomc.logging.ri.jdk.JdkObjectManagementListener"
-                    name="${pom.name}"
-                    version="${pom.version}"
-                    vendor="${pom.organization.name}"
+                    name="${project.name}"
+                    version="${project.version}"
+                    vendor="${project.organization.name}"
                     stateless="true">
 
       <documentation defaultLanguage="en">
@@ -86,7 +86,7 @@
       </specifications>
       <dependencies>
         <dependency name="Logger" identifier="org.jomc.logging.Logger"
-                    version="1.0" implementationName="${pom.name}">
+                    version="1.0" implementationName="${project.name}">
 
           <properties>
             <property name="name" value="org.jomc.ObjectManager"/>
