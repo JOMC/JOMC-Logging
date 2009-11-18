@@ -1,4 +1,5 @@
 // SECTION-START[License Header]
+// <editor-fold defaultstate="collapsed" desc=" Generated License ">
 /*
  *   Copyright (c) 2009 The JOMC Project
  *   Copyright (c) 2005 Christian Schulte <cs@jomc.org>
@@ -31,12 +32,14 @@
  *   $Id$
  *
  */
+// </editor-fold>
 // SECTION-END
 package org.jomc.logging.ri.log4j;
 
 import org.jomc.logging.Logger;
 
 // SECTION-START[Documentation]
+// <editor-fold defaultstate="collapsed" desc=" Generated Documentation ">
 /**
  * Log4J logging system implementation.
  * <p><b>Specifications</b><ul>
@@ -52,28 +55,34 @@ import org.jomc.logging.Logger;
  * @author <a href="mailto:cs@jomc.org">Christian Schulte</a> 1.0
  * @version $Id$
  */
+// </editor-fold>
 // SECTION-END
 // SECTION-START[Annotations]
+// <editor-fold defaultstate="collapsed" desc=" Generated Annotations ">
 @javax.annotation.Generated( value = "org.jomc.tools.JavaSources",
-                             comments = "See http://jomc.sourceforge.net/jomc/1.0-alpha-7/jomc-tools" )
+                             comments = "See http://jomc.sourceforge.net/jomc/1.0-alpha-8/jomc-tools" )
+// </editor-fold>
 // SECTION-END
 public class Log4JLogger implements Logger
 {
     // SECTION-START[Constructors]
+    // <editor-fold defaultstate="collapsed" desc=" Generated Constructors ">
 
     /** Creates a new {@code Log4JLogger} instance. */
     @javax.annotation.Generated( value = "org.jomc.tools.JavaSources",
-                                 comments = "See http://jomc.sourceforge.net/jomc/1.0-alpha-7/jomc-tools" )
+                                 comments = "See http://jomc.sourceforge.net/jomc/1.0-alpha-8/jomc-tools" )
     public Log4JLogger()
     {
         // SECTION-START[Default Constructor]
         super();
         // SECTION-END
     }
+    // </editor-fold>
     // SECTION-END
     // SECTION-START[Dependencies]
     // SECTION-END
     // SECTION-START[Properties]
+    // <editor-fold defaultstate="collapsed" desc=" Generated Properties ">
 
     /**
      * Gets the value of the {@code name} property.
@@ -81,13 +90,14 @@ public class Log4JLogger implements Logger
      * @throws org.jomc.ObjectManagementException if getting the property instance fails.
      */
     @javax.annotation.Generated( value = "org.jomc.tools.JavaSources",
-                                 comments = "See http://jomc.sourceforge.net/jomc/1.0-alpha-7/jomc-tools" )
+                                 comments = "See http://jomc.sourceforge.net/jomc/1.0-alpha-8/jomc-tools" )
     public java.lang.String getName()
     {
-        final java.lang.String _p = (java.lang.String) org.jomc.ObjectManagerFactory.getObjectManager().getProperty( this, "name" );
+        final java.lang.String _p = (java.lang.String) org.jomc.ObjectManagerFactory.getObjectManager( this.getClass().getClassLoader() ).getProperty( this, "name" );
         assert _p != null : "'name' property not found.";
         return _p;
     }
+    // </editor-fold>
     // SECTION-END
     // SECTION-START[Log4JLogger]
 
