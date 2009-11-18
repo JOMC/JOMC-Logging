@@ -1,4 +1,5 @@
 // SECTION-START[License Header]
+// <editor-fold defaultstate="collapsed" desc=" Generated License ">
 /*
  *   Copyright (c) 2009 The JOMC Project
  *   Copyright (c) 2005 Christian Schulte <cs@jomc.org>
@@ -31,16 +32,18 @@
  *   $Id$
  *
  */
+// </editor-fold>
 // SECTION-END
 package org.jomc.logging;
 
 // SECTION-START[Documentation]
+// <editor-fold defaultstate="collapsed" desc=" Generated Documentation ">
 /**
  * Logs events for a specific component.
  * <p>This specification declares a multiplicity of {@code One}.
  * An application assembler is required to provide no more than one implementation of this specification (including none).
  * Use of class {@link org.jomc.ObjectManager ObjectManager} is supported for getting that implementation.<pre>
- * Logger object = (Logger) ObjectManagerFactory.getObjectManager().getObject( Logger.class );
+ * Logger object = (Logger) ObjectManagerFactory.getObjectManager( getClassLoader() ).getObject( Logger.class );
  * </pre>
  * </p>
  *
@@ -49,10 +52,13 @@ package org.jomc.logging;
  * @author <a href="mailto:cs@jomc.org">Christian Schulte</a> 1.0
  * @version $Id$
  */
+// </editor-fold>
 // SECTION-END
 // SECTION-START[Annotations]
+// <editor-fold defaultstate="collapsed" desc=" Generated Annotations ">
 @javax.annotation.Generated( value = "org.jomc.tools.JavaSources",
-                             comments = "See http://jomc.sourceforge.net/jomc/1.0-alpha-7/jomc-tools" )
+                             comments = "See http://jomc.sourceforge.net/jomc/1.0-alpha-8/jomc-tools" )
+// </editor-fold>
 // SECTION-END
 public interface Logger
 {
