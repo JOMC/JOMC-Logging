@@ -1,4 +1,5 @@
 // SECTION-START[License Header]
+// <editor-fold defaultstate="collapsed" desc=" Generated License ">
 /*
  *   Copyright (c) 2009 The JOMC Project
  *   Copyright (c) 2005 Christian Schulte <cs@jomc.org>
@@ -31,6 +32,7 @@
  *   $Id$
  *
  */
+// </editor-fold>
 // SECTION-END
 package org.jomc.logging.ri.commons;
 
@@ -38,6 +40,7 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
 // SECTION-START[Documentation]
+// <editor-fold defaultstate="collapsed" desc=" Generated Documentation ">
 /**
  * Commons logging system implementation.
  * <p><b>Specifications</b><ul>
@@ -53,26 +56,31 @@ import org.apache.commons.logging.LogFactory;
  * @author <a href="mailto:cs@jomc.org">Christian Schulte</a> 1.0
  * @version $Id$
  */
+// </editor-fold>
 // SECTION-END
 // SECTION-START[Annotations]
+// <editor-fold defaultstate="collapsed" desc=" Generated Annotations ">
 @javax.annotation.Generated( value = "org.jomc.tools.JavaSources",
-                             comments = "See http://jomc.sourceforge.net/jomc/1.0-alpha-7/jomc-tools" )
+                             comments = "See http://jomc.sourceforge.net/jomc/1.0-alpha-8/jomc-tools" )
+// </editor-fold>
 // SECTION-END
 public class CommonsLogger
     implements
     org.jomc.logging.Logger
 {
     // SECTION-START[Constructors]
+    // <editor-fold defaultstate="collapsed" desc=" Generated Constructors ">
 
     /** Creates a new {@code CommonsLogger} instance. */
     @javax.annotation.Generated( value = "org.jomc.tools.JavaSources",
-                                 comments = "See http://jomc.sourceforge.net/jomc/1.0-alpha-7/jomc-tools" )
+                                 comments = "See http://jomc.sourceforge.net/jomc/1.0-alpha-8/jomc-tools" )
     public CommonsLogger()
     {
         // SECTION-START[Default Constructor]
         super();
         // SECTION-END
     }
+    // </editor-fold>
     // SECTION-END
     // SECTION-START[CommonsLogger]
 
@@ -212,6 +220,7 @@ public class CommonsLogger
     // SECTION-START[Dependencies]
     // SECTION-END
     // SECTION-START[Properties]
+    // <editor-fold defaultstate="collapsed" desc=" Generated Properties ">
 
     /**
      * Gets the value of the {@code name} property.
@@ -219,13 +228,14 @@ public class CommonsLogger
      * @throws org.jomc.ObjectManagementException if getting the property instance fails.
      */
     @javax.annotation.Generated( value = "org.jomc.tools.JavaSources",
-                                 comments = "See http://jomc.sourceforge.net/jomc/1.0-alpha-7/jomc-tools" )
+                                 comments = "See http://jomc.sourceforge.net/jomc/1.0-alpha-8/jomc-tools" )
     public java.lang.String getName()
     {
-        final java.lang.String _p = (java.lang.String) org.jomc.ObjectManagerFactory.getObjectManager().getProperty( this, "name" );
+        final java.lang.String _p = (java.lang.String) org.jomc.ObjectManagerFactory.getObjectManager( this.getClass().getClassLoader() ).getProperty( this, "name" );
         assert _p != null : "'name' property not found.";
         return _p;
     }
+    // </editor-fold>
     // SECTION-END
     // SECTION-START[Messages]
     // SECTION-END
