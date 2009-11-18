@@ -66,5 +66,15 @@
       Corrected dependency management in parent pom.]]>
       </action>
     </release>
+
+    <!-- ******************************************************************* -->
+    <release version="1.0-alpha-5" date="2009-11-18">
+      <action dev="schulte2005" type="update"><![CDATA[
+      Maven POM updates.<ul>
+      <li>Updated JOMC dependencies to 1.0-alpha-8.</li>
+      </ul>]]>
+      </action>
+    </release>
+
   </body>
 </document>
