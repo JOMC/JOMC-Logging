@@ -55,7 +55,7 @@ import junit.framework.TestCase;
 // SECTION-START[Annotations]
 // <editor-fold defaultstate="collapsed" desc=" Generated Annotations ">
 @javax.annotation.Generated( value = "org.jomc.tools.JavaSources",
-                             comments = "See http://jomc.sourceforge.net/jomc/1.0-alpha-8/jomc-tools" )
+                             comments = "See http://jomc.sourceforge.net/jomc/1.0-alpha-9/jomc-tools" )
 // </editor-fold>
 // SECTION-END
 public class LoggerTest extends TestCase
@@ -65,7 +65,7 @@ public class LoggerTest extends TestCase
 
     /** Creates a new {@code LoggerTest} instance. */
     @javax.annotation.Generated( value = "org.jomc.tools.JavaSources",
-                                 comments = "See http://jomc.sourceforge.net/jomc/1.0-alpha-8/jomc-tools" )
+                                 comments = "See http://jomc.sourceforge.net/jomc/1.0-alpha-9/jomc-tools" )
     public LoggerTest()
     {
         // SECTION-START[Default Constructor]
@@ -144,7 +144,7 @@ public class LoggerTest extends TestCase
      * @throws org.jomc.ObjectManagementException if getting the dependency instance fails.
      */
     @javax.annotation.Generated( value = "org.jomc.tools.JavaSources",
-                                 comments = "See http://jomc.sourceforge.net/jomc/1.0-alpha-8/jomc-tools" )
+                                 comments = "See http://jomc.sourceforge.net/jomc/1.0-alpha-9/jomc-tools" )
     private org.jomc.logging.Logger getLogger()
     {
         final org.jomc.logging.Logger _d = (org.jomc.logging.Logger) org.jomc.ObjectManagerFactory.getObjectManager( this.getClass().getClassLoader() ).getDependency( this, "Logger" );
