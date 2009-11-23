@@ -90,6 +90,14 @@
           <skip>false</skip>
           <systemProperties>
             <property>
+              <name>org.jomc.model.DefaultModelManager.defaultLogLevel</name>
+              <value>ALL</value>
+            </property>
+            <property>
+              <name>org.jomc.ri.DefaultObjectManager.defaultLogLevel</name>
+              <value>ALL</value>
+            </property>
+            <property>
               <name>java.util.logging.config.file</name>
               <value>${project.build.testOutputDirectory}/logging.properties</value>
             </property>
