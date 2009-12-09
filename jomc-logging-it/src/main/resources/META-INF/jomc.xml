@@ -35,46 +35,45 @@
 <module xmlns="http://jomc.org/model"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://jomc.org/model http://jomc.org/model/jomc-1.0.xsd"
-        name="${project.name}"
-        version="${project.version}"
-        vendor="${project.organization.name}"
-        modelVersion="1.0">
+        name="${project.name}" version="${project.version}" vendor="${project.organization.name}">
 
   <documentation defaultLanguage="en">
     <text language="en"><![CDATA[${project.description}]]></text>
   </documentation>
 
   <implementations>
-    <!-- ******************************************************************* -->
+    <!-- *********************************************************************************************************** -->
     <implementation identifier="org.jomc.logging.it.LoggerTest"
                     class="org.jomc.logging.it.LoggerTest"
-                    name="${project.name}"
-                    version="${project.version}"
-                    vendor="${project.organization.name}"
+                    name="${project.name}" version="${project.version}" vendor="${project.organization.name}"
                     stateless="true">
 
       <documentation defaultLanguage="en">
         <text language="en"><![CDATA[${project.description}]]></text>
       </documentation>
       <authors>
-        <author name="Christian Schulte" version="1.0" mail="cs@jomc.org"
-                createDate="2005-07-25T19:56:45Z"/>
-
+        <author name="Christian Schulte" version="1.0" mail="cs@jomc.org" createDate="2005-07-25T19:56:45Z"/>
       </authors>
       <dependencies>
-        <dependency identifier="org.jomc.logging.Logger"
-                    version="1.0" name="Logger">
-
+        <dependency identifier="org.jomc.logging.Logger" version="${logger.specification.version}" name="Logger"
+                    optional="true">
           <documentation defaultLanguage="en">
-            <text language="en"><![CDATA[Implementation tests are performed with.]]></text>
+            <text language="en">Implementation tests are performed with.</text>
           </documentation>
           <properties>
-            <property name="name" type="java.lang.String"
-                      value="org.jomc.logging.it.LoggerTest"/>
-
+            <property name="name" value="org.jomc.logging.it.LoggerTest" override="true"/>
           </properties>
         </dependency>
+        <dependency identifier="java.util.Locale" version="1.1" name="Locale" implementationName="default"/>
       </dependencies>
+      <messages>
+        <message name="testImplementationNotFound" final="true">
+          <template defaultLanguage="en">
+            <text language="en">No test implementation found.</text>
+            <text language="de">Keine Test-Implementierung gefunden.</text>
+          </template>
+        </message>
+      </messages>
     </implementation>
   </implementations>
 </module>

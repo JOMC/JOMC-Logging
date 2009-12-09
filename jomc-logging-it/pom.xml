@@ -70,10 +70,14 @@
             <configuration>
               <programs>
                 <program>
-                  <mainClass>junit.textui.TestRunner</mainClass>
-                  <name>testsuite</name>
+                  <mainClass>org.jomc.logging.it.LoggerTest</mainClass>
+                  <name>testrunner</name>
                 </program>
               </programs>
+              <platforms>
+                <platform>windows</platform>
+                <platform>unix</platform>
+              </platforms>
               <repositoryLayout>flat</repositoryLayout>
               <repositoryName>lib</repositoryName>
             </configuration>
@@ -97,20 +101,6 @@
             </configuration>
           </execution>
         </executions>
-      </plugin>
-      <plugin>
-        <artifactId>maven-jar-plugin</artifactId>
-        <configuration>
-          <archive>
-            <index>true</index>
-            <addMavenDescriptor>false</addMavenDescriptor>
-            <compress>true</compress>
-            <manifestEntries>
-              <Build-Date>${buildNumber}</Build-Date>
-              <Main-Class>junit.textui.TestRunner</Main-Class>
-            </manifestEntries>
-          </archive>
-        </configuration>
       </plugin>
     </plugins>
   </build>

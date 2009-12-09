@@ -77,10 +77,17 @@
       <directoryMode>0755</directoryMode>
       <fileMode>0555</fileMode>
       <outputDirectory>bin</outputDirectory>
-      <includes>
-        <include>testsuite</include>
-      </includes>
+      <excludes>
+        <exclude>*.bat</exclude>
+      </excludes>
       <lineEnding>unix</lineEnding>
+    </fileSet>
+    <fileSet>
+      <directory>src/main/assembly/etc</directory>
+      <directoryMode>0755</directoryMode>
+      <fileMode>0444</fileMode>
+      <outputDirectory>etc</outputDirectory>
+      <lineEnding>dos</lineEnding>
     </fileSet>
     <fileSet>
       <directory>target/appassembler/lib</directory>

@@ -40,50 +40,35 @@
     <author email="cs@jomc.org">Christian Schulte</author>
   </properties>
   <body>
-    <!-- ******************************************************************* -->
+    <!-- *********************************************************************************************************** -->
     <release version="1.0-alpha-1" date="2009-09-22"/>
-
-    <!-- ******************************************************************* -->
+    <!-- *********************************************************************************************************** -->
     <release version="1.0-alpha-2" date="2009-09-26">
-      <action dev="schulte2005" type="update"><![CDATA[
-      Maven POM updates.<ul>
-      <li>Updated JOMC dependencies from 1.0-alpha-1 to 1.0-alpha-2.</li>
-      <li>Updated jomc-build-resources dependency from 1.1 to 1.2.</li>
-      </ul>]]>
-      </action>
+      <action dev="schulte2005" type="update">Updated JOMC dependencies from 1.0-alpha-1 to 1.0-alpha-2.</action>
     </release>
-
-    <!-- ******************************************************************* -->
+    <!-- *********************************************************************************************************** -->
     <release version="1.0-alpha-3" date="2009-10-04">
-      <action dev="schulte2005" type="update"><![CDATA[
-      Build updates.]]>
-      </action>
+      <action dev="schulte2005" type="update">Build updates.</action>
     </release>
-
-    <!-- ******************************************************************* -->
+    <!-- *********************************************************************************************************** -->
     <release version="1.0-alpha-4" date="2009-10-10">
-      <action dev="schulte2005" type="update"><![CDATA[
-      Corrected dependency management in parent pom.]]>
-      </action>
+      <action dev="schulte2005" type="update">Corrected dependency management in parent pom.</action>
     </release>
-
-    <!-- ******************************************************************* -->
+    <!-- *********************************************************************************************************** -->
     <release version="1.0-alpha-5" date="2009-11-18">
-      <action dev="schulte2005" type="update"><![CDATA[
-      Maven POM updates.<ul>
-      <li>Updated JOMC dependencies to 1.0-alpha-8.</li>
-      </ul>]]>
-      </action>
+      <action dev="schulte2005" type="update">Updated JOMC dependencies to 1.0-alpha-8.</action>
     </release>
-
-    <!-- ******************************************************************* -->
+    <!-- *********************************************************************************************************** -->
     <release version="1.0-alpha-6" date="2009-11-20">
-      <action dev="schulte2005" type="update"><![CDATA[
-      Maven POM updates.<ul>
-      <li>Updated JOMC dependencies to 1.0-alpha-9.</li>
-      </ul>]]>
+      <action dev="schulte2005" type="update">Updated JOMC dependencies to 1.0-alpha-9.</action>
+    </release>
+    <!-- *********************************************************************************************************** -->
+    <release version="1.0-alpha-7" date="2009-12-10">
+      <action dev="schulte2005" type="update">Updated JOMC dependencies to 1.0-alpha-11.</action>
+      <action dev="schulte2005" type="fix"><![CDATA[[
+      Added property <code>stackDepth</code> to implementation <code>org.jomc.logging.ri.jdk.JdkLogger</code> and
+      updated class <code>org.jomc.logging.ri.jdk.JdkLogger</code> to correctly compute the calling frame.]]>
       </action>
     </release>
-
   </body>
 </document>

@@ -575,7 +575,7 @@
       <dependency>
         <groupId>junit</groupId>
         <artifactId>junit</artifactId>
-        <version>3.8.2</version>
+        <version>4.7</version>
       </dependency>
 
       <!-- JOMC -->
@@ -805,5 +805,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <jomc.version>1.0-alpha-11</jomc.version>
+    <logger.specification.version>1.0</logger.specification.version>
+    <listener.specification.version>1.0</listener.specification.version>
   </properties>
 </project>

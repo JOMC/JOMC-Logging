@@ -50,6 +50,10 @@ import java.util.logging.Level;
  * <blockquote>Property of type {@code java.lang.String}.
  * <p>Name of the component events are logged for.</p>
  * </blockquote></li>
+ * <li>"{@link #getStackDepth stackDepth}"
+ * <blockquote>Property of type {@code int}.
+ * <p>Number of frames between the logger and the frame of the caller.</p>
+ * </blockquote></li>
  * </ul></p>
  *
  * @author <a href="mailto:cs@jomc.org">Christian Schulte</a> 1.0
@@ -224,9 +228,9 @@ public class JdkLogger
             String cname = "unknown";
             String method = "unknown";
 
-            if ( elements != null && elements.length > 2 )
+            if ( elements != null && elements.length >= this.getStackDepth() )
             {
-                caller = elements[2];
+                caller = elements[this.getStackDepth()];
                 cname = caller.getClassName();
                 method = caller.getMethodName();
             }
@@ -260,6 +264,20 @@ public class JdkLogger
         final java.lang.String _p = (java.lang.String) org.jomc.ObjectManagerFactory.getObjectManager( this.getClass().getClassLoader() ).getProperty( this, "name" );
         assert _p != null : "'name' property not found.";
         return _p;
+    }
+
+    /**
+     * Gets the value of the {@code stackDepth} property.
+     * @return Number of frames between the logger and the frame of the caller.
+     * @throws org.jomc.ObjectManagementException if getting the property instance fails.
+     */
+    @javax.annotation.Generated( value = "org.jomc.tools.JavaSources",
+                                 comments = "See http://jomc.sourceforge.net/jomc/1.0-alpha-11/jomc-tools" )
+    private int getStackDepth()
+    {
+        final java.lang.Integer _p = (java.lang.Integer) org.jomc.ObjectManagerFactory.getObjectManager( this.getClass().getClassLoader() ).getProperty( this, "stackDepth" );
+        assert _p != null : "'stackDepth' property not found.";
+        return _p.intValue();
     }
     // </editor-fold>
     // SECTION-END

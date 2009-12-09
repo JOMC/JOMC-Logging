@@ -124,6 +124,9 @@ implements
      * <dt>"{@code name}"</dt>
      * <dd>Property of type {@code java.lang.String}.
      * </dd>
+     * <dt>"{@code stackDepth}"</dt>
+     * <dd>Property of type {@code int}.
+     * </dd>
      * </dl>
      * @return The {@code Logger} dependency.
      * @throws org.jomc.ObjectManagementException if getting the dependency instance fails.

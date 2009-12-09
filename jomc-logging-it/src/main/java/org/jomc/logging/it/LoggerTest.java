@@ -36,15 +36,31 @@
 // SECTION-END
 package org.jomc.logging.it;
 
-import junit.framework.TestCase;
-
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.URL;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.logging.LogManager;
+import org.junit.Test;
+import org.junit.runner.JUnitCore;
+import static org.junit.Assert.fail;
 // SECTION-START[Documentation]
 // <editor-fold defaultstate="collapsed" desc=" Generated Documentation ">
 /**
  * Logging system test suite.
  * <p><b>Dependencies</b><ul>
+ * <li>"{@link #getLocale Locale}"<blockquote>
+ * Dependency on {@code java.util.Locale} at specification level 1.1 bound to an instance.</blockquote></li>
  * <li>"{@link #getLogger Logger}"<blockquote>
  * Dependency on {@code org.jomc.logging.Logger} at specification level 1.0 bound to an instance.</blockquote></li>
+ * </ul></p>
+ * <p><b>Messages</b><ul>
+ * <li>"{@link #getTestImplementationNotFoundMessage testImplementationNotFound}"<table>
+ * <tr><td valign="top">English:</td><td valign="top"><pre>No test implementation found.</pre></td></tr>
+ * <tr><td valign="top">Deutsch:</td><td valign="top"><pre>Keine Test-Implementierung gefunden.</pre></td></tr>
+ * </table>
  * </ul></p>
  *
  * @author <a href="mailto:cs@jomc.org">Christian Schulte</a> 1.0
@@ -58,7 +74,7 @@ import junit.framework.TestCase;
                              comments = "See http://jomc.sourceforge.net/jomc/1.0-alpha-11/jomc-tools" )
 // </editor-fold>
 // SECTION-END
-public class LoggerTest extends TestCase
+public class LoggerTest
 {
     // SECTION-START[Constructors]
     // <editor-fold defaultstate="collapsed" desc=" Generated Constructors ">
@@ -81,16 +97,21 @@ public class LoggerTest extends TestCase
      *
      * @throws Exception if testing fails.
      */
-    public void testIsEnabled() throws Exception
+    @Test public void testIsEnabled() throws Exception
     {
-        assert this.getLogger() != null;
-
-        this.getLogger().isDebugEnabled();
-        this.getLogger().isErrorEnabled();
-        this.getLogger().isFatalEnabled();
-        this.getLogger().isInfoEnabled();
-        this.getLogger().isTraceEnabled();
-        this.getLogger().isWarnEnabled();
+        if ( this.getLogger() != null )
+        {
+            this.getLogger().isDebugEnabled();
+            this.getLogger().isErrorEnabled();
+            this.getLogger().isFatalEnabled();
+            this.getLogger().isInfoEnabled();
+            this.getLogger().isTraceEnabled();
+            this.getLogger().isWarnEnabled();
+        }
+        else
+        {
+            fail( this.getTestImplementationNotFoundMessage( this.getLocale() ) );
+        }
     }
 
     /**
@@ -98,38 +119,90 @@ public class LoggerTest extends TestCase
      *
      * @throws Exception if testing fails.
      */
-    public void testLog() throws Exception
+    @Test public void testLog() throws Exception
     {
-        assert this.getLogger() != null;
+        if ( this.getLogger() != null )
+        {
+            this.getLogger().debug( "TEST" );
+            this.getLogger().debug( new Exception() );
+            this.getLogger().debug( "TEST", new Exception() );
 
-        this.getLogger().debug( "TEST" );
-        this.getLogger().debug( new Exception() );
-        this.getLogger().debug( "TEST", new Exception() );
+            this.getLogger().error( "TEST" );
+            this.getLogger().error( new Exception() );
+            this.getLogger().error( "TEST", new Exception() );
 
-        this.getLogger().error( "TEST" );
-        this.getLogger().error( new Exception() );
-        this.getLogger().error( "TEST", new Exception() );
+            this.getLogger().fatal( "TEST" );
+            this.getLogger().fatal( new Exception() );
+            this.getLogger().fatal( "TEST", new Exception() );
 
-        this.getLogger().fatal( "TEST" );
-        this.getLogger().fatal( new Exception() );
-        this.getLogger().fatal( "TEST", new Exception() );
+            this.getLogger().info( "TEST" );
+            this.getLogger().info( new Exception() );
+            this.getLogger().info( "TEST", new Exception() );
 
-        this.getLogger().info( "TEST" );
-        this.getLogger().info( new Exception() );
-        this.getLogger().info( "TEST", new Exception() );
+            this.getLogger().trace( "TEST" );
+            this.getLogger().trace( new Exception() );
+            this.getLogger().trace( "TEST", new Exception() );
 
-        this.getLogger().trace( "TEST" );
-        this.getLogger().trace( new Exception() );
-        this.getLogger().trace( "TEST", new Exception() );
+            this.getLogger().warn( "TEST" );
+            this.getLogger().warn( new Exception() );
+            this.getLogger().warn( "TEST", new Exception() );
+        }
+        else
+        {
+            fail( this.getTestImplementationNotFoundMessage( this.getLocale() ) );
+        }
+    }
 
-        this.getLogger().warn( "TEST" );
-        this.getLogger().warn( new Exception() );
-        this.getLogger().warn( "TEST", new Exception() );
+    /**
+     * Test runner entry point.
+     * <p>This method sets up the JDK's {@code LogManager} with properties found at classpath location
+     * {@code "/logging.properties"} and executes {@link JUnitCore#main} passing the given arguments with this classes
+     * name prepended.</p>
+     *
+     * @param args Command line arguments.
+     */
+    public static void main( final String... args )
+    {
+        try
+        {
+            final URL loggingProperties = LoggerTest.class.getResource( "/logging.properties" );
+            if ( loggingProperties != null )
+            {
+                final InputStream in = loggingProperties.openStream();
+                LogManager.getLogManager().readConfiguration( in );
+                in.close();
+            }
+
+            final List<String> l = new ArrayList<String>( Arrays.asList( args ) );
+            l.add( 0, LoggerTest.class.getName() );
+            JUnitCore.main( l.toArray( new String[ l.size() ] ) );
+        }
+        catch ( final IOException e )
+        {
+            e.printStackTrace();
+            System.exit( 1 );
+        }
     }
 
     // SECTION-END
     // SECTION-START[Dependencies]
     // <editor-fold defaultstate="collapsed" desc=" Generated Dependencies ">
+
+    /**
+     * Gets the {@code Locale} dependency.
+     * <p>This method returns the "{@code default}" object of the {@code java.util.Locale} specification at specification level 1.1.</p>
+     * <p>That specification does not apply to any scope. A new object is returned whenever requested and bound to this instance.</p>
+     * @return The {@code Locale} dependency.
+     * @throws org.jomc.ObjectManagementException if getting the dependency instance fails.
+     */
+    @javax.annotation.Generated( value = "org.jomc.tools.JavaSources",
+                                 comments = "See http://jomc.sourceforge.net/jomc/1.0-alpha-11/jomc-tools" )
+    private java.util.Locale getLocale()
+    {
+        final java.util.Locale _d = (java.util.Locale) org.jomc.ObjectManagerFactory.getObjectManager( this.getClass().getClassLoader() ).getDependency( this, "Locale" );
+        assert _d != null : "'Locale' dependency not found.";
+        return _d;
+    }
 
     /**
      * Gets the {@code Logger} dependency.
@@ -141,20 +214,41 @@ public class LoggerTest extends TestCase
      * </dd>
      * </dl>
      * @return Implementation tests are performed with.
+     * {@code null} if no object is available.
      * @throws org.jomc.ObjectManagementException if getting the dependency instance fails.
      */
     @javax.annotation.Generated( value = "org.jomc.tools.JavaSources",
                                  comments = "See http://jomc.sourceforge.net/jomc/1.0-alpha-11/jomc-tools" )
     private org.jomc.logging.Logger getLogger()
     {
-        final org.jomc.logging.Logger _d = (org.jomc.logging.Logger) org.jomc.ObjectManagerFactory.getObjectManager( this.getClass().getClassLoader() ).getDependency( this, "Logger" );
-        assert _d != null : "'Logger' dependency not found.";
-        return _d;
+        return (org.jomc.logging.Logger) org.jomc.ObjectManagerFactory.getObjectManager( this.getClass().getClassLoader() ).getDependency( this, "Logger" );
     }
     // </editor-fold>
     // SECTION-END
     // SECTION-START[Properties]
     // SECTION-END
     // SECTION-START[Messages]
+    // <editor-fold defaultstate="collapsed" desc=" Generated Messages ">
+
+    /**
+     * Gets the text of the {@code testImplementationNotFound} message.
+     * <p><b>Templates</b><br/><table>
+     * <tr><td valign="top">English:</td><td valign="top"><pre>No test implementation found.</pre></td></tr>
+     * <tr><td valign="top">Deutsch:</td><td valign="top"><pre>Keine Test-Implementierung gefunden.</pre></td></tr>
+     * </table></p>
+     * @param locale The locale of the message to return.
+     * @return The text of the {@code testImplementationNotFound} message.
+     *
+     * @throws org.jomc.ObjectManagementException if getting the message instance fails.
+     */
+    @javax.annotation.Generated( value = "org.jomc.tools.JavaSources",
+                                 comments = "See http://jomc.sourceforge.net/jomc/1.0-alpha-11/jomc-tools" )
+    private String getTestImplementationNotFoundMessage( final java.util.Locale locale )
+    {
+        final String _m = org.jomc.ObjectManagerFactory.getObjectManager( this.getClass().getClassLoader() ).getMessage( this, "testImplementationNotFound", locale,  null );
+        assert _m != null : "'testImplementationNotFound' message not found.";
+        return _m;
+    }
+    // </editor-fold>
     // SECTION-END
 }
