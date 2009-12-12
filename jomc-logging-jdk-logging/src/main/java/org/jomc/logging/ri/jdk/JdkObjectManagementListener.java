@@ -58,7 +58,7 @@ import java.util.logging.Level;
 // SECTION-START[Annotations]
 // <editor-fold defaultstate="collapsed" desc=" Generated Annotations ">
 @javax.annotation.Generated( value = "org.jomc.tools.JavaSources",
-                             comments = "See http://jomc.sourceforge.net/jomc/1.0-alpha-11/jomc-tools" )
+                             comments = "See http://jomc.sourceforge.net/jomc/1.0-alpha-12/jomc-tools" )
 // </editor-fold>
 // SECTION-END
 public class JdkObjectManagementListener
@@ -104,7 +104,7 @@ implements
 
     /** Creates a new {@code JdkObjectManagementListener} instance. */
     @javax.annotation.Generated( value = "org.jomc.tools.JavaSources",
-                                 comments = "See http://jomc.sourceforge.net/jomc/1.0-alpha-11/jomc-tools" )
+                                 comments = "See http://jomc.sourceforge.net/jomc/1.0-alpha-12/jomc-tools" )
     public JdkObjectManagementListener()
     {
         // SECTION-START[Default Constructor]
@@ -132,7 +132,7 @@ implements
      * @throws org.jomc.ObjectManagementException if getting the dependency instance fails.
      */
     @javax.annotation.Generated( value = "org.jomc.tools.JavaSources",
-                                 comments = "See http://jomc.sourceforge.net/jomc/1.0-alpha-11/jomc-tools" )
+                                 comments = "See http://jomc.sourceforge.net/jomc/1.0-alpha-12/jomc-tools" )
     private org.jomc.logging.Logger getLogger()
     {
         final org.jomc.logging.Logger _d = (org.jomc.logging.Logger) org.jomc.ObjectManagerFactory.getObjectManager( this.getClass().getClassLoader() ).getDependency( this, "Logger" );
