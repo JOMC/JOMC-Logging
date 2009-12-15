@@ -806,7 +806,7 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-    <jomc.version>1.0-alpha-12</jomc.version>
+    <jomc.version>1.0-alpha-13-SNAPSHOT</jomc.version>
     <logger.specification.version>1.0</logger.specification.version>
     <listener.specification.version>1.0</listener.specification.version>
   </properties>

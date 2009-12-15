@@ -35,7 +35,7 @@
 <module xmlns="http://jomc.org/model"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://jomc.org/model http://jomc.org/model/jomc-1.0.xsd"
-        name="${project.name}" version="${project.version}" vendor="${project.organization.name}">
+        name="${project.name}" version="${project.version}" vendor="${project.organization.name}" modelVersion="1.0">
 
   <documentation defaultLanguage="en">
     <text language="en"><![CDATA[${project.description}]]></text>
@@ -44,7 +44,7 @@
   <implementations>
     <!-- *********************************************************************************************************** -->
     <implementation identifier="org.jomc.logging.ri.slf4j.Slf4JLogger"
-                    class="org.jomc.logging.ri.slf4j.Slf4JLogger"
+                    class="org.jomc.logging.ri.slf4j.Slf4JLogger" classDeclaration="true"
                     name="${project.name}" version="${project.version}" vendor="${project.organization.name}"
                     stateless="true">
 
@@ -61,7 +61,7 @@
     </implementation>
     <!-- *********************************************************************************************************** -->
     <implementation identifier="org.jomc.logging.ri.slf4j.Slf4JObjectManagementListener"
-                    class="org.jomc.logging.ri.slf4j.Slf4JObjectManagementListener"
+                    class="org.jomc.logging.ri.slf4j.Slf4JObjectManagementListener" classDeclaration="true"
                     name="${project.name}" version="${project.version}" vendor="${project.organization.name}"
                     stateless="true">
 

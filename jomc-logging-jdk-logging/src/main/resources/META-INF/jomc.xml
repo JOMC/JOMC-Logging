@@ -35,7 +35,7 @@
 <module xmlns="http://jomc.org/model"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://jomc.org/model http://jomc.org/model/jomc-1.0.xsd"
-        name="${project.name}" version="${project.version}" vendor="${project.organization.name}">
+        name="${project.name}" version="${project.version}" vendor="${project.organization.name}" modelVersion="1.0">
 
   <documentation defaultLanguage="en">
     <text language="en"><![CDATA[${project.description}]]></text>
@@ -44,8 +44,8 @@
   <implementations>
     <!-- *********************************************************************************************************** -->
     <implementation identifier="org.jomc.logging.ri.jdk.JdkLogger" class="org.jomc.logging.ri.jdk.JdkLogger"
-                    name="${project.name}" version="${project.version}" vendor="${project.organization.name}"
-                    stateless="true">
+                    classDeclaration="true" name="${project.name}" version="${project.version}"
+                    vendor="${project.organization.name}" stateless="true">
 
       <documentation defaultLanguage="en">
         <text language="en"><![CDATA[${project.description}]]></text>
@@ -66,7 +66,7 @@
     </implementation>
     <!-- *********************************************************************************************************** -->
     <implementation identifier="org.jomc.logging.ri.jdk.JdkObjectManagementListener"
-                    class="org.jomc.logging.ri.jdk.JdkObjectManagementListener"
+                    class="org.jomc.logging.ri.jdk.JdkObjectManagementListener" classDeclaration="true"
                     name="${project.name}" version="${project.version}" vendor="${project.organization.name}"
                     stateless="true">
 
