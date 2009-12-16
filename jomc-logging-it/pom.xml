@@ -86,6 +86,41 @@
       </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-dependency-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>copy</id>
+            <phase>package</phase>
+            <goals>
+              <goal>copy</goal>
+            </goals>
+            <configuration>
+              <artifactItems>
+                <artifactItem>
+                  <groupId>${project.groupId}</groupId>
+                  <artifactId>jomc-logging</artifactId>
+                  <version>${project.version}</version>
+                  <type>txt</type>
+                  <classifier>license</classifier>
+                  <outputDirectory>${project.build.directory}</outputDirectory>
+                  <destFileName>JOMC_LICENSE.txt</destFileName>
+                </artifactItem>
+                <artifactItem>
+                  <groupId>${project.groupId}</groupId>
+                  <artifactId>jomc-logging</artifactId>
+                  <version>${project.version}</version>
+                  <type>xhtml</type>
+                  <classifier>changes</classifier>
+                  <outputDirectory>${project.build.directory}</outputDirectory>
+                  <destFileName>changes.xhtml</destFileName>
+                </artifactItem>
+              </artifactItems>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-assembly-plugin</artifactId>
         <executions>
           <execution>
@@ -98,6 +133,28 @@
               <descriptors>
                 <descriptor>src/main/assembly/bin.xml</descriptor>
               </descriptors>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>build-helper-maven-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>attach</id>
+            <phase>process-resources</phase>
+            <goals>
+              <goal>attach-artifact</goal>
+            </goals>
+            <configuration>
+              <artifacts>
+                <artifact>
+                  <file>${project.build.outputDirectory}/META-INF/jomc.xml</file>
+                  <type>xml</type>
+                  <classifier>jomc</classifier>
+                </artifact>
+              </artifacts>
             </configuration>
           </execution>
         </executions>

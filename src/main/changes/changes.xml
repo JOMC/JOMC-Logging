@@ -65,7 +65,7 @@
     <!-- *********************************************************************************************************** -->
     <release version="1.0-alpha-7" date="2009-12-10">
       <action dev="schulte2005" type="update">Updated JOMC dependencies to 1.0-alpha-11.</action>
-      <action dev="schulte2005" type="fix"><![CDATA[[
+      <action dev="schulte2005" type="fix"><![CDATA[
       Added property <code>stackDepth</code> to implementation <code>org.jomc.logging.ri.jdk.JdkLogger</code> and
       updated class <code>org.jomc.logging.ri.jdk.JdkLogger</code> to correctly compute the calling frame.]]>
       </action>
