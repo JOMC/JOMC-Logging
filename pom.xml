@@ -47,7 +47,7 @@
   </description>
   <url>http://jomc.sourceforge.net/jomc-logging/${project.version}</url>
   <prerequisites>
-    <maven>2.0.9</maven>
+    <maven>2.0.10</maven>
   </prerequisites>
   <inceptionYear>2005</inceptionYear>
   <organization>
