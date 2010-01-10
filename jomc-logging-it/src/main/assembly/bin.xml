@@ -55,6 +55,7 @@
     <fileSet>
       <directory>target/maven-shared-archive-resources/META-INF</directory>
       <fileMode>0444</fileMode>
+      <directoryMode>0755</directoryMode>
       <outputDirectory>/</outputDirectory>
       <lineEnding>dos</lineEnding>
       <filtered>false</filtered>
@@ -65,6 +66,7 @@
     <fileSet>
       <directory>src/main/assembly</directory>
       <fileMode>0444</fileMode>
+      <directoryMode>0755</directoryMode>
       <outputDirectory>/</outputDirectory>
       <lineEnding>dos</lineEnding>
       <filtered>true</filtered>
@@ -74,8 +76,8 @@
     </fileSet>
     <fileSet>
       <directory>target/appassembler/bin</directory>
-      <directoryMode>0755</directoryMode>
       <fileMode>0555</fileMode>
+      <directoryMode>0755</directoryMode>
       <outputDirectory>bin</outputDirectory>
       <includes>
         <include>*.bat</include>
@@ -84,8 +86,8 @@
     </fileSet>
     <fileSet>
       <directory>target/appassembler/bin</directory>
-      <directoryMode>0755</directoryMode>
       <fileMode>0555</fileMode>
+      <directoryMode>0755</directoryMode>
       <outputDirectory>bin</outputDirectory>
       <excludes>
         <exclude>*.bat</exclude>
@@ -94,16 +96,16 @@
     </fileSet>
     <fileSet>
       <directory>src/main/assembly/etc</directory>
-      <directoryMode>0755</directoryMode>
       <fileMode>0444</fileMode>
+      <directoryMode>0755</directoryMode>
       <outputDirectory>etc</outputDirectory>
       <lineEnding>dos</lineEnding>
     </fileSet>
     <fileSet>
       <directory>target/appassembler/lib</directory>
+      <fileMode>0555</fileMode>
       <directoryMode>0755</directoryMode>
       <outputDirectory>lib</outputDirectory>
-      <fileMode>0555</fileMode>
       <excludes>
         <exclude>*.xml</exclude>
         <exclude>*.pom</exclude>
