@@ -245,7 +245,7 @@ public class LoggerTest
                                  comments = "See http://jomc.sourceforge.net/jomc/1.0-alpha-14-SNAPSHOT/jomc-tools" )
     private String getTestImplementationNotFoundMessage( final java.util.Locale locale )
     {
-        final String _m = org.jomc.ObjectManagerFactory.getObjectManager( this.getClass().getClassLoader() ).getMessage( this, "testImplementationNotFound", locale,  null );
+        final String _m = org.jomc.ObjectManagerFactory.getObjectManager( this.getClass().getClassLoader() ).getMessage( this, "testImplementationNotFound", locale );
         assert _m != null : "'testImplementationNotFound' message not found.";
         return _m;
     }
