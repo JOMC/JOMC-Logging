@@ -909,7 +909,7 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-    <jomc.version>1.0-alpha-14</jomc.version>
+    <jomc.version>1.0-alpha-15-SNAPSHOT</jomc.version>
     <jomc-build.version>1.3</jomc-build.version>
     <logger.specification.version>1.0</logger.specification.version>
     <listener.specification.version>1.0</listener.specification.version>
