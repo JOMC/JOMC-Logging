@@ -212,7 +212,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-surefire-plugin</artifactId>
-          <version>2.4.3</version>
+          <version>${surefire.version}</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
@@ -298,6 +298,12 @@
               <goals>
                 <goal>test-java-classes</goal>
                 <goal>validate-test-java-classes</goal>
+              </goals>
+            </execution>
+            <execution>
+              <id>test-model</id>
+              <goals>
+                <goal>validate-test-modules</goal>
               </goals>
             </execution>
           </executions>
@@ -601,7 +607,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-report-plugin</artifactId>
-        <version>2.4.3</version>
+        <version>${surefire.version}</version>
       </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
@@ -909,8 +915,9 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-    <jomc.version>1.0-alpha-15</jomc.version>
+    <jomc.version>1.0-alpha-16-SNAPSHOT</jomc.version>
     <jomc-build.version>1.3</jomc-build.version>
+    <surefire.version>2.5</surefire.version>
     <logger.specification.version>1.0</logger.specification.version>
     <listener.specification.version>1.0</listener.specification.version>
   </properties>
