@@ -38,7 +38,7 @@
         name="${project.name}" version="${project.version}" vendor="${project.organization.name}" modelVersion="1.0">
 
   <documentation defaultLanguage="en">
-    <text language="en"><![CDATA[${project.description}]]></text>
+    <text language="en">${project.description}</text>
   </documentation>
 
   <implementations>
@@ -49,33 +49,17 @@
                     stateless="true">
 
       <documentation defaultLanguage="en">
-        <text language="en"><![CDATA[${project.description}]]></text>
+        <text language="en">${project.description}</text>
       </documentation>
       <authors>
         <author name="Christian Schulte" version="1.0" mail="cs@jomc.org" createDate="2005-07-25T19:56:45Z"/>
       </authors>
       <specifications>
         <reference identifier="org.jomc.logging.Logger" version="${logger.specification.version}"/>
-      </specifications>
-    </implementation>
-
-    <!-- ******************************************************************* -->
-    <implementation identifier="org.jomc.logging.ri.commons.CommonsObjectManagementListener"
-                    class="org.jomc.logging.ri.commons.CommonsObjectManagementListener" classDeclaration="true"
-                    name="${project.name}" version="${project.version}" vendor="${project.organization.name}"
-                    stateless="true">
-
-      <documentation defaultLanguage="en">
-        <text language="en">{@code Listener} backed by commons logging.</text>
-      </documentation>
-      <authors>
-        <author name="Christian Schulte" version="1.0" mail="cs@jomc.org" createDate="2005-07-25T19:56:45Z"/>
-      </authors>
-      <specifications>
         <reference identifier="org.jomc.spi.Listener" version="${listener.specification.version}"/>
       </specifications>
       <dependencies>
-        <dependency name="Logger" identifier="org.jomc.logging.Logger" version="${logger.specification.version}"
+        <dependency name="ObjectManagementLogger" identifier="org.jomc.logging.Logger" version="${logger.specification.version}"
                     implementationName="${project.name}">
 
           <properties>

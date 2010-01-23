@@ -36,7 +36,7 @@
 // SECTION-END
 package org.jomc.logging.ri.log4j;
 
-import org.jomc.logging.Logger;
+import java.util.logging.Level;
 
 // SECTION-START[Documentation]
 // <editor-fold defaultstate="collapsed" desc=" Generated Documentation ">
@@ -44,12 +44,17 @@ import org.jomc.logging.Logger;
  * Log4J logging system implementation.
  * <p><b>Specifications</b><ul>
  * <li>{@code org.jomc.logging.Logger} {@code 1.0} {@code Multiton}</li>
+ * <li>{@code org.jomc.spi.Listener} {@code 1.0} {@code Multiton}</li>
  * </ul></p>
  * <p><b>Properties</b><ul>
  * <li>"{@link #getName name}"
  * <blockquote>Property of type {@code java.lang.String}.
  * <p>Name of the component events are logged for.</p>
  * </blockquote></li>
+ * </ul></p>
+ * <p><b>Dependencies</b><ul>
+ * <li>"{@link #getObjectManagementLogger ObjectManagementLogger}"<blockquote>
+ * Dependency on {@code org.jomc.logging.Logger} at specification level 1.0 bound to an instance.</blockquote></li>
  * </ul></p>
  *
  * @author <a href="mailto:cs@jomc.org">Christian Schulte</a> 1.0
@@ -63,7 +68,9 @@ import org.jomc.logging.Logger;
                              comments = "See http://jomc.sourceforge.net/jomc/1.0-alpha-16-SNAPSHOT/jomc-tools" )
 // </editor-fold>
 // SECTION-END
-public class Log4JLogger implements Logger
+public class Log4JLogger
+    implements org.jomc.logging.Logger,
+               org.jomc.spi.Listener
 {
     // SECTION-START[Constructors]
     // <editor-fold defaultstate="collapsed" desc=" Generated Constructors ">
@@ -80,6 +87,29 @@ public class Log4JLogger implements Logger
     // </editor-fold>
     // SECTION-END
     // SECTION-START[Dependencies]
+    // <editor-fold defaultstate="collapsed" desc=" Generated Dependencies ">
+
+    /**
+     * Gets the {@code ObjectManagementLogger} dependency.
+     * <p>This method returns the "{@code JOMC Logging Log4J Logging}" object of the {@code org.jomc.logging.Logger} specification at specification level 1.0.</p>
+     * <p>That specification does not apply to any scope. A new object is returned whenever requested and bound to this instance.</p>
+     * <p><b>Properties</b><dl>
+     * <dt>"{@code name}"</dt>
+     * <dd>Property of type {@code java.lang.String}.
+     * </dd>
+     * </dl>
+     * @return The {@code ObjectManagementLogger} dependency.
+     * @throws org.jomc.ObjectManagementException if getting the dependency instance fails.
+     */
+    @javax.annotation.Generated( value = "org.jomc.tools.JavaSources",
+                                 comments = "See http://jomc.sourceforge.net/jomc/1.0-alpha-16-SNAPSHOT/jomc-tools" )
+    private org.jomc.logging.Logger getObjectManagementLogger()
+    {
+        final org.jomc.logging.Logger _d = (org.jomc.logging.Logger) org.jomc.ObjectManagerFactory.getObjectManager( this.getClass().getClassLoader() ).getDependency( this, "ObjectManagementLogger" );
+        assert _d != null : "'ObjectManagementLogger' dependency not found.";
+        return _d;
+    }
+    // </editor-fold>
     // SECTION-END
     // SECTION-START[Properties]
     // <editor-fold defaultstate="collapsed" desc=" Generated Properties ">
@@ -229,6 +259,37 @@ public class Log4JLogger implements Logger
     public org.apache.log4j.Logger getLogger()
     {
         return org.apache.log4j.Logger.getLogger( this.getName() );
+    }
+
+    public void onLog( final Level level, final String message, final Throwable throwable )
+    {
+        if ( level != null )
+        {
+            if ( level.equals( Level.CONFIG ) || level.equals( Level.FINE ) )
+            {
+                this.getObjectManagementLogger().debug( message, throwable );
+            }
+            else if ( level.equals( Level.FINER ) || level.equals( Level.FINEST ) )
+            {
+                this.getObjectManagementLogger().trace( message, throwable );
+            }
+            else if ( level.equals( Level.INFO ) )
+            {
+                this.getObjectManagementLogger().info( message, throwable );
+            }
+            else if ( level.equals( Level.SEVERE ) )
+            {
+                this.getObjectManagementLogger().error( message, throwable );
+            }
+            else if ( level.equals( Level.WARNING ) )
+            {
+                this.getObjectManagementLogger().warn( message, throwable );
+            }
+            else
+            {
+                this.getObjectManagementLogger().trace( message, throwable );
+            }
+        }
     }
 
     // SECTION-END

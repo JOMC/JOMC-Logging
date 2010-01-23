@@ -88,20 +88,11 @@
         <configuration>
           <forkMode>once</forkMode>
           <skip>false</skip>
-          <systemProperties>
-            <property>
-              <name>org.jomc.model.DefaultModelManager.defaultLogLevel</name>
-              <value>ALL</value>
-            </property>
-            <property>
-              <name>org.jomc.ri.DefaultObjectManager.defaultLogLevel</name>
-              <value>ALL</value>
-            </property>
-            <property>
-              <name>java.util.logging.config.file</name>
-              <value>${project.build.testOutputDirectory}/logging.properties</value>
-            </property>
-          </systemProperties>
+          <systemPropertyVariables>
+            <org.jomc.model.ModelContext.defaultLogLevel>ALL</org.jomc.model.ModelContext.defaultLogLevel>
+            <org.jomc.ri.DefaultObjectManager.defaultLogLevel>ALL</org.jomc.ri.DefaultObjectManager.defaultLogLevel>
+            <java.util.logging.config.file>${project.build.testOutputDirectory}/logging.properties</java.util.logging.config.file>
+          </systemPropertyVariables>
         </configuration>
       </plugin>
       <plugin>
