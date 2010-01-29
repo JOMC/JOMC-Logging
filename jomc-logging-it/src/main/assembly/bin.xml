@@ -43,7 +43,7 @@
   </formats>
   <files>
     <file>
-      <destName>Changelog.xhtml</destName>
+      <destName>Changelog.html</destName>
       <fileMode>0444</fileMode>
       <filtered>false</filtered>
       <lineEnding>dos</lineEnding>
