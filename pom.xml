@@ -40,9 +40,8 @@
   <name>JOMC Logging</name>
   <version>1.0-alpha-9-SNAPSHOT</version>
   <description><![CDATA[
-  This is the 'JOMC Logging' parent project. The 'JOMC Logging API' artifact
-  provides an application programming interface to logging systems. Whenever
-  that API is used at compile time, an application assembler needs to provide a
+  This is the 'JOMC Logging' parent project. The 'JOMC Logging API' artifact provides an application programming
+  interface to logging systems. Whenever that API is used at compile time, an application assembler needs to provide a
   corresponding logging system implementation at runtime.]]>
   </description>
   <url>http://jomc.sourceforge.net/jomc-logging/${project.version}</url>
@@ -640,7 +639,7 @@
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>findbugs-maven-plugin</artifactId>
-        <version>2.3</version>
+        <version>2.3.1</version>
       </plugin>
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
