@@ -75,5 +75,13 @@
       <action dev="schulte2005" type="update">Updated to JOMC 1.0-alpha-14.</action>
       <action dev="schulte2005" type="update">Updated to SLF4J 1.5.10.</action>
     </release>
+    <!-- *********************************************************************************************************** -->
+    <release version="1.0-alpha-9" date="2009-02-02">
+      <action dev="schulte2005" type="update">Updated to JOMC 1.0-alpha-16.</action>
+      <action dev="schulte2005" type="update"><![CDATA[
+      Updated the logger implementations to implement the <code>org.jomc.spi.Listener</code> interface and removed
+      separate implementation classes.]]>
+      </action>
+    </release>
   </body>
 </document>
