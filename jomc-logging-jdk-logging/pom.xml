@@ -87,7 +87,7 @@
         <artifactId>maven-surefire-plugin</artifactId>
         <configuration>
           <forkMode>once</forkMode>
-          <skip>false</skip>
+          <redirectTestOutputToFile>true</redirectTestOutputToFile>
           <systemPropertyVariables>
             <org.jomc.model.ModelContext.defaultLogLevel>ALL</org.jomc.model.ModelContext.defaultLogLevel>
             <org.jomc.ri.DefaultObjectManager.defaultLogLevel>ALL</org.jomc.ri.DefaultObjectManager.defaultLogLevel>
