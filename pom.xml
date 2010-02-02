@@ -38,7 +38,7 @@
   <artifactId>jomc-logging</artifactId>
   <packaging>pom</packaging>
   <name>JOMC Logging</name>
-  <version>1.0-alpha-9-SNAPSHOT</version>
+  <version>1.0-alpha-9</version>
   <description><![CDATA[
   This is the 'JOMC Logging' parent project. The 'JOMC Logging API' artifact provides an application programming
   interface to logging systems. Whenever that API is used at compile time, an application assembler needs to provide a
@@ -96,9 +96,9 @@
     </mailingList>
   </mailingLists>
   <scm>
-    <connection>scm:svn:https://jomc.svn.sourceforge.net/svnroot/jomc/jomc-logging/trunk</connection>
-    <developerConnection>scm:svn:https://jomc.svn.sourceforge.net/svnroot/jomc/jomc-logging/trunk</developerConnection>
-    <url>http://jomc.svn.sourceforge.net/viewvc/jomc/jomc-logging/trunk/</url>
+    <connection>scm:svn:https://jomc.svn.sourceforge.net/svnroot/jomc/jomc-logging/tags/jomc-logging-1.0-alpha-9</connection>
+    <developerConnection>scm:svn:https://jomc.svn.sourceforge.net/svnroot/jomc/jomc-logging/tags/jomc-logging-1.0-alpha-9</developerConnection>
+    <url>http://jomc.svn.sourceforge.net/viewvc/jomc/jomc-logging/tags/jomc-logging-1.0-alpha-9</url>
   </scm>
   <build>
     <extensions>
@@ -710,32 +710,32 @@
       <dependency>
         <groupId>org.jomc.logging</groupId>
         <artifactId>jomc-logging-api</artifactId>
-        <version>1.0-alpha-9-SNAPSHOT</version>
+        <version>1.0-alpha-9</version>
       </dependency>
       <dependency>
         <groupId>org.jomc.logging</groupId>
         <artifactId>jomc-logging-it</artifactId>
-        <version>1.0-alpha-9-SNAPSHOT</version>
+        <version>1.0-alpha-9</version>
       </dependency>
       <dependency>
         <groupId>org.jomc.logging</groupId>
         <artifactId>jomc-logging-commons-logging</artifactId>
-        <version>1.0-alpha-9-SNAPSHOT</version>
+        <version>1.0-alpha-9</version>
       </dependency>
       <dependency>
         <groupId>org.jomc.logging</groupId>
         <artifactId>jomc-logging-jdk-logging</artifactId>
-        <version>1.0-alpha-9-SNAPSHOT</version>
+        <version>1.0-alpha-9</version>
       </dependency>
       <dependency>
         <groupId>org.jomc.logging</groupId>
         <artifactId>jomc-logging-log4j-logging</artifactId>
-        <version>1.0-alpha-9-SNAPSHOT</version>
+        <version>1.0-alpha-9</version>
       </dependency>
       <dependency>
         <groupId>org.jomc.logging</groupId>
         <artifactId>jomc-logging-slf4j-logging</artifactId>
-        <version>1.0-alpha-9-SNAPSHOT</version>
+        <version>1.0-alpha-9</version>
       </dependency>
 
       <!-- JAXB -->
