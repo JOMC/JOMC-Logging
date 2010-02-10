@@ -65,7 +65,7 @@ import java.util.logging.Level;
 // SECTION-START[Annotations]
 // <editor-fold defaultstate="collapsed" desc=" Generated Annotations ">
 @javax.annotation.Generated( value = "org.jomc.tools.JavaSources",
-                             comments = "See http://jomc.sourceforge.net/jomc/1.0-alpha-16/jomc-tools" )
+                             comments = "See http://jomc.sourceforge.net/jomc/1.0-alpha-17-SNAPSHOT/jomc-tools" )
 // </editor-fold>
 // SECTION-END
 public class Log4JLogger
@@ -77,7 +77,7 @@ public class Log4JLogger
 
     /** Creates a new {@code Log4JLogger} instance. */
     @javax.annotation.Generated( value = "org.jomc.tools.JavaSources",
-                                 comments = "See http://jomc.sourceforge.net/jomc/1.0-alpha-16/jomc-tools" )
+                                 comments = "See http://jomc.sourceforge.net/jomc/1.0-alpha-17-SNAPSHOT/jomc-tools" )
     public Log4JLogger()
     {
         // SECTION-START[Default Constructor]
@@ -86,50 +86,7 @@ public class Log4JLogger
     }
     // </editor-fold>
     // SECTION-END
-    // SECTION-START[Dependencies]
-    // <editor-fold defaultstate="collapsed" desc=" Generated Dependencies ">
-
-    /**
-     * Gets the {@code ObjectManagementLogger} dependency.
-     * <p>This method returns the "{@code JOMC Logging Log4J Logging}" object of the {@code org.jomc.logging.Logger} specification at specification level 1.0.</p>
-     * <p>That specification does not apply to any scope. A new object is returned whenever requested and bound to this instance.</p>
-     * <p><b>Properties</b><dl>
-     * <dt>"{@code name}"</dt>
-     * <dd>Property of type {@code java.lang.String}.
-     * </dd>
-     * </dl>
-     * @return The {@code ObjectManagementLogger} dependency.
-     * @throws org.jomc.ObjectManagementException if getting the dependency instance fails.
-     */
-    @javax.annotation.Generated( value = "org.jomc.tools.JavaSources",
-                                 comments = "See http://jomc.sourceforge.net/jomc/1.0-alpha-16/jomc-tools" )
-    private org.jomc.logging.Logger getObjectManagementLogger()
-    {
-        final org.jomc.logging.Logger _d = (org.jomc.logging.Logger) org.jomc.ObjectManagerFactory.getObjectManager( this.getClass().getClassLoader() ).getDependency( this, "ObjectManagementLogger" );
-        assert _d != null : "'ObjectManagementLogger' dependency not found.";
-        return _d;
-    }
-    // </editor-fold>
-    // SECTION-END
-    // SECTION-START[Properties]
-    // <editor-fold defaultstate="collapsed" desc=" Generated Properties ">
-
-    /**
-     * Gets the value of the {@code name} property.
-     * @return Name of the component events are logged for.
-     * @throws org.jomc.ObjectManagementException if getting the property instance fails.
-     */
-    @javax.annotation.Generated( value = "org.jomc.tools.JavaSources",
-                                 comments = "See http://jomc.sourceforge.net/jomc/1.0-alpha-16/jomc-tools" )
-    public java.lang.String getName()
-    {
-        final java.lang.String _p = (java.lang.String) org.jomc.ObjectManagerFactory.getObjectManager( this.getClass().getClassLoader() ).getProperty( this, "name" );
-        assert _p != null : "'name' property not found.";
-        return _p;
-    }
-    // </editor-fold>
-    // SECTION-END
-    // SECTION-START[Log4JLogger]
+    // SECTION-START[Logger]
 
     public boolean isDebugEnabled()
     {
@@ -251,16 +208,8 @@ public class Log4JLogger
         this.getLogger().warn( message, throwable );
     }
 
-    /**
-     * Requests a Log4J logger for the name given by property {@code name}.
-     *
-     * @return The Log4J logger for the name given by property {@code name}.
-     */
-    public org.apache.log4j.Logger getLogger()
-    {
-        return org.apache.log4j.Logger.getLogger( this.getName() );
-    }
-
+    // SECTION-END
+    // SECTION-START[Listener]
     public void onLog( final Level level, final String message, final Throwable throwable )
     {
         if ( level != null )
@@ -292,6 +241,61 @@ public class Log4JLogger
         }
     }
 
+    // SECTION-END
+    // SECTION-START[Log4JLogger]
+    /**
+     * Requests a Log4J logger for the name given by property {@code name}.
+     *
+     * @return The Log4J logger for the name given by property {@code name}.
+     */
+    public org.apache.log4j.Logger getLogger()
+    {
+        return org.apache.log4j.Logger.getLogger( this.getName() );
+    }
+
+    // SECTION-END
+    // SECTION-START[Dependencies]
+    // <editor-fold defaultstate="collapsed" desc=" Generated Dependencies ">
+
+    /**
+     * Gets the {@code ObjectManagementLogger} dependency.
+     * <p>This method returns the "{@code JOMC Logging Log4J Logging}" object of the {@code org.jomc.logging.Logger} specification at specification level 1.0.</p>
+     * <p>That specification does not apply to any scope. A new object is returned whenever requested and bound to this instance.</p>
+     * <p><b>Properties</b><dl>
+     * <dt>"{@code name}"</dt>
+     * <dd>Property of type {@code java.lang.String}.
+     * </dd>
+     * </dl>
+     * @return The {@code ObjectManagementLogger} dependency.
+     * @throws org.jomc.ObjectManagementException if getting the dependency instance fails.
+     */
+    @javax.annotation.Generated( value = "org.jomc.tools.JavaSources",
+                                 comments = "See http://jomc.sourceforge.net/jomc/1.0-alpha-17-SNAPSHOT/jomc-tools" )
+    private org.jomc.logging.Logger getObjectManagementLogger()
+    {
+        final org.jomc.logging.Logger _d = (org.jomc.logging.Logger) org.jomc.ObjectManagerFactory.getObjectManager( this.getClass().getClassLoader() ).getDependency( this, "ObjectManagementLogger" );
+        assert _d != null : "'ObjectManagementLogger' dependency not found.";
+        return _d;
+    }
+    // </editor-fold>
+    // SECTION-END
+    // SECTION-START[Properties]
+    // <editor-fold defaultstate="collapsed" desc=" Generated Properties ">
+
+    /**
+     * Gets the value of the {@code name} property.
+     * @return Name of the component events are logged for.
+     * @throws org.jomc.ObjectManagementException if getting the property instance fails.
+     */
+    @javax.annotation.Generated( value = "org.jomc.tools.JavaSources",
+                                 comments = "See http://jomc.sourceforge.net/jomc/1.0-alpha-17-SNAPSHOT/jomc-tools" )
+    public java.lang.String getName()
+    {
+        final java.lang.String _p = (java.lang.String) org.jomc.ObjectManagerFactory.getObjectManager( this.getClass().getClassLoader() ).getProperty( this, "name" );
+        assert _p != null : "'name' property not found.";
+        return _p;
+    }
+    // </editor-fold>
     // SECTION-END
     // SECTION-START[Messages]
     // SECTION-END

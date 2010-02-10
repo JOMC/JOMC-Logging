@@ -43,7 +43,7 @@ package org.jomc.logging;
  * <p>This specification declares a multiplicity of {@code One}.
  * An application assembler is required to provide no more than one implementation of this specification (including none).
  * Use of class {@link org.jomc.ObjectManager ObjectManager} is supported for getting that implementation.<pre>
- * Logger object = (Logger) ObjectManagerFactory.getObjectManager( getClassLoader() ).getObject( Logger.class );
+ * Logger object = (Logger) ObjectManagerFactory.getObjectManager( getClass().getClassLoader() ).getObject( Logger.class );
  * </pre>
  * </p>
  *
@@ -57,11 +57,12 @@ package org.jomc.logging;
 // SECTION-START[Annotations]
 // <editor-fold defaultstate="collapsed" desc=" Generated Annotations ">
 @javax.annotation.Generated( value = "org.jomc.tools.JavaSources",
-                             comments = "See http://jomc.sourceforge.net/jomc/1.0-alpha-16/jomc-tools" )
+                             comments = "See http://jomc.sourceforge.net/jomc/1.0-alpha-17-SNAPSHOT/jomc-tools" )
 // </editor-fold>
 // SECTION-END
 public interface Logger
 {
+    // SECTION-START[Logger]
 
     /**
      * Getter for property {@code debugEnabled}.
@@ -238,4 +239,5 @@ public interface Logger
      */
     void warn( String message, Throwable t );
 
+    // SECTION-END
 }

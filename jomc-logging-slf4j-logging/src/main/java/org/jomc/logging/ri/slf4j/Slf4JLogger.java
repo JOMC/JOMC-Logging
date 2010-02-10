@@ -65,7 +65,7 @@ import java.util.logging.Level;
 // SECTION-START[Annotations]
 // <editor-fold defaultstate="collapsed" desc=" Generated Annotations ">
 @javax.annotation.Generated( value = "org.jomc.tools.JavaSources",
-                             comments = "See http://jomc.sourceforge.net/jomc/1.0-alpha-16/jomc-tools" )
+                             comments = "See http://jomc.sourceforge.net/jomc/1.0-alpha-17-SNAPSHOT/jomc-tools" )
 // </editor-fold>
 // SECTION-END
 public class Slf4JLogger
@@ -77,7 +77,7 @@ public class Slf4JLogger
 
     /** Creates a new {@code Slf4JLogger} instance. */
     @javax.annotation.Generated( value = "org.jomc.tools.JavaSources",
-                                 comments = "See http://jomc.sourceforge.net/jomc/1.0-alpha-16/jomc-tools" )
+                                 comments = "See http://jomc.sourceforge.net/jomc/1.0-alpha-17-SNAPSHOT/jomc-tools" )
     public Slf4JLogger()
     {
         // SECTION-START[Default Constructor]
@@ -86,7 +86,7 @@ public class Slf4JLogger
     }
     // </editor-fold>
     // SECTION-END
-    // SECTION-START[Slf4JLogger]
+    // SECTION-START[Logger]
 
     public boolean isDebugEnabled()
     {
@@ -208,16 +208,8 @@ public class Slf4JLogger
         this.getLogger().warn( message, throwable );
     }
 
-    /**
-     * Requests a Slf4J logger for the name given by property {@code name}.
-     *
-     * @return The Slf4J logger for the name given by property {@code name}.
-     */
-    public org.slf4j.Logger getLogger()
-    {
-        return org.slf4j.LoggerFactory.getLogger( this.getName() );
-    }
-
+    // SECTION-END
+    // SECTION-START[Listener]
     public void onLog( final Level level, final String message, final Throwable throwable )
     {
         if ( level != null )
@@ -250,6 +242,18 @@ public class Slf4JLogger
     }
 
     // SECTION-END
+    // SECTION-START[Slf4JLogger]
+    /**
+     * Requests a Slf4J logger for the name given by property {@code name}.
+     *
+     * @return The Slf4J logger for the name given by property {@code name}.
+     */
+    public org.slf4j.Logger getLogger()
+    {
+        return org.slf4j.LoggerFactory.getLogger( this.getName() );
+    }
+
+    // SECTION-END
     // SECTION-START[Dependencies]
     // <editor-fold defaultstate="collapsed" desc=" Generated Dependencies ">
 
@@ -266,7 +270,7 @@ public class Slf4JLogger
      * @throws org.jomc.ObjectManagementException if getting the dependency instance fails.
      */
     @javax.annotation.Generated( value = "org.jomc.tools.JavaSources",
-                                 comments = "See http://jomc.sourceforge.net/jomc/1.0-alpha-16/jomc-tools" )
+                                 comments = "See http://jomc.sourceforge.net/jomc/1.0-alpha-17-SNAPSHOT/jomc-tools" )
     private org.jomc.logging.Logger getObjectManagementLogger()
     {
         final org.jomc.logging.Logger _d = (org.jomc.logging.Logger) org.jomc.ObjectManagerFactory.getObjectManager( this.getClass().getClassLoader() ).getDependency( this, "ObjectManagementLogger" );
@@ -284,7 +288,7 @@ public class Slf4JLogger
      * @throws org.jomc.ObjectManagementException if getting the property instance fails.
      */
     @javax.annotation.Generated( value = "org.jomc.tools.JavaSources",
-                                 comments = "See http://jomc.sourceforge.net/jomc/1.0-alpha-16/jomc-tools" )
+                                 comments = "See http://jomc.sourceforge.net/jomc/1.0-alpha-17-SNAPSHOT/jomc-tools" )
     public java.lang.String getName()
     {
         final java.lang.String _p = (java.lang.String) org.jomc.ObjectManagerFactory.getObjectManager( this.getClass().getClassLoader() ).getProperty( this, "name" );
