@@ -115,6 +115,12 @@
         <exclude>*.pom</exclude>
       </excludes>
     </fileSet>
+    <fileSet>
+      <directory>${project.build.directory}/jomc-endorsed</directory>
+      <fileMode>0555</fileMode>
+      <directoryMode>0755</directoryMode>
+      <outputDirectory>/lib/endorsed</outputDirectory>
+    </fileSet>
   </fileSets>
   <dependencySets>
     <dependencySet>

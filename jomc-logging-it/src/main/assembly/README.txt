@@ -15,9 +15,19 @@
     bin/testrunner (Unix)
     bin/testrunner.bat (Windows)
 
-    The 'lib/ext' directory contains Java archives needed to run the application
-    with JDK 1.5.
+  JDK 1.5
 
-    export JAVA_OPTS="-Djava.ext.dirs='path to lib/ext directory'".
+    The 'lib/ext' directory contains JDK extensions to setup using the
+    'java.ext.dirs' system property or another mechanism compatible to the JDK
+    in use.
+
+    The 'lib/endorsed' directory contains updates to libraries part of the JDK
+    to setup via the 'java.endorsed.dirs' system property or another mechanism
+    compatible to the JDK in use. Use of these libraries may become necessary
+    when encountering problems with the XML parsers of the JDK.
+
+    export JAVA_OPTS="-Djava.ext.dirs='path to lib/ext directory' \
+                      -Djava.endorsed.dirs='path to lib/endorsed directory'".
+
     bin/testrunner (Unix)
     bin/testrunner.bat (Windows)
