@@ -38,7 +38,7 @@
   <artifactId>jomc-logging</artifactId>
   <packaging>pom</packaging>
   <name>JOMC Logging</name>
-  <version>1.0-alpha-13-SNAPSHOT</version>
+  <version>1.0-beta-1-SNAPSHOT</version>
   <description><![CDATA[
   This is the 'JOMC Logging' parent project. The 'JOMC Logging API' artifact provides an application programming
   interface to logging systems. Whenever that API is used at compile time, an application assembler needs to provide a
@@ -693,32 +693,32 @@
       <dependency>
         <groupId>org.jomc.logging</groupId>
         <artifactId>jomc-logging-api</artifactId>
-        <version>1.0-alpha-13-SNAPSHOT</version>
+        <version>1.0-beta-1-SNAPSHOT</version>
       </dependency>
       <dependency>
         <groupId>org.jomc.logging</groupId>
         <artifactId>jomc-logging-it</artifactId>
-        <version>1.0-alpha-13-SNAPSHOT</version>
+        <version>1.0-beta-1-SNAPSHOT</version>
       </dependency>
       <dependency>
         <groupId>org.jomc.logging</groupId>
         <artifactId>jomc-logging-commons-logging</artifactId>
-        <version>1.0-alpha-13-SNAPSHOT</version>
+        <version>1.0-beta-1-SNAPSHOT</version>
       </dependency>
       <dependency>
         <groupId>org.jomc.logging</groupId>
         <artifactId>jomc-logging-jdk-logging</artifactId>
-        <version>1.0-alpha-13-SNAPSHOT</version>
+        <version>1.0-beta-1-SNAPSHOT</version>
       </dependency>
       <dependency>
         <groupId>org.jomc.logging</groupId>
         <artifactId>jomc-logging-log4j-logging</artifactId>
-        <version>1.0-alpha-13-SNAPSHOT</version>
+        <version>1.0-beta-1-SNAPSHOT</version>
       </dependency>
       <dependency>
         <groupId>org.jomc.logging</groupId>
         <artifactId>jomc-logging-slf4j-logging</artifactId>
-        <version>1.0-alpha-13-SNAPSHOT</version>
+        <version>1.0-beta-1-SNAPSHOT</version>
       </dependency>
 
       <!-- JAXB -->
@@ -902,7 +902,7 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-    <jomc.version>1.0-alpha-19</jomc.version>
+    <jomc.version>1.0-beta-1</jomc.version>
     <jomc-build.version>1.4</jomc-build.version>
     <surefire.version>2.5</surefire.version>
     <logger.specification.version>1.0</logger.specification.version>

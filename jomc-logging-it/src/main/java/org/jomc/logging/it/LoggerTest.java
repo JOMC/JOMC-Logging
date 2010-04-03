@@ -58,7 +58,7 @@ import static org.junit.Assert.fail;
  * Dependency on {@code org.jomc.logging.Logger} at specification level 1.0 bound to an instance.</blockquote></li>
  * </ul></p>
  * <p><b>Messages</b><ul>
- * <li>"{@link #getTestImplementationNotFoundMessage testImplementationNotFound}"<table>
+ * <li>"{@link #getTestImplementationNotFoundMessage Test Implementation Not Found Message}"<table>
  * <tr><td valign="top">English:</td><td valign="top"><pre>No test implementation found.</pre></td></tr>
  * <tr><td valign="top">Deutsch:</td><td valign="top"><pre>Keine Test-Implementierung gefunden.</pre></td></tr>
  * </table>
@@ -72,7 +72,7 @@ import static org.junit.Assert.fail;
 // SECTION-START[Annotations]
 // <editor-fold defaultstate="collapsed" desc=" Generated Annotations ">
 @javax.annotation.Generated( value = "org.jomc.tools.SourceFileProcessor",
-                             comments = "See http://jomc.sourceforge.net/jomc/1.0-alpha-19/jomc-tools" )
+                             comments = "See http://jomc.sourceforge.net/jomc/1.0-beta-1/jomc-tools" )
 // </editor-fold>
 // SECTION-END
 public class LoggerTest
@@ -82,7 +82,7 @@ public class LoggerTest
 
     /** Creates a new {@code LoggerTest} instance. */
     @javax.annotation.Generated( value = "org.jomc.tools.SourceFileProcessor",
-                                 comments = "See http://jomc.sourceforge.net/jomc/1.0-alpha-19/jomc-tools" )
+                                 comments = "See http://jomc.sourceforge.net/jomc/1.0-beta-1/jomc-tools" )
     public LoggerTest()
     {
         // SECTION-START[Default Constructor]
@@ -197,7 +197,7 @@ public class LoggerTest
      * @throws org.jomc.ObjectManagementException if getting the dependency instance fails.
      */
     @javax.annotation.Generated( value = "org.jomc.tools.SourceFileProcessor",
-                                 comments = "See http://jomc.sourceforge.net/jomc/1.0-alpha-19/jomc-tools" )
+                                 comments = "See http://jomc.sourceforge.net/jomc/1.0-beta-1/jomc-tools" )
     private java.util.Locale getLocale()
     {
         final java.util.Locale _d = (java.util.Locale) org.jomc.ObjectManagerFactory.getObjectManager( this.getClass().getClassLoader() ).getDependency( this, "Locale" );
@@ -219,7 +219,7 @@ public class LoggerTest
      * @throws org.jomc.ObjectManagementException if getting the dependency instance fails.
      */
     @javax.annotation.Generated( value = "org.jomc.tools.SourceFileProcessor",
-                                 comments = "See http://jomc.sourceforge.net/jomc/1.0-alpha-19/jomc-tools" )
+                                 comments = "See http://jomc.sourceforge.net/jomc/1.0-beta-1/jomc-tools" )
     private org.jomc.logging.Logger getLogger()
     {
         return (org.jomc.logging.Logger) org.jomc.ObjectManagerFactory.getObjectManager( this.getClass().getClassLoader() ).getDependency( this, "Logger" );
@@ -232,22 +232,22 @@ public class LoggerTest
     // <editor-fold defaultstate="collapsed" desc=" Generated Messages ">
 
     /**
-     * Gets the text of the {@code testImplementationNotFound} message.
+     * Gets the text of the {@code Test Implementation Not Found Message} message.
      * <p><b>Templates</b><br/><table>
      * <tr><td valign="top">English:</td><td valign="top"><pre>No test implementation found.</pre></td></tr>
      * <tr><td valign="top">Deutsch:</td><td valign="top"><pre>Keine Test-Implementierung gefunden.</pre></td></tr>
      * </table></p>
      * @param locale The locale of the message to return.
-     * @return The text of the {@code testImplementationNotFound} message.
+     * @return The text of the {@code Test Implementation Not Found Message} message.
      *
      * @throws org.jomc.ObjectManagementException if getting the message instance fails.
      */
     @javax.annotation.Generated( value = "org.jomc.tools.SourceFileProcessor",
-                                 comments = "See http://jomc.sourceforge.net/jomc/1.0-alpha-19/jomc-tools" )
+                                 comments = "See http://jomc.sourceforge.net/jomc/1.0-beta-1/jomc-tools" )
     private String getTestImplementationNotFoundMessage( final java.util.Locale locale )
     {
-        final String _m = org.jomc.ObjectManagerFactory.getObjectManager( this.getClass().getClassLoader() ).getMessage( this, "testImplementationNotFound", locale );
-        assert _m != null : "'testImplementationNotFound' message not found.";
+        final String _m = org.jomc.ObjectManagerFactory.getObjectManager( this.getClass().getClassLoader() ).getMessage( this, "Test Implementation Not Found Message", locale );
+        assert _m != null : "'Test Implementation Not Found Message' message not found.";
         return _m;
     }
     // </editor-fold>
