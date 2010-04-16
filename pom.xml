@@ -902,7 +902,7 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-    <jomc.version>1.0-beta-1</jomc.version>
+    <jomc.version>1.0-beta-2</jomc.version>
     <jomc-build.version>1.4</jomc-build.version>
     <surefire.version>2.5</surefire.version>
     <logger.specification.version>1.0</logger.specification.version>
