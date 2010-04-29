@@ -71,7 +71,7 @@
               <programs>
                 <program>
                   <mainClass>org.jomc.logging.it.LoggerTest</mainClass>
-                  <name>testrunner</name>
+                  <name>test-logger</name>
                 </program>
               </programs>
               <platforms>
@@ -80,6 +80,7 @@
               </platforms>
               <repositoryLayout>flat</repositoryLayout>
               <repositoryName>lib</repositoryName>
+              <assembleDirectory>${appassemblerAssembleDirectory}</assembleDirectory>
             </configuration>
           </execution>
         </executions>
@@ -207,4 +208,7 @@
       <scope>provided</scope>
     </dependency>
   </dependencies>
+  <properties>
+    <appassemblerAssembleDirectory>${project.build.directory}/appassembler</appassemblerAssembleDirectory>
+  </properties>
 </project>

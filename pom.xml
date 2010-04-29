@@ -419,6 +419,7 @@
                       <value>${buildNumber}</value>
                     </parameter>
                   </parameters>
+                  <outputDir>${transformationsOutputDirectory}</outputDir>
                 </transformationSet>
               </transformationSets>
             </configuration>
@@ -456,7 +457,7 @@
                   <classifier>license</classifier>
                 </artifact>
                 <artifact>
-                  <file>${project.build.directory}/generated-resources/xml/xslt/changes.xml</file>
+                  <file>${transformationsOutputDirectory}/changes.xml</file>
                   <type>xhtml</type>
                   <classifier>changes</classifier>
                 </artifact>
@@ -489,6 +490,7 @@
               <properties>
                 <buildNumber>${buildNumber}</buildNumber>
               </properties>
+              <outputDirectory>${remoteResourcesOutputDirectory}</outputDirectory>
             </configuration>
           </execution>
         </executions>
@@ -910,5 +912,7 @@
     <surefire.version>2.5</surefire.version>
     <logger.specification.version>1.0</logger.specification.version>
     <listener.specification.version>1.0</listener.specification.version>
+    <remoteResourcesOutputDirectory>${project.build.directory}/maven-shared-archive-resources</remoteResourcesOutputDirectory>
+    <transformationsOutputDirectory>${project.build.directory}/generated-resources/xml/xslt</transformationsOutputDirectory>
   </properties>
 </project>

@@ -12,8 +12,8 @@
     Prior to launching, the environment variable CLASSPATH_PREFIX needs to be
     setup to contain the modules of the logging implementation to test.
 
-    bin/testrunner (Unix)
-    bin/testrunner.bat (Windows)
+    bin/test-logger (Unix)
+    bin/test-logger.bat (Windows)
 
   JDK 1.5
 
@@ -29,5 +29,5 @@
     export JAVA_OPTS="-Djava.ext.dirs='path to lib/ext directory' \
                       -Djava.endorsed.dirs='path to lib/endorsed directory'".
 
-    bin/testrunner (Unix)
-    bin/testrunner.bat (Windows)
+    bin/test-logger (Unix)
+    bin/test-logger.bat (Windows)
