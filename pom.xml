@@ -45,9 +45,6 @@
   corresponding logging system implementation at runtime.]]>
   </description>
   <url>http://jomc.sourceforge.net/jomc-logging/${project.version}</url>
-  <prerequisites>
-    <maven>2.2.1</maven>
-  </prerequisites>
   <inceptionYear>2005</inceptionYear>
   <organization>
     <name>The JOMC Project</name>
