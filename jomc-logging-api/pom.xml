@@ -42,7 +42,7 @@
   <groupId>org.jomc.logging</groupId>
   <artifactId>jomc-logging-api</artifactId>
   <name>JOMC Logging API</name>
-  <description>Logging system application programming interface.</description>
+  <description>Object management and configuration logging system application programming interface.</description>
   <build>
     <resources>
       <resource>

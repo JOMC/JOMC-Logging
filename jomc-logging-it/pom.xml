@@ -42,7 +42,7 @@
   <groupId>org.jomc.logging</groupId>
   <artifactId>jomc-logging-it</artifactId>
   <name>JOMC Logging Test Suite</name>
-  <description>Logging system test suite.</description>
+  <description>Object management and configuration logging system test suite.</description>
   <build>
     <resources>
       <resource>

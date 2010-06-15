@@ -42,7 +42,7 @@
   <groupId>org.jomc.logging</groupId>
   <artifactId>jomc-logging-jdk-logging</artifactId>
   <name>JOMC Logging JDK Logging</name>
-  <description>JDK logging system implementation.</description>
+  <description>Object management and configuration logging system implementation backed by JDK Logging.</description>
   <build>
     <resources>
       <resource>

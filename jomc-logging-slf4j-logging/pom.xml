@@ -42,7 +42,7 @@
   <groupId>org.jomc.logging</groupId>
   <artifactId>jomc-logging-slf4j-logging</artifactId>
   <name>JOMC Logging Slf4J Logging</name>
-  <description>Slf4J logging system implementation.</description>
+  <description>Object management and configuration logging system implementation backed by Slf4J.</description>
   <build>
     <resources>
       <resource>

@@ -42,7 +42,7 @@
   <groupId>org.jomc.logging</groupId>
   <artifactId>jomc-logging-commons-logging</artifactId>
   <name>JOMC Logging Commons Logging</name>
-  <description>Commons logging system implementation.</description>
+  <description>Object management and configuration logging system implementation backed by Apache Commons Logging.</description>
   <build>
     <resources>
       <resource>

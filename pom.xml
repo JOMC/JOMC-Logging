@@ -39,11 +39,7 @@
   <packaging>pom</packaging>
   <name>JOMC Logging</name>
   <version>1.0-beta-2-SNAPSHOT</version>
-  <description><![CDATA[
-  This is the 'JOMC Logging' parent project. The 'JOMC Logging API' artifact provides an application programming
-  interface to logging systems. Whenever that API is used at compile time, an application assembler needs to provide a
-  corresponding logging system implementation at runtime.]]>
-  </description>
+  <description>JOMC Logging is an application programming interface to logging systems with corresponding reference implementations. This is the parent module of the JOMC Logging artifacts.</description>
   <url>http://jomc.sourceforge.net/jomc-logging/${project.version}</url>
   <inceptionYear>2005</inceptionYear>
   <organization>
@@ -275,11 +271,17 @@
           <version>${jomc.version}</version>
           <executions>
             <execution>
+              <id>main-default</id>
               <goals>
                 <goal>attach-main-module</goal>
                 <goal>manage-main-sources</goal>
                 <goal>commit-main-classes</goal>
                 <goal>validate-main-classes</goal>
+              </goals>
+            </execution>
+            <execution>
+              <id>test-default</id>
+              <goals>
                 <goal>attach-test-module</goal>
                 <goal>manage-test-sources</goal>
                 <goal>commit-test-classes</goal>
@@ -901,7 +903,7 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-    <jomc.version>1.0-beta-4</jomc.version>
+    <jomc.version>1.0-beta-5-SNAPSHOT</jomc.version>
     <jomc-build.version>1.4</jomc-build.version>
     <surefire.version>2.5</surefire.version>
     <slf4j.version>1.6.0</slf4j.version>
