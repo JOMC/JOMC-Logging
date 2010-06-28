@@ -43,8 +43,8 @@ import java.util.logging.Level;
 /**
  * Object management and configuration logging system implementation backed by JDK Logging.
  * <p><b>Specifications</b><ul>
- * <li>{@code 'org.jomc.logging.Logger'} ({@code org.jomc.logging.Logger}) {@code 1.0} {@code Multiton}</li>
- * <li>{@code 'org.jomc.spi.Listener'} ({@code org.jomc.spi.Listener}) {@code 1.0} {@code Multiton}</li>
+ * <li>{@code 'org.jomc.logging.Logger'} {@code (org.jomc.logging.Logger)} {@code 1.0} {@code Multiton}</li>
+ * <li>{@code 'org.jomc.spi.Listener'} {@code (org.jomc.spi.Listener)} {@code 1.0} {@code Multiton}</li>
  * </ul></p>
  * <p><b>Properties</b><ul>
  * <li>"{@link #getName name}"
@@ -58,7 +58,7 @@ import java.util.logging.Level;
  * </ul></p>
  * <p><b>Dependencies</b><ul>
  * <li>"{@link #getObjectManagementLogger ObjectManagementLogger}"<blockquote>
- * Dependency on {@code 'org.jomc.logging.Logger'} ({@code org.jomc.logging.Logger}) at specification level 1.0 bound to an instance.</blockquote></li>
+ * Dependency on {@code 'org.jomc.logging.Logger'} {@code (org.jomc.logging.Logger)} at specification level 1.0 bound to an instance.</blockquote></li>
  * </ul></p>
  *
  * @author <a href="mailto:schulte2005@users.sourceforge.net">Christian Schulte</a> 1.0
@@ -68,7 +68,7 @@ import java.util.logging.Level;
 // SECTION-END
 // SECTION-START[Annotations]
 // <editor-fold defaultstate="collapsed" desc=" Generated Annotations ">
-@javax.annotation.Generated( value = "org.jomc.tools.SourceFileProcessor 1.0-beta-5-SNAPSHOT", comments = "See http://jomc.sourceforge.net/jomc/1.0-beta-5-SNAPSHOT/jomc-tools" )
+@javax.annotation.Generated( value = "org.jomc.tools.SourceFileProcessor 1.0", comments = "See http://jomc.sourceforge.net/jomc/1.0/jomc-tools" )
 // </editor-fold>
 // SECTION-END
 public class JdkLogger
@@ -80,7 +80,7 @@ public class JdkLogger
     // <editor-fold defaultstate="collapsed" desc=" Generated Constructors ">
 
     /** Creates a new {@code JdkLogger} instance. */
-    @javax.annotation.Generated( value = "org.jomc.tools.SourceFileProcessor 1.0-beta-5-SNAPSHOT", comments = "See http://jomc.sourceforge.net/jomc/1.0-beta-5-SNAPSHOT/jomc-tools" )
+    @javax.annotation.Generated( value = "org.jomc.tools.SourceFileProcessor 1.0", comments = "See http://jomc.sourceforge.net/jomc/1.0/jomc-tools" )
     public JdkLogger()
     {
         // SECTION-START[Default Constructor]
@@ -291,7 +291,7 @@ public class JdkLogger
 
     /**
      * Gets the {@code ObjectManagementLogger} dependency.
-     * <p>This method returns the "{@code JOMC Logging JDK Logging}" object of the {@code 'org.jomc.logging.Logger'} specification at specification level 1.0.</p>
+     * <p>This method returns the {@code 'JOMC Logging JDK Logging'} object of the {@code 'org.jomc.logging.Logger'} {@code (org.jomc.logging.Logger)} specification at specification level 1.0.</p>
      * <p>That specification does not apply to any scope. A new object is returned whenever requested and bound to this instance.</p>
      * <p><b>Properties</b><dl>
      * <dt>"{@code name}"</dt>
@@ -304,7 +304,7 @@ public class JdkLogger
      * @return The {@code ObjectManagementLogger} dependency.
      * @throws org.jomc.ObjectManagementException if getting the dependency instance fails.
      */
-    @javax.annotation.Generated( value = "org.jomc.tools.SourceFileProcessor 1.0-beta-5-SNAPSHOT", comments = "See http://jomc.sourceforge.net/jomc/1.0-beta-5-SNAPSHOT/jomc-tools" )
+    @javax.annotation.Generated( value = "org.jomc.tools.SourceFileProcessor 1.0", comments = "See http://jomc.sourceforge.net/jomc/1.0/jomc-tools" )
     private org.jomc.logging.Logger getObjectManagementLogger()
     {
         final org.jomc.logging.Logger _d = (org.jomc.logging.Logger) org.jomc.ObjectManagerFactory.getObjectManager( this.getClass().getClassLoader() ).getDependency( this, "ObjectManagementLogger" );
@@ -321,7 +321,7 @@ public class JdkLogger
      * @return Name of the component events are logged for.
      * @throws org.jomc.ObjectManagementException if getting the property instance fails.
      */
-    @javax.annotation.Generated( value = "org.jomc.tools.SourceFileProcessor 1.0-beta-5-SNAPSHOT", comments = "See http://jomc.sourceforge.net/jomc/1.0-beta-5-SNAPSHOT/jomc-tools" )
+    @javax.annotation.Generated( value = "org.jomc.tools.SourceFileProcessor 1.0", comments = "See http://jomc.sourceforge.net/jomc/1.0/jomc-tools" )
     public java.lang.String getName()
     {
         final java.lang.String _p = (java.lang.String) org.jomc.ObjectManagerFactory.getObjectManager( this.getClass().getClassLoader() ).getProperty( this, "name" );
@@ -334,7 +334,7 @@ public class JdkLogger
      * @return Number of frames between the logger and the frame of the caller.
      * @throws org.jomc.ObjectManagementException if getting the property instance fails.
      */
-    @javax.annotation.Generated( value = "org.jomc.tools.SourceFileProcessor 1.0-beta-5-SNAPSHOT", comments = "See http://jomc.sourceforge.net/jomc/1.0-beta-5-SNAPSHOT/jomc-tools" )
+    @javax.annotation.Generated( value = "org.jomc.tools.SourceFileProcessor 1.0", comments = "See http://jomc.sourceforge.net/jomc/1.0/jomc-tools" )
     private int getStackDepth()
     {
         final java.lang.Integer _p = (java.lang.Integer) org.jomc.ObjectManagerFactory.getObjectManager( this.getClass().getClassLoader() ).getProperty( this, "stackDepth" );
