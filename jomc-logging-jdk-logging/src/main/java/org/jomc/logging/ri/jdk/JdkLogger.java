@@ -43,8 +43,8 @@ import java.util.logging.Level;
 /**
  * Object management and configuration logging system implementation backed by JDK Logging.
  * <p><b>Specifications</b><ul>
- * <li>{@code org.jomc.logging.Logger} {@code 1.0} {@code Multiton}</li>
- * <li>{@code org.jomc.spi.Listener} {@code 1.0} {@code Multiton}</li>
+ * <li>{@code 'org.jomc.logging.Logger'} ({@code org.jomc.logging.Logger}) {@code 1.0} {@code Multiton}</li>
+ * <li>{@code 'org.jomc.spi.Listener'} ({@code org.jomc.spi.Listener}) {@code 1.0} {@code Multiton}</li>
  * </ul></p>
  * <p><b>Properties</b><ul>
  * <li>"{@link #getName name}"
@@ -58,7 +58,7 @@ import java.util.logging.Level;
  * </ul></p>
  * <p><b>Dependencies</b><ul>
  * <li>"{@link #getObjectManagementLogger ObjectManagementLogger}"<blockquote>
- * Dependency on {@code org.jomc.logging.Logger} at specification level 1.0 bound to an instance.</blockquote></li>
+ * Dependency on {@code 'org.jomc.logging.Logger'} ({@code org.jomc.logging.Logger}) at specification level 1.0 bound to an instance.</blockquote></li>
  * </ul></p>
  *
  * @author <a href="mailto:schulte2005@users.sourceforge.net">Christian Schulte</a> 1.0
@@ -291,7 +291,7 @@ public class JdkLogger
 
     /**
      * Gets the {@code ObjectManagementLogger} dependency.
-     * <p>This method returns the "{@code JOMC Logging JDK Logging}" object of the {@code org.jomc.logging.Logger} specification at specification level 1.0.</p>
+     * <p>This method returns the "{@code JOMC Logging JDK Logging}" object of the {@code 'org.jomc.logging.Logger'} specification at specification level 1.0.</p>
      * <p>That specification does not apply to any scope. A new object is returned whenever requested and bound to this instance.</p>
      * <p><b>Properties</b><dl>
      * <dt>"{@code name}"</dt>
