@@ -71,7 +71,7 @@ import java.util.logging.Level;
 @javax.annotation.Generated( value = "org.jomc.tools.SourceFileProcessor 1.0", comments = "See http://jomc.sourceforge.net/jomc/1.0/jomc-tools" )
 // </editor-fold>
 // SECTION-END
-public class JdkLogger
+public final class JdkLogger
     implements
     org.jomc.logging.Logger,
     org.jomc.spi.Listener

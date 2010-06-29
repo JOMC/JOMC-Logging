@@ -69,7 +69,7 @@ import org.apache.commons.logging.LogFactory;
 @javax.annotation.Generated( value = "org.jomc.tools.SourceFileProcessor 1.0", comments = "See http://jomc.sourceforge.net/jomc/1.0/jomc-tools" )
 // </editor-fold>
 // SECTION-END
-public class CommonsLogger
+public final class CommonsLogger
     implements
     org.jomc.logging.Logger,
     org.jomc.spi.Listener
