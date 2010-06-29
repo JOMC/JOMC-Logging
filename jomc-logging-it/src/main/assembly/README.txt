@@ -5,12 +5,13 @@
 
   ${project.description}
 
-    See the output of the 'testrunner' application for further information.
+    See the output of the 'test-logger' application for further information.
     For launching that application use of the scripts found in the 'bin'
     directory is recommended.
 
     Prior to launching, the environment variable CLASSPATH_PREFIX needs to be
     setup to contain the modules of the logging implementation to test.
+    Alternatively you can unpack the classes into the 'etc' directory.
 
     bin/test-logger (Unix)
     bin/test-logger.bat (Windows)
