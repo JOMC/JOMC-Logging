@@ -40,7 +40,7 @@
   <name>JOMC Logging</name>
   <version>1.1-SNAPSHOT</version>
   <description>JOMC Logging is an application programming interface to logging systems with corresponding reference implementations. This is the parent module of the JOMC Logging artifacts.</description>
-  <url>http://jomc.sourceforge.net/jomc-logging/${project.version}</url>
+  <url>http://jomc.sourceforge.net/jomc-logging/${jomc.site.version}</url>
   <inceptionYear>2005</inceptionYear>
   <organization>
     <name>The JOMC Project</name>
@@ -765,7 +765,7 @@
     <site>
       <id>jomc.sourceforge.net</id>
       <name>JOMC Site</name>
-      <url>scp://shell.sourceforge.net/home/groups/j/jo/jomc/htdocs/jomc-logging/${project.version}</url>
+      <url>scp://shell.sourceforge.net/home/groups/j/jo/jomc/htdocs/jomc-logging/${jomc.site.version}</url>
     </site>
   </distributionManagement>
   <profiles>
@@ -799,8 +799,8 @@
             <artifactId>maven-scm-plugin</artifactId>
             <executions>
               <execution>
-                <id>update-workdir</id>
-                <phase>validate</phase>
+                <id>initialize</id>
+                <phase>initialize</phase>
                 <goals>
                   <goal>update</goal>
                 </goals>
@@ -809,6 +809,7 @@
                 <id>main-sources</id>
                 <phase>process-resources</phase>
                 <goals>
+                  <goal>update</goal>
                   <goal>checkin</goal>
                 </goals>
               </execution>
@@ -816,6 +817,7 @@
                 <id>test-sources</id>
                 <phase>process-test-resources</phase>
                 <goals>
+                  <goal>update</goal>
                   <goal>checkin</goal>
                 </goals>
               </execution>
@@ -905,6 +907,7 @@
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <jomc.version>1.0</jomc.version>
     <jomc-build.version>1.4</jomc-build.version>
+    <jomc.site.version>1.1.x</jomc.site.version>
     <surefire.version>2.5</surefire.version>
     <slf4j.version>1.6.0</slf4j.version>
     <logger.specification.version>1.0</logger.specification.version>
