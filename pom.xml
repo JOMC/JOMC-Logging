@@ -1094,7 +1094,7 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-    <jomc.version>1.0</jomc.version>
+    <jomc.version>1.1-SNAPSHOT</jomc.version>
     <jomc.build.version>1.5</jomc.build.version>
     <jomc.base.version>1.1</jomc.base.version>
     <jomc.artifacts.url>http://jomc.sourceforge.net/jomc-logging/${jomc.base.version}</jomc.artifacts.url>
