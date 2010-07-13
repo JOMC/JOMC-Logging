@@ -43,6 +43,7 @@
   <artifactId>jomc-logging-api</artifactId>
   <name>JOMC Logging API</name>
   <description>Object management and configuration logging system application programming interface.</description>
+  <url>${jomc.artifacts.url}/${project.artifactId}-${project.version}</url>
   <build>
     <resources>
       <resource>
@@ -56,11 +57,12 @@
         <directory>src/test/resources</directory>
       </testResource>
     </testResources>
-    <plugins>
-      <plugin>
-        <groupId>org.codehaus.mojo</groupId>
-        <artifactId>build-helper-maven-plugin</artifactId>
-      </plugin>
-    </plugins>
   </build>
+  <distributionManagement>
+    <site>
+      <id>jomc.sourceforge.net</id>
+      <name>JOMC Site</name>
+      <url>${jomc.artifacts.distribution.url}/${project.artifactId}-${project.version}</url>
+    </site>
+  </distributionManagement>
 </project>

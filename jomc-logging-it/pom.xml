@@ -43,6 +43,7 @@
   <artifactId>jomc-logging-it</artifactId>
   <name>JOMC Logging Test Suite</name>
   <description>Object management and configuration logging system test suite.</description>
+  <url>${jomc.artifacts.url}/${project.artifactId}-${project.version}</url>
   <build>
     <resources>
       <resource>
@@ -90,31 +91,13 @@
         <artifactId>maven-dependency-plugin</artifactId>
         <executions>
           <execution>
-            <id>copy</id>
+            <id>copy-endorsed</id>
             <phase>package</phase>
             <goals>
               <goal>copy</goal>
             </goals>
             <configuration>
               <artifactItems>
-                <artifactItem>
-                  <groupId>${project.groupId}</groupId>
-                  <artifactId>jomc-logging</artifactId>
-                  <version>${project.version}</version>
-                  <type>txt</type>
-                  <classifier>license</classifier>
-                  <outputDirectory>${project.build.directory}</outputDirectory>
-                  <destFileName>JOMC_LICENSE.txt</destFileName>
-                </artifactItem>
-                <artifactItem>
-                  <groupId>${project.groupId}</groupId>
-                  <artifactId>jomc-logging</artifactId>
-                  <version>${project.version}</version>
-                  <type>xhtml</type>
-                  <classifier>changes</classifier>
-                  <outputDirectory>${project.build.directory}</outputDirectory>
-                  <destFileName>changes.xhtml</destFileName>
-                </artifactItem>
                 <artifactItem>
                   <groupId>javax.xml.parsers</groupId>
                   <artifactId>jaxp-api</artifactId>
@@ -151,10 +134,6 @@
             </configuration>
           </execution>
         </executions>
-      </plugin>
-      <plugin>
-        <groupId>org.codehaus.mojo</groupId>
-        <artifactId>build-helper-maven-plugin</artifactId>
       </plugin>
     </plugins>
   </build>
@@ -208,6 +187,13 @@
       <scope>provided</scope>
     </dependency>
   </dependencies>
+  <distributionManagement>
+    <site>
+      <id>jomc.sourceforge.net</id>
+      <name>JOMC Site</name>
+      <url>${jomc.artifacts.distribution.url}/${project.artifactId}-${project.version}</url>
+    </site>
+  </distributionManagement>
   <properties>
     <appassemblerAssembleDirectory>${project.build.directory}/appassembler</appassemblerAssembleDirectory>
   </properties>
