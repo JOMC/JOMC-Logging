@@ -1124,7 +1124,7 @@
     <jomc.base.version>1.1</jomc.base.version>
     <jomc.artifacts.url>http://jomc.sourceforge.net/jomc-logging/${jomc.base.version}</jomc.artifacts.url>
     <jomc.artifacts.distribution.url>scp://shell.sourceforge.net/home/groups/j/jo/jomc/htdocs/jomc-logging/${jomc.base.version}</jomc.artifacts.distribution.url>
-    <surefire.version>2.5</surefire.version>
+    <surefire.version>2.6</surefire.version>
     <slf4j.version>1.6.0</slf4j.version>
     <logger.specification.version>1.0</logger.specification.version>
     <listener.specification.version>1.0</listener.specification.version>
