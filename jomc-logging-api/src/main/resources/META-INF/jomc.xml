@@ -44,7 +44,8 @@
   <specifications>
     <!-- *********************************************************************************************************** -->
     <specification identifier="org.jomc.logging.Logger" class="org.jomc.logging.Logger" classDeclaration="true"
-                   version="${logger.specification.version}" multiplicity="One" vendor="${project.organization.name}">
+                   version="${logger.specification.version}" multiplicity="One" vendor="${project.organization.name}"
+                   createDate="2009-07-25T19:56:45Z">
 
       <documentation defaultLanguage="en">
         <text language="en">Logs events for a specific component.</text>

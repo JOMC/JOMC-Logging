@@ -47,7 +47,7 @@
     <implementation identifier="org.jomc.logging.ri.log4j.Log4JLogger"
                     class="org.jomc.logging.ri.log4j.Log4JLogger" classDeclaration="true"
                     name="${project.name}" version="${project.version}" vendor="${project.organization.name}"
-                    stateless="true">
+                    stateless="true" createDate="2009-07-25T19:56:45Z">
 
       <documentation defaultLanguage="en">
         <text language="en">${project.description}</text>
