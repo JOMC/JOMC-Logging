@@ -632,7 +632,9 @@
               <serialwarn>true</serialwarn>
               <source>1.5</source>
               <doctitle>${project.name} ${project.version}</doctitle>
+              <testDoctitle>${project.name} Tests ${project.version}</testDoctitle>
               <windowtitle>${project.name} ${project.version}</windowtitle>
+              <testWindowtitle>${project.name} Tests ${project.version}</testWindowtitle>
               <detectJavaApiLink>true</detectJavaApiLink>
               <detectOfflineLinks>false</detectOfflineLinks>
               <detectLinks>true</detectLinks>
@@ -652,7 +654,9 @@
               <serialwarn>true</serialwarn>
               <source>1.5</source>
               <doctitle>${project.name} ${project.version}</doctitle>
+              <testDoctitle>${project.name} Tests ${project.version}</testDoctitle>
               <windowtitle>${project.name} ${project.version}</windowtitle>
+              <testWindowtitle>${project.name} Tests ${project.version}</testWindowtitle>
               <detectJavaApiLink>true</detectJavaApiLink>
               <detectOfflineLinks>false</detectOfflineLinks>
               <detectLinks>true</detectLinks>
@@ -1167,7 +1171,7 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-    <jomc.version>1.1</jomc.version>
+    <jomc.version>1.2-SNAPSHOT</jomc.version>
     <jomc.build.version>1.5</jomc.build.version>
     <jomc.base.version>1.1</jomc.base.version>
     <jomc.artifacts.url>http://jomc.sourceforge.net/jomc-logging/${jomc.base.version}</jomc.artifacts.url>
