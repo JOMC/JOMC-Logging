@@ -78,12 +78,12 @@ import static org.junit.Assert.fail;
  *     <tr class="TableSubHeadingColor">
  *       <td align="left" scope="col" nowrap><b>Name</b></td>
  *       <td align="left" scope="col" nowrap><b>Languages</b></td>
- *       <td align="left" scope="col" nowrap><b>Default Template</b></td>
+ *       <td align="left" scope="col" nowrap><b>Default Templates</b></td>
  *     </tr>
  *     <tr class="TableRowColor">
  *       <td align="left" valign="top" nowrap>{@link #getTestImplementationNotFoundMessage Test Implementation Not Found Message}</td>
  *       <td align="left" valign="top" nowrap>English (default),&nbsp;Deutsch</td>
- *       <td align="left" valign="top" nowrap><pre><code>No test implementation found.</code></pre></td>
+ *       <td align="left" valign="top" nowrap><pre><code>No test implementation found.</code></pre><hr/><pre><code>Keine Test-Implementierung gefunden.</code></pre></td>
  *     </tr>
  *   </table>
  * </p>
