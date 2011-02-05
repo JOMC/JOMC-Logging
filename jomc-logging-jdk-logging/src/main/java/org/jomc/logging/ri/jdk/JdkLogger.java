@@ -78,13 +78,13 @@ import java.util.logging.Level;
  *       <td align="left" scope="col" nowrap><b>Documentation</b></td>
  *     </tr>
  *     <tr class="TableRowColor">
- *       <td align="left" nowrap>{@link #getName name}</td>
- *       <td align="left" nowrap>{@code java.lang.String}</td>
+ *       <td align="left" valign="top" nowrap>{@link #getName name}</td>
+ *       <td align="left" valign="top" nowrap>{@code java.lang.String}</td>
  *       <td align="left" valign="top">Name of the component events are logged for.</td>
  *     </tr>
  *     <tr class="TableRowColor">
- *       <td align="left" nowrap>{@link #getStackDepth stackDepth}</td>
- *       <td align="left" nowrap>{@code int}</td>
+ *       <td align="left" valign="top" nowrap>{@link #getStackDepth stackDepth}</td>
+ *       <td align="left" valign="top" nowrap>{@code int}</td>
  *       <td align="left" valign="top">Number of frames between the logger and the frame of the caller.</td>
  *     </tr>
  *   </table>
@@ -99,8 +99,8 @@ import java.util.logging.Level;
  *       <td align="left" scope="col" nowrap><b>Description</b></td>
  *     </tr>
  *     <tr class="TableRowColor">
- *       <td align="left" nowrap>{@link #getObjectManagementLogger ObjectManagementLogger}</td>
- *       <td align="left">Dependency on {@code 'org.jomc.logging.Logger'} {@code (org.jomc.logging.Logger)} at specification level 1.0 bound to an instance.</td>
+ *       <td align="left" valign="top" nowrap>{@link #getObjectManagementLogger ObjectManagementLogger}</td>
+ *       <td align="left" valign="top">Dependency on the {@code 'JOMC Logging JDK Logging'} object of the {@code 'org.jomc.logging.Logger'} {@code (org.jomc.logging.Logger)} specification at specification level 1.0 bound to an instance.</td>
  *     </tr>
  *   </table>
  * </p>
@@ -337,15 +337,26 @@ public final class JdkLogger
      * Gets the {@code ObjectManagementLogger} dependency.
      * <p>This method returns the {@code 'JOMC Logging JDK Logging'} object of the {@code 'org.jomc.logging.Logger'} {@code (org.jomc.logging.Logger)} specification at specification level 1.0.</p>
      * <p>That specification does not apply to any scope. A new object is returned whenever requested and bound to this instance.</p>
-     * <p><b>Properties</b><dl>
-     * <dt>"{@code name}"</dt>
-     * <dd>Property of type {@code java.lang.String}.
-     * </dd>
-     * <dt>"{@code stackDepth}"</dt>
-     * <dd>Property of type {@code int}.
-     * </dd>
-     * </dl>
-     * @return The {@code ObjectManagementLogger} dependency.
+     * <p><strong>Properties:</strong>
+     *   <table border="1" width="100%" cellpadding="3" cellspacing="0">
+     *     <tr class="TableSubHeadingColor">
+     *       <th align="left" scope="col" nowrap><b>Name</b></th>
+     *       <th align="left" scope="col" nowrap><b>Type</b></th>
+     *       <th align="left" scope="col" nowrap><b>Documentation</b></th>
+     *     </tr>
+     *     <tr class="TableRow">
+     *       <td align="left" valign="top" nowrap>{@code name}</td>
+     *       <td align="left" valign="top" nowrap>{@code java.lang.String}</td>
+     *       <td align="left" valign="top">Name of the logger object management events are logged with.</td>
+     *     </tr>
+     *     <tr class="TableRow">
+     *       <td align="left" valign="top" nowrap>{@code stackDepth}</td>
+     *       <td align="left" valign="top" nowrap>{@code int}</td>
+     *       <td align="left" valign="top"></td>
+     *     </tr>
+     *   </table>
+     * </p>
+     * @return Logger object management events are logged with.
      * @throws org.jomc.ObjectManagementException if getting the dependency instance fails.
      */
     @javax.annotation.Generated( value = "org.jomc.tools.SourceFileProcessor 1.2-SNAPSHOT", comments = "See http://jomc.sourceforge.net/jomc/1.2/jomc-tools-1.2-SNAPSHOT" )
