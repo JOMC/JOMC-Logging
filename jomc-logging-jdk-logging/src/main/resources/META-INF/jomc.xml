@@ -69,8 +69,16 @@
       <dependencies>
         <dependency name="ObjectManagementLogger" identifier="org.jomc.logging.Logger" version="${logger.specification.version}"
                     implementationName="${project.name}">
+
+          <documentation defaultLanguage="en">
+            <text language="en">Logger object management events are logged with.</text>
+          </documentation>
           <properties>
-            <property name="name" value="org.jomc.ObjectManager" override="true"/>
+            <property name="name" value="org.jomc.ObjectManager" override="true">
+              <documentation defaultLanguage="en">
+                <text language="en">Name of the logger object management events are logged with.</text>
+              </documentation>
+            </property>
             <property name="stackDepth" type="int" value="10" override="true"/>
           </properties>
         </dependency>
