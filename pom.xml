@@ -63,8 +63,8 @@
     </developer>
   </developers>
   <issueManagement>
-    <system>MantisBT</system>
-    <url>http://sourceforge.net/apps/mantisbt/jomc/</url>
+    <system>Trac</system>
+    <url>http://sourceforge.net/apps/trac/jomc</url>
   </issueManagement>
   <mailingLists>
     <mailingList>
@@ -92,7 +92,7 @@
   <scm>
     <connection>scm:svn:https://jomc.svn.sourceforge.net/svnroot/jomc/jomc-logging/trunk</connection>
     <developerConnection>scm:svn:https://jomc.svn.sourceforge.net/svnroot/jomc/jomc-logging/trunk</developerConnection>
-    <url>http://jomc.svn.sourceforge.net/viewvc/jomc/jomc-logging/trunk/</url>
+    <url>http://sourceforge.net/apps/trac/jomc/browser/jomc-logging/trunk</url>
   </scm>
   <build>
     <extensions>
@@ -722,7 +722,8 @@
             <configuration>
               <escapeHTML>false</escapeHTML>
               <issueLinkTemplatePerSystem>
-                <MantisBT>http://apps.sourceforge.net/mantisbt/jomc/view.php?id=%ISSUE%</MantisBT>
+                <MantisBT>http://sourceforge.net/apps/mantisbt/jomc/view.php?id=%ISSUE%</MantisBT>
+                <Trac>http://sourceforge.net/apps/trac/jomc/ticket/%ISSUE%</Trac>
               </issueLinkTemplatePerSystem>
               <xmlPath>src/main/changes/changes.xml</xmlPath>
             </configuration>
