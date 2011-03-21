@@ -68,14 +68,6 @@ piwikTracker.enableLinkTracking();
         </p>
       </noscript>
     </head>
-    <menu name="Sourceforge" inherit="top" inheritAsRef="false">
-      <item name="Home" href="http://jomc.sourceforge.net/project/home"/>
-      <item name="Files" href="http://jomc.sourceforge.net/project/files"/>
-      <item name="Issues" href="http://jomc.sourceforge.net/project/issues"/>
-      <item name="Summary" href="http://jomc.sourceforge.net/project/summary"/>
-      <item name="Support" href="http://jomc.sourceforge.net/project/support"/>
-      <item name="Statistics" href="http://jomc.sourceforge.net/project/statistics"/>
-    </menu>
     <menu ref="parent" inherit="top" inheritAsRef="false"/>
     <menu name="Modules">
       <item name="JOMC Logging API" href="jomc-logging-api/index.html"/>
@@ -84,6 +76,14 @@ piwikTracker.enableLinkTracking();
       <item name="JOMC Logging JDK Logging" href="jomc-logging-jdk-logging/index.html"/>
       <item name="JOMC Logging Log4J Logging" href="jomc-logging-log4j-logging/index.html"/>
       <item name="JOMC Logging Slf4J Logging" href="jomc-logging-slf4j-logging/index.html"/>
+    </menu>
+    <menu name="Sourceforge" inherit="bottom" inheritAsRef="false">
+      <item name="Home" href="http://jomc.sourceforge.net/project/home"/>
+      <item name="Files" href="http://jomc.sourceforge.net/project/files"/>
+      <item name="Issues" href="http://jomc.sourceforge.net/project/issues"/>
+      <item name="Summary" href="http://jomc.sourceforge.net/project/summary"/>
+      <item name="Support" href="http://jomc.sourceforge.net/project/support"/>
+      <item name="Statistics" href="http://jomc.sourceforge.net/project/statistics"/>
     </menu>
     <menu ref="reports" inherit="bottom" inheritAsRef="false"/>
   </body>
