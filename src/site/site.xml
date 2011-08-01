@@ -65,12 +65,12 @@ _gaq.push(['_trackPageview']);
     </head>
     <menu ref="parent" inherit="top" inheritAsRef="false"/>
     <menu name="Modules">
-      <item name="JOMC Logging API" href="jomc-logging-api/index.html"/>
-      <item name="JOMC Logging Test Suite" href="jomc-logging-it/index.html"/>
-      <item name="JOMC Logging Commons Logging" href="jomc-logging-commons-logging/index.html"/>
-      <item name="JOMC Logging JDK Logging" href="jomc-logging-jdk-logging/index.html"/>
-      <item name="JOMC Logging Log4J Logging" href="jomc-logging-log4j-logging/index.html"/>
-      <item name="JOMC Logging Slf4J Logging" href="jomc-logging-slf4j-logging/index.html"/>
+      <item name="API" href="jomc-logging-api/index.html"/>
+      <item name="Test Suite" href="jomc-logging-it/index.html"/>
+      <item name="Commons Logging" href="jomc-logging-commons-logging/index.html"/>
+      <item name="JDK Logging" href="jomc-logging-jdk-logging/index.html"/>
+      <item name="Log4J Logging" href="jomc-logging-log4j-logging/index.html"/>
+      <item name="Slf4J Logging" href="jomc-logging-slf4j-logging/index.html"/>
     </menu>
     <menu name="Sourceforge" inherit="bottom" inheritAsRef="false">
       <item name="Home" href="http://jomc.sourceforge.net/project/home"/>
