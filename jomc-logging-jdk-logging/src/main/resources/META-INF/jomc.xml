@@ -59,13 +59,6 @@
         <reference identifier="org.jomc.logging.Logger" version="${logger.specification.version}"/>
         <reference identifier="org.jomc.spi.Listener" version="${listener.specification.version}"/>
       </specifications>
-      <properties>
-        <property name="stackDepth" type="int" value="9">
-          <documentation defaultLanguage="en">
-            <text language="en">Number of frames between the logger and the frame of the caller.</text>
-          </documentation>
-        </property>
-      </properties>
       <dependencies>
         <dependency name="ObjectManagementLogger" identifier="org.jomc.logging.Logger" version="${logger.specification.version}"
                     implementationName="${project.name}">
@@ -83,6 +76,13 @@
           </properties>
         </dependency>
       </dependencies>
+      <properties>
+        <property name="stackDepth" type="int" value="9">
+          <documentation defaultLanguage="en">
+            <text language="en">Number of frames between the logger and the frame of the caller.</text>
+          </documentation>
+        </property>
+      </properties>
     </implementation>
   </implementations>
 </module>
