@@ -42,99 +42,21 @@ import java.util.logging.Level;
 // <editor-fold defaultstate="collapsed" desc=" Generated Documentation ">
 /**
  * Object management and configuration logging system implementation backed by JDK Logging.
+ *
  * <p>
- *   <table border="1" width="100%" cellpadding="3" cellspacing="0">
- *     <tr class="TableHeadingColor">
- *       <th align="left" scope="col" colspan="2" nowrap><font size="+2">Implementation</font></th>
- *     </tr>
- *     <tr>
- *       <td class="TableSubHeadingColor" align="left" nowrap><b>Identifier:</b></td>
- *       <td class="TableRowColor" align="left" nowrap>{@code org.jomc.logging.ri.jdk.JdkLogger}</td>
- *     </tr>
- *     <tr>
- *       <td class="TableSubHeadingColor" align="left" nowrap><b>Name:</b></td>
- *       <td class="TableRowColor" align="left" nowrap>{@code JOMC Logging JDK Logging}</td>
- *     </tr>
- *     <tr>
- *       <td class="TableSubHeadingColor" align="left" nowrap><b>Flags:</b></td>
- *       <td class="TableRowColor" align="left" nowrap> {@code stateless}</td>
- *     </tr>
- *     <tr>
- *       <td class="TableSubHeadingColor" align="left" nowrap><b>Version:</b></td>
- *       <td class="TableRowColor" align="left" nowrap>{@code 1.1-SNAPSHOT}</td>
- *     </tr>
- *   </table>
- * </p>
- * <p>
- *   <table border="1" width="100%" cellpadding="3" cellspacing="0">
- *     <tr class="TableHeadingColor">
- *       <th align="left" scope="col" colspan="4" nowrap><font size="+2">Specifications</font></th>
- *     </tr>
- *     <tr class="TableSubHeadingColor">
- *       <td align="left" scope="col" nowrap><b>Identifier</b></td>
- *       <td align="left" scope="col" nowrap><b>Class</b></td>
- *       <td align="left" scope="col" nowrap><b>Scope</b></td>
- *       <td align="left" scope="col" nowrap><b>Version</b></td>
- *     </tr>
- *     <tr class="TableRowColor">
- *       <td align="left" nowrap>{@code org.jomc.logging.Logger}</td>
- *       <td align="left" nowrap>{@code org.jomc.logging.Logger}</td>
- *       <td align="left" nowrap>{@code Multiton}</td>
- *       <td align="left" nowrap>{@code 1.0}</td>
- *     </tr>
- *     <tr class="TableRowColor">
- *       <td align="left" nowrap>{@code org.jomc.spi.Listener}</td>
- *       <td align="left" nowrap>{@code org.jomc.spi.Listener}</td>
- *       <td align="left" nowrap>{@code Multiton}</td>
- *       <td align="left" nowrap>{@code 1.0}</td>
- *     </tr>
- *   </table>
- * </p>
- * <p>
- *   <table border="1" width="100%" cellpadding="3" cellspacing="0">
- *     <tr class="TableHeadingColor">
- *       <th align="left" scope="col" colspan="4" nowrap><font size="+2">Properties</font></th>
- *     </tr>
- *     <tr class="TableSubHeadingColor">
- *       <td align="left" scope="col" nowrap><b>Name</b></td>
- *       <td align="left" scope="col" nowrap><b>Type</b></td>
- *       <td align="left" scope="col" nowrap><b>Flags</b></td>
- *       <td align="left" scope="col" nowrap><b>Documentation</b></td>
- *     </tr>
- *     <tr class="TableRowColor">
- *       <td align="left" valign="top" nowrap>{@link #getName name}</td>
- *       <td align="left" valign="top" nowrap>{@code java.lang.String}</td>
- *       <td align="left" valign="top" nowrap>{@code none}</td>
- *       <td align="left" valign="top">Name of the component events are logged for.</td>
- *     </tr>
- *     <tr class="TableRowColor">
- *       <td align="left" valign="top" nowrap>{@link #getStackDepth stackDepth}</td>
- *       <td align="left" valign="top" nowrap>{@code int}</td>
- *       <td align="left" valign="top" nowrap>{@code none}</td>
- *       <td align="left" valign="top">Number of frames between the logger and the frame of the caller.</td>
- *     </tr>
- *   </table>
- * </p>
- * <p>
- *   <table border="1" width="100%" cellpadding="3" cellspacing="0">
- *     <tr class="TableHeadingColor">
- *       <th align="left" scope="col" colspan="3" nowrap><font size="+2">Dependencies</font></th>
- *     </tr>
- *     <tr class="TableSubHeadingColor">
- *       <td align="left" scope="col" nowrap><b>Name</b></td>
- *       <td align="left" scope="col" nowrap><b>Flags</b></td>
- *       <td align="left" scope="col" nowrap><b>Description</b></td>
- *     </tr>
- *     <tr class="TableRowColor">
- *       <td align="left" valign="top" nowrap>{@link #getObjectManagementLogger ObjectManagementLogger}</td>
- *       <td align="left" valign="top" nowrap>{@code none}</td>
- *       <td align="left" valign="top">Dependency on the {@code 'JOMC Logging JDK Logging'} object of the {@code 'org.jomc.logging.Logger'} {@code (org.jomc.logging.Logger)} specification at specification level 1.0 bound to an instance.</td>
- *     </tr>
- *   </table>
+ *   This implementation is identified by identifier {@code <org.jomc.logging.ri.jdk.JdkLogger>}.
+ *   It provides objects named {@code <JOMC Logging JDK Logging>} of the following specifications:
+ *
+ *   <ul>
+ *     <li>{@code <org.jomc.logging.Logger>} at specification level 1.0.</li>
+ *     <li>{@code <org.jomc.spi.Listener>} at specification level 1.0.</li>
+ *   </ul>
+ *
+ *   No state is retained across operations due to flag {@code <stateless>}.
  * </p>
  *
  * @author <a href="mailto:schulte2005@users.sourceforge.net">Christian Schulte</a> 1.0
- * @version $Id$
+ * @version 1.1-SNAPSHOT
  */
 // </editor-fold>
 // SECTION-END
@@ -362,9 +284,11 @@ public final class JdkLogger
     // <editor-fold defaultstate="collapsed" desc=" Generated Dependencies ">
 
     /**
-     * Gets the {@code ObjectManagementLogger} dependency.
-     * <p>This method returns the {@code 'JOMC Logging JDK Logging'} object of the {@code 'org.jomc.logging.Logger'} {@code (org.jomc.logging.Logger)} specification at specification level 1.0.</p>
-     * <p>That specification does not apply to any scope. A new object is returned whenever requested and bound to this instance.</p>
+     * Gets the {@code <ObjectManagementLogger>} dependency.
+     * <p>
+     *   This method returns the {@code <JOMC Logging JDK Logging>} object of the {@code <org.jomc.logging.Logger>} specification at specification level 1.0.
+     *   That specification does not apply to any scope. A new object is returned whenever requested and bound to this instance.
+     * </p>
      * <p><strong>Properties:</strong>
      *   <table border="1" width="100%" cellpadding="3" cellspacing="0">
      *     <tr class="TableSubHeadingColor">
@@ -373,12 +297,12 @@ public final class JdkLogger
      *       <th align="left" scope="col" nowrap><b>Documentation</b></th>
      *     </tr>
      *     <tr class="TableRow">
-     *       <td align="left" valign="top" nowrap>{@code name}</td>
+     *       <td align="left" valign="top" nowrap>{@code <name>}</td>
      *       <td align="left" valign="top" nowrap>{@code java.lang.String}</td>
      *       <td align="left" valign="top">Name of the logger object management events are logged with.</td>
      *     </tr>
      *     <tr class="TableRow">
-     *       <td align="left" valign="top" nowrap>{@code stackDepth}</td>
+     *       <td align="left" valign="top" nowrap>{@code <stackDepth>}</td>
      *       <td align="left" valign="top" nowrap>{@code int}</td>
      *       <td align="left" valign="top"></td>
      *     </tr>
@@ -400,7 +324,7 @@ public final class JdkLogger
     // <editor-fold defaultstate="collapsed" desc=" Generated Properties ">
 
     /**
-     * Gets the value of the {@code name} property.
+     * Gets the value of the {@code <name>} property.
      * @return Name of the component events are logged for.
      * @throws org.jomc.ObjectManagementException if getting the property instance fails.
      */
@@ -413,7 +337,7 @@ public final class JdkLogger
     }
 
     /**
-     * Gets the value of the {@code stackDepth} property.
+     * Gets the value of the {@code <stackDepth>} property.
      * @return Number of frames between the logger and the frame of the caller.
      * @throws org.jomc.ObjectManagementException if getting the property instance fails.
      */
