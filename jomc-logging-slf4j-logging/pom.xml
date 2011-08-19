@@ -57,46 +57,6 @@
         <directory>src/test/resources</directory>
       </testResource>
     </testResources>
-    <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-dependency-plugin</artifactId>
-        <executions>
-          <execution>
-            <id>copy-test-classes</id>
-            <phase>validate</phase>
-            <goals>
-              <goal>unpack</goal>
-            </goals>
-            <configuration>
-              <artifactItems>
-                <artifactItem>
-                  <groupId>org.jomc.logging</groupId>
-                  <artifactId>jomc-logging-it</artifactId>
-                  <version>${project.version}</version>
-                  <type>jar</type>
-                </artifactItem>
-              </artifactItems>
-              <excludes>**/META-INF/**</excludes>
-              <outputDirectory>${project.build.testOutputDirectory}</outputDirectory>
-            </configuration>
-          </execution>
-        </executions>
-      </plugin>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-surefire-plugin</artifactId>
-        <configuration>
-          <forkMode>once</forkMode>
-          <redirectTestOutputToFile>true</redirectTestOutputToFile>
-          <systemPropertyVariables>
-            <org.jomc.modlet.ModelContext.defaultLogLevel>ALL</org.jomc.modlet.ModelContext.defaultLogLevel>
-            <org.jomc.ri.DefaultObjectManager.defaultLogLevel>ALL</org.jomc.ri.DefaultObjectManager.defaultLogLevel>
-            <java.util.logging.config.file>${project.build.testOutputDirectory}/logging.properties</java.util.logging.config.file>
-          </systemPropertyVariables>
-        </configuration>
-      </plugin>
-    </plugins>
   </build>
   <dependencies>
     <dependency>
