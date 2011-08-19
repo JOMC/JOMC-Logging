@@ -186,10 +186,10 @@
             <excludeClassifiers>
               <excludeClassifier>bin</excludeClassifier>
             </excludeClassifiers>
-            <!-- arguments>
+            <arguments>
               <argument>-tsa</argument>
               <argument>${jarsigner.tsa}</argument>
-            </arguments -->
+            </arguments>
           </configuration>
         </plugin>
         <plugin>
