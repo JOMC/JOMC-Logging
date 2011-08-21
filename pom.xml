@@ -969,11 +969,104 @@
     <!-- http://jira.codehaus.org/browse/SUREFIRE-683 -->
     <!-- http://jira.codehaus.org/browse/MFINDBUGS-145 -->
     <!-- http://jira.codehaus.org/browse/MCLIRR-38 -->
+    <!-- http://jira.codehaus.org/browse/JXR-91 -->
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-project-info-reports-plugin</artifactId>
         <version>2.4</version>
+        <reportSets>
+          <reportSet>
+            <id>default-index</id>
+            <reports>
+              <report>index</report>
+            </reports>
+          </reportSet>
+          <reportSet>
+            <id>default-cim</id>
+            <reports>
+              <report>cim</report>
+            </reports>
+          </reportSet>
+          <reportSet>
+            <id>default-dependencies</id>
+            <reports>
+              <report>dependencies</report>
+            </reports>
+          </reportSet>
+          <reportSet>
+            <id>default-dependency-convergence</id>
+            <reports>
+              <report>dependency-convergence</report>
+            </reports>
+          </reportSet>
+          <reportSet>
+            <id>default-dependency-management</id>
+            <reports>
+              <report>dependency-management</report>
+            </reports>
+          </reportSet>
+          <reportSet>
+            <id>default-issue-tracking</id>
+            <reports>
+              <report>issue-tracking</report>
+            </reports>
+          </reportSet>
+          <reportSet>
+            <id>default-mailing-list</id>
+            <reports>
+              <report>mailing-list</report>
+            </reports>
+          </reportSet>
+          <reportSet>
+            <id>default-plugin-management</id>
+            <reports>
+              <report>plugin-management</report>
+            </reports>
+          </reportSet>
+          <reportSet>
+            <id>default-license</id>
+            <reports>
+              <report>license</report>
+            </reports>
+          </reportSet>
+          <!-- reportSet> http://jira.codehaus.org/browse/MPIR-229
+            <id>default-modules</id>
+            <reports>
+              <report>modules</report>
+            </reports>
+          </reportSet -->
+          <reportSet>
+            <id>default-plugins</id>
+            <reports>
+              <report>plugins</report>
+            </reports>
+          </reportSet>
+          <reportSet>
+            <id>default-plugin-management</id>
+            <reports>
+              <report>plugin-management</report>
+            </reports>
+          </reportSet>
+          <reportSet>
+            <id>default-summary</id>
+            <reports>
+              <report>summary</report>
+            </reports>
+          </reportSet>
+          <reportSet>
+            <id>default-project-team</id>
+            <reports>
+              <report>project-team</report>
+            </reports>
+          </reportSet>
+          <reportSet>
+            <id>default-scm</id>
+            <reports>
+              <report>scm</report>
+            </reports>
+          </reportSet>
+        </reportSets>
       </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
@@ -984,6 +1077,11 @@
             <id>default-javadoc</id>
             <reports>
               <report>javadoc</report>
+            </reports>
+          </reportSet>
+          <reportSet>
+            <id>default-test-javadoc</id>
+            <reports>
               <report>test-javadoc</report>
             </reports>
           </reportSet>
@@ -992,6 +1090,12 @@
             <inherited>false</inherited>
             <reports>
               <report>aggregate</report>
+            </reports>
+          </reportSet>
+          <reportSet>
+            <id>default-test-aggregate</id>
+            <inherited>false</inherited>
+            <reports>
               <report>test-aggregate</report>
             </reports>
           </reportSet>
@@ -1053,11 +1157,39 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-jxr-plugin</artifactId>
         <version>2.3</version>
+        <reportSets>
+          <reportSet>
+            <id>default-jxr</id>
+            <reports>
+              <report>jxr</report>
+            </reports>
+          </reportSet>
+          <reportSet>
+            <id>default-test-jxr</id>
+            <reports>
+              <report>test-jxr</report>
+            </reports>
+          </reportSet>
+        </reportSets>
       </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-pmd-plugin</artifactId>
         <version>2.5</version>
+        <reportSets>
+          <reportSet>
+            <id>default-pmd</id>
+            <reports>
+              <report>pmd</report>
+            </reports>
+          </reportSet>
+          <reportSet>
+            <id>default-cpd</id>
+            <reports>
+              <report>cpd</report>
+            </reports>
+          </reportSet>
+        </reportSets>
         <configuration>
           <format>none</format>
           <targetJdk>1.5</targetJdk>
@@ -1067,11 +1199,27 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-report-plugin</artifactId>
         <version>${surefire.version}</version>
+        <reportSets>
+          <reportSet>
+            <id>default-report</id>
+            <reports>
+              <report>report</report>
+            </reports>
+          </reportSet>
+        </reportSets>
       </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-checkstyle-plugin</artifactId>
         <version>2.7</version>
+        <reportSets>
+          <reportSet>
+            <id>default-checkstyle</id>
+            <reports>
+              <report>checkstyle</report>
+            </reports>
+          </reportSet>
+        </reportSets>
         <configuration>
           <configLocation>org/jomc/build/resources/checkstyle.xml</configLocation>
         </configuration>
@@ -1101,6 +1249,14 @@
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>findbugs-maven-plugin</artifactId>
         <version>2.3.2</version>
+        <reportSets>
+          <reportSet>
+            <id>default-findbugs</id>
+            <reports>
+              <report>findbugs</report>
+            </reports>
+          </reportSet>
+        </reportSets>
         <configuration>
           <maxHeap>256</maxHeap>
         </configuration>
@@ -1109,6 +1265,14 @@
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>emma-maven-plugin</artifactId>
         <version>1.0-alpha-3</version>
+        <reportSets>
+          <reportSet>
+            <id>default-emma</id>
+            <reports>
+              <report>emma</report>
+            </reports>
+          </reportSet>
+        </reportSets>
         <configuration>
           <dataFiles>
             <dataFile>${project.build.directory}/coverage.ec</dataFile>
@@ -1119,6 +1283,14 @@
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>clirr-maven-plugin</artifactId>
         <version>2.3</version>
+        <reportSets>
+          <reportSet>
+            <id>default-clirr</id>
+            <reports>
+              <report>clirr</report>
+            </reports>
+          </reportSet>
+        </reportSets>
         <configuration>
           <minSeverity>info</minSeverity>
         </configuration>
