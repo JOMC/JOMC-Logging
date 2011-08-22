@@ -744,193 +744,415 @@
       <dependency>
         <groupId>org.jomc.logging</groupId>
         <artifactId>jomc-logging-api</artifactId>
-        <version>1.1-SNAPSHOT</version>
+        <version>${jomc-logging-api.artifact.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jomc.logging</groupId>
+        <artifactId>jomc-logging-api</artifactId>
+        <classifier>tests</classifier>
+        <version>${jomc-logging-api.artifact.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jomc.logging</groupId>
+        <artifactId>jomc-logging-api</artifactId>
+        <classifier>javadoc</classifier>
+        <version>${jomc-logging-api.artifact.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jomc.logging</groupId>
+        <artifactId>jomc-logging-api</artifactId>
+        <classifier>test-javadoc</classifier>
+        <version>${jomc-logging-api.artifact.version}</version>
       </dependency>
       <dependency>
         <groupId>org.jomc.logging</groupId>
         <artifactId>jomc-logging-api</artifactId>
         <classifier>sources</classifier>
-        <version>1.1-SNAPSHOT</version>
+        <version>${jomc-logging-api.artifact.version}</version>
       </dependency>
       <dependency>
         <groupId>org.jomc.logging</groupId>
         <artifactId>jomc-logging-api</artifactId>
-        <classifier>javadoc</classifier>
-        <version>1.1-SNAPSHOT</version>
+        <classifier>test-sources</classifier>
+        <version>${jomc-logging-api.artifact.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jomc.logging</groupId>
+        <artifactId>jomc-logging-api</artifactId>
+        <classifier>project</classifier>
+        <version>${jomc-logging-api.artifact.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jomc.logging</groupId>
+        <artifactId>jomc-logging-api</artifactId>
+        <classifier>site</classifier>
+        <version>${jomc-logging-api.artifact.version}</version>
       </dependency>
       <dependency>
         <groupId>org.jomc.logging</groupId>
         <artifactId>jomc-logging-api</artifactId>
         <classifier>changes</classifier>
         <type>xhtml</type>
-        <version>1.1-SNAPSHOT</version>
+        <version>${jomc-logging-api.artifact.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jomc.logging</groupId>
+        <artifactId>jomc-logging-api</artifactId>
+        <classifier>changes</classifier>
+        <type>xml</type>
+        <version>${jomc-logging-api.artifact.version}</version>
       </dependency>
       <dependency>
         <groupId>org.jomc.logging</groupId>
         <artifactId>jomc-logging-api</artifactId>
         <classifier>license</classifier>
         <type>txt</type>
-        <version>1.1-SNAPSHOT</version>
+        <version>${jomc-logging-api.artifact.version}</version>
       </dependency>
 
       <dependency>
         <groupId>org.jomc.logging</groupId>
         <artifactId>jomc-logging-it</artifactId>
-        <version>1.1-SNAPSHOT</version>
+        <version>${jomc-logging-it.artifact.version}</version>
       </dependency>
       <dependency>
         <groupId>org.jomc.logging</groupId>
         <artifactId>jomc-logging-it</artifactId>
-        <classifier>sources</classifier>
-        <version>1.1-SNAPSHOT</version>
+        <classifier>tests</classifier>
+        <version>${jomc-logging-it.artifact.version}</version>
       </dependency>
       <dependency>
         <groupId>org.jomc.logging</groupId>
         <artifactId>jomc-logging-it</artifactId>
         <classifier>javadoc</classifier>
-        <version>1.1-SNAPSHOT</version>
+        <version>${jomc-logging-it.artifact.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jomc.logging</groupId>
+        <artifactId>jomc-logging-it</artifactId>
+        <classifier>test-javadoc</classifier>
+        <version>${jomc-logging-it.artifact.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jomc.logging</groupId>
+        <artifactId>jomc-logging-it</artifactId>
+        <classifier>sources</classifier>
+        <version>${jomc-logging-it.artifact.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jomc.logging</groupId>
+        <artifactId>jomc-logging-it</artifactId>
+        <classifier>test-sources</classifier>
+        <version>${jomc-logging-it.artifact.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jomc.logging</groupId>
+        <artifactId>jomc-logging-it</artifactId>
+        <classifier>project</classifier>
+        <version>${jomc-logging-it.artifact.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jomc.logging</groupId>
+        <artifactId>jomc-logging-it</artifactId>
+        <classifier>site</classifier>
+        <version>${jomc-logging-it.artifact.version}</version>
       </dependency>
       <dependency>
         <groupId>org.jomc.logging</groupId>
         <artifactId>jomc-logging-it</artifactId>
         <classifier>changes</classifier>
         <type>xhtml</type>
-        <version>1.1-SNAPSHOT</version>
+        <version>${jomc-logging-it.artifact.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jomc.logging</groupId>
+        <artifactId>jomc-logging-it</artifactId>
+        <classifier>changes</classifier>
+        <type>xml</type>
+        <version>${jomc-logging-it.artifact.version}</version>
       </dependency>
       <dependency>
         <groupId>org.jomc.logging</groupId>
         <artifactId>jomc-logging-it</artifactId>
         <classifier>license</classifier>
         <type>txt</type>
-        <version>1.1-SNAPSHOT</version>
+        <version>${jomc-logging-it.artifact.version}</version>
       </dependency>
 
       <dependency>
         <groupId>org.jomc.logging</groupId>
         <artifactId>jomc-logging-commons-logging</artifactId>
-        <version>1.1-SNAPSHOT</version>
+        <version>${jomc-logging-commons-logging.artifact.version}</version>
       </dependency>
       <dependency>
         <groupId>org.jomc.logging</groupId>
         <artifactId>jomc-logging-commons-logging</artifactId>
-        <classifier>sources</classifier>
-        <version>1.1-SNAPSHOT</version>
+        <classifier>tests</classifier>
+        <version>${jomc-logging-commons-logging.artifact.version}</version>
       </dependency>
       <dependency>
         <groupId>org.jomc.logging</groupId>
         <artifactId>jomc-logging-commons-logging</artifactId>
         <classifier>javadoc</classifier>
-        <version>1.1-SNAPSHOT</version>
+        <version>${jomc-logging-commons-logging.artifact.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jomc.logging</groupId>
+        <artifactId>jomc-logging-commons-logging</artifactId>
+        <classifier>test-javadoc</classifier>
+        <version>${jomc-logging-commons-logging.artifact.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jomc.logging</groupId>
+        <artifactId>jomc-logging-commons-logging</artifactId>
+        <classifier>sources</classifier>
+        <version>${jomc-logging-commons-logging.artifact.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jomc.logging</groupId>
+        <artifactId>jomc-logging-commons-logging</artifactId>
+        <classifier>test-sources</classifier>
+        <version>${jomc-logging-commons-logging.artifact.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jomc.logging</groupId>
+        <artifactId>jomc-logging-commons-logging</artifactId>
+        <classifier>project</classifier>
+        <version>${jomc-logging-commons-logging.artifact.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jomc.logging</groupId>
+        <artifactId>jomc-logging-commons-logging</artifactId>
+        <classifier>site</classifier>
+        <version>${jomc-logging-commons-logging.artifact.version}</version>
       </dependency>
       <dependency>
         <groupId>org.jomc.logging</groupId>
         <artifactId>jomc-logging-commons-logging</artifactId>
         <classifier>changes</classifier>
         <type>xhtml</type>
-        <version>1.1-SNAPSHOT</version>
+        <version>${jomc-logging-commons-logging.artifact.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jomc.logging</groupId>
+        <artifactId>jomc-logging-commons-logging</artifactId>
+        <classifier>changes</classifier>
+        <type>xml</type>
+        <version>${jomc-logging-commons-logging.artifact.version}</version>
       </dependency>
       <dependency>
         <groupId>org.jomc.logging</groupId>
         <artifactId>jomc-logging-commons-logging</artifactId>
         <classifier>license</classifier>
         <type>txt</type>
-        <version>1.1-SNAPSHOT</version>
+        <version>${jomc-logging-commons-logging.artifact.version}</version>
       </dependency>
 
       <dependency>
         <groupId>org.jomc.logging</groupId>
         <artifactId>jomc-logging-jdk-logging</artifactId>
-        <version>1.1-SNAPSHOT</version>
+        <version>${jomc-logging-jdk-logging.artifact.version}</version>
       </dependency>
       <dependency>
         <groupId>org.jomc.logging</groupId>
         <artifactId>jomc-logging-jdk-logging</artifactId>
-        <classifier>sources</classifier>
-        <version>1.1-SNAPSHOT</version>
+        <classifier>tests</classifier>
+        <version>${jomc-logging-jdk-logging.artifact.version}</version>
       </dependency>
       <dependency>
         <groupId>org.jomc.logging</groupId>
         <artifactId>jomc-logging-jdk-logging</artifactId>
         <classifier>javadoc</classifier>
-        <version>1.1-SNAPSHOT</version>
+        <version>${jomc-logging-jdk-logging.artifact.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jomc.logging</groupId>
+        <artifactId>jomc-logging-jdk-logging</artifactId>
+        <classifier>test-javadoc</classifier>
+        <version>${jomc-logging-jdk-logging.artifact.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jomc.logging</groupId>
+        <artifactId>jomc-logging-jdk-logging</artifactId>
+        <classifier>sources</classifier>
+        <version>${jomc-logging-jdk-logging.artifact.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jomc.logging</groupId>
+        <artifactId>jomc-logging-jdk-logging</artifactId>
+        <classifier>test-sources</classifier>
+        <version>${jomc-logging-jdk-logging.artifact.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jomc.logging</groupId>
+        <artifactId>jomc-logging-jdk-logging</artifactId>
+        <classifier>project</classifier>
+        <version>${jomc-logging-jdk-logging.artifact.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jomc.logging</groupId>
+        <artifactId>jomc-logging-jdk-logging</artifactId>
+        <classifier>site</classifier>
+        <version>${jomc-logging-jdk-logging.artifact.version}</version>
       </dependency>
       <dependency>
         <groupId>org.jomc.logging</groupId>
         <artifactId>jomc-logging-jdk-logging</artifactId>
         <classifier>changes</classifier>
         <type>xhtml</type>
-        <version>1.1-SNAPSHOT</version>
+        <version>${jomc-logging-jdk-logging.artifact.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jomc.logging</groupId>
+        <artifactId>jomc-logging-jdk-logging</artifactId>
+        <classifier>changes</classifier>
+        <type>xml</type>
+        <version>${jomc-logging-jdk-logging.artifact.version}</version>
       </dependency>
       <dependency>
         <groupId>org.jomc.logging</groupId>
         <artifactId>jomc-logging-jdk-logging</artifactId>
         <classifier>license</classifier>
         <type>txt</type>
-        <version>1.1-SNAPSHOT</version>
+        <version>${jomc-logging-jdk-logging.artifact.version}</version>
       </dependency>
 
       <dependency>
         <groupId>org.jomc.logging</groupId>
         <artifactId>jomc-logging-log4j-logging</artifactId>
-        <version>1.1-SNAPSHOT</version>
+        <version>${jomc-logging-log4j-logging.artifact.version}</version>
       </dependency>
       <dependency>
         <groupId>org.jomc.logging</groupId>
         <artifactId>jomc-logging-log4j-logging</artifactId>
-        <classifier>sources</classifier>
-        <version>1.1-SNAPSHOT</version>
+        <classifier>tests</classifier>
+        <version>${jomc-logging-log4j-logging.artifact.version}</version>
       </dependency>
       <dependency>
         <groupId>org.jomc.logging</groupId>
         <artifactId>jomc-logging-log4j-logging</artifactId>
         <classifier>javadoc</classifier>
-        <version>1.1-SNAPSHOT</version>
+        <version>${jomc-logging-log4j-logging.artifact.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jomc.logging</groupId>
+        <artifactId>jomc-logging-log4j-logging</artifactId>
+        <classifier>test-javadoc</classifier>
+        <version>${jomc-logging-log4j-logging.artifact.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jomc.logging</groupId>
+        <artifactId>jomc-logging-log4j-logging</artifactId>
+        <classifier>sources</classifier>
+        <version>${jomc-logging-log4j-logging.artifact.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jomc.logging</groupId>
+        <artifactId>jomc-logging-log4j-logging</artifactId>
+        <classifier>test-sources</classifier>
+        <version>${jomc-logging-log4j-logging.artifact.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jomc.logging</groupId>
+        <artifactId>jomc-logging-log4j-logging</artifactId>
+        <classifier>project</classifier>
+        <version>${jomc-logging-log4j-logging.artifact.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jomc.logging</groupId>
+        <artifactId>jomc-logging-log4j-logging</artifactId>
+        <classifier>site</classifier>
+        <version>${jomc-logging-log4j-logging.artifact.version}</version>
       </dependency>
       <dependency>
         <groupId>org.jomc.logging</groupId>
         <artifactId>jomc-logging-log4j-logging</artifactId>
         <classifier>changes</classifier>
         <type>xhtml</type>
-        <version>1.1-SNAPSHOT</version>
+        <version>${jomc-logging-log4j-logging.artifact.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jomc.logging</groupId>
+        <artifactId>jomc-logging-log4j-logging</artifactId>
+        <classifier>changes</classifier>
+        <type>xml</type>
+        <version>${jomc-logging-log4j-logging.artifact.version}</version>
       </dependency>
       <dependency>
         <groupId>org.jomc.logging</groupId>
         <artifactId>jomc-logging-log4j-logging</artifactId>
         <classifier>license</classifier>
         <type>txt</type>
-        <version>1.1-SNAPSHOT</version>
+        <version>${jomc-logging-log4j-logging.artifact.version}</version>
       </dependency>
 
       <dependency>
         <groupId>org.jomc.logging</groupId>
         <artifactId>jomc-logging-slf4j-logging</artifactId>
-        <version>1.1-SNAPSHOT</version>
+        <version>${jomc-logging-slf4j-logging.artifact.version}</version>
       </dependency>
       <dependency>
         <groupId>org.jomc.logging</groupId>
         <artifactId>jomc-logging-slf4j-logging</artifactId>
-        <classifier>sources</classifier>
-        <version>1.1-SNAPSHOT</version>
+        <classifier>tests</classifier>
+        <version>${jomc-logging-slf4j-logging.artifact.version}</version>
       </dependency>
       <dependency>
         <groupId>org.jomc.logging</groupId>
         <artifactId>jomc-logging-slf4j-logging</artifactId>
         <classifier>javadoc</classifier>
-        <version>1.1-SNAPSHOT</version>
+        <version>${jomc-logging-slf4j-logging.artifact.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jomc.logging</groupId>
+        <artifactId>jomc-logging-slf4j-logging</artifactId>
+        <classifier>test-javadoc</classifier>
+        <version>${jomc-logging-slf4j-logging.artifact.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jomc.logging</groupId>
+        <artifactId>jomc-logging-slf4j-logging</artifactId>
+        <classifier>sources</classifier>
+        <version>${jomc-logging-slf4j-logging.artifact.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jomc.logging</groupId>
+        <artifactId>jomc-logging-slf4j-logging</artifactId>
+        <classifier>test-sources</classifier>
+        <version>${jomc-logging-slf4j-logging.artifact.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jomc.logging</groupId>
+        <artifactId>jomc-logging-slf4j-logging</artifactId>
+        <classifier>project</classifier>
+        <version>${jomc-logging-slf4j-logging.artifact.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jomc.logging</groupId>
+        <artifactId>jomc-logging-slf4j-logging</artifactId>
+        <classifier>site</classifier>
+        <version>${jomc-logging-slf4j-logging.artifact.version}</version>
       </dependency>
       <dependency>
         <groupId>org.jomc.logging</groupId>
         <artifactId>jomc-logging-slf4j-logging</artifactId>
         <classifier>changes</classifier>
         <type>xhtml</type>
-        <version>1.1-SNAPSHOT</version>
+        <version>${jomc-logging-slf4j-logging.artifact.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jomc.logging</groupId>
+        <artifactId>jomc-logging-slf4j-logging</artifactId>
+        <classifier>changes</classifier>
+        <type>xml</type>
+        <version>${jomc-logging-slf4j-logging.artifact.version}</version>
       </dependency>
       <dependency>
         <groupId>org.jomc.logging</groupId>
         <artifactId>jomc-logging-slf4j-logging</artifactId>
         <classifier>license</classifier>
         <type>txt</type>
-        <version>1.1-SNAPSHOT</version>
+        <version>${jomc-logging-slf4j-logging.artifact.version}</version>
       </dependency>
 
       <!-- JAXB -->
@@ -1601,6 +1823,12 @@
     <jomc.base.version>1.1</jomc.base.version>
     <jomc.artifacts.url>http://jomc.sourceforge.net/jomc-logging/${jomc.base.version}</jomc.artifacts.url>
     <jomc.artifacts.distribution.url>scp://shell.sourceforge.net/home/project-web/jomc/htdocs/jomc-logging/${jomc.base.version}</jomc.artifacts.distribution.url>
+    <jomc-logging-api.artifact.version>1.1-SNAPSHOT</jomc-logging-api.artifact.version>
+    <jomc-logging-it.artifact.version>1.1-SNAPSHOT</jomc-logging-it.artifact.version>
+    <jomc-logging-commons-logging.artifact.version>1.1-SNAPSHOT</jomc-logging-commons-logging.artifact.version>
+    <jomc-logging-jdk-logging.artifact.version>1.1-SNAPSHOT</jomc-logging-jdk-logging.artifact.version>
+    <jomc-logging-log4j-logging.artifact.version>1.1-SNAPSHOT</jomc-logging-log4j-logging.artifact.version>
+    <jomc-logging-slf4j-logging.artifact.version>1.1-SNAPSHOT</jomc-logging-slf4j-logging.artifact.version>
     <logger.specification.version>1.0</logger.specification.version>
     <listener.specification.version>1.0</listener.specification.version>
   </properties>
