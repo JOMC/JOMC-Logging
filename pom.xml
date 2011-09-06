@@ -1812,7 +1812,7 @@
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <remoteResourcesOutputDirectory>${project.build.directory}/maven-shared-archive-resources</remoteResourcesOutputDirectory>
     <surefire.version>2.9</surefire.version>
-    <plugintools.version>2.8</plugintools.version> <!-- See http://jira.codehaus.org/browse/MNG-3762 -->
+    <plugintools.version>2.9</plugintools.version> <!-- See http://jira.codehaus.org/browse/MNG-3762 -->
     <plexuscontainers.version>1.5.5</plexuscontainers.version>
     <wagon.version>1.0</wagon.version>
     <slf4j.version>1.6.2</slf4j.version>
