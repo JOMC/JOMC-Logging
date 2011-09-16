@@ -142,7 +142,6 @@
             <password>${jomc.scm.password}</password>
             <remoteTagging>false</remoteTagging>
             <suppressCommitBeforeTag>true</suppressCommitBeforeTag>
-            <useEditMode>true</useEditMode>
             <goals>deploy</goals>
             <useReleaseProfile>false</useReleaseProfile>
             <releaseProfiles>jomc-release</releaseProfiles>
