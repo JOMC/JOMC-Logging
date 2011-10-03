@@ -53,7 +53,6 @@ import static org.junit.Assert.fail;
  * <p>
  *   This implementation is identified by identifier {@code <org.jomc.logging.it.LoggerTest>}.
  *   It does not provide any specified objects.
- *   No state is retained across operations due to flag {@code <stateless>}.
  * </p>
  *
  * @author <a href="mailto:schulte2005@users.sourceforge.net">Christian Schulte</a> 1.0
