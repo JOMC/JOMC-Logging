@@ -145,7 +145,7 @@ public class LoggerTest
 
     /**
      * Test runner entry point.
-     * <p>This method sets up the JDK's {@code LogManager} with properties found at classpath location
+     * <p>This method sets up the JDK's {@code LogManager} with properties found at class path location
      * {@code "/logging.properties"} and executes {@link JUnitCore#main} passing the given arguments with this classes
      * name prepended.</p>
      *

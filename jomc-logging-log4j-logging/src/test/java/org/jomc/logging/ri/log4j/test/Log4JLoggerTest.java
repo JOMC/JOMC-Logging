@@ -39,7 +39,7 @@ import org.jomc.logging.it.LoggerTest;
 // SECTION-START[Documentation]
 // <editor-fold defaultstate="collapsed" desc=" Generated Documentation ">
 /**
- * Object management and configuration logging system implementation backed by Log4J.
+ * Test cases for class {@code org.jomc.logging.ri.jdk.JdkLogger}.
  *
  * <p>
  *   This implementation is identified by identifier {@code <org.jomc.logging.ri.log4j.test.Log4JLoggerTest>}.

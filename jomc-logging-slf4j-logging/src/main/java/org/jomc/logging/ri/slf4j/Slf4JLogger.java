@@ -238,9 +238,12 @@ public final class Slf4JLogger
     // SECTION-END
     // SECTION-START[Slf4JLogger]
     /**
-     * Requests a Slf4J logger for the name given by property {@code name}.
+     * Gets the Slf4J logger backing the instance.
      *
-     * @return The Slf4J logger for the name given by property {@code name}.
+     * @return The Slf4J logger backing the instance.
+     *
+     * @see #getName()
+     * @see org.slf4j.LoggerFactory#getLogger(java.lang.String)
      */
     public org.slf4j.Logger getLogger()
     {

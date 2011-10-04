@@ -71,28 +71,28 @@ public interface Logger
     // SECTION-START[Logger]
 
     /**
-     * Getter for property {@code debugEnabled}.
+     * Gets a flag indicating logging debug messages is enabled.
      *
      * @return {@code true} if logging debug messages is enabled; {@code false} if logging debug messages is disabled.
      */
     boolean isDebugEnabled();
 
     /**
-     * Logs a message at log level {@code debug}.
+     * Logs a debug message.
      *
      * @param message The message to log.
      */
     void debug( String message );
 
     /**
-     * Logs an exception at log level {@code debug}.
+     * Logs a debug exception.
      *
      * @param t The exception to log.
      */
     void debug( Throwable t );
 
     /**
-     * Logs a message and an exception at log level {@code debug}.
+     * Logs a debug message and exception.
      *
      * @param message The message to log.
      * @param t The exception to log.
@@ -100,28 +100,28 @@ public interface Logger
     void debug( String message, Throwable t );
 
     /**
-     * Getter for property {@code errorEnabled}.
+     * Gets a flag indicating logging error messages is enabled.
      *
      * @return {@code true} if logging error messages is enabled; {@code false} if logging error messages is disabled.
      */
     boolean isErrorEnabled();
 
     /**
-     * Logs a message at log level {@code error}.
+     * Logs an error message.
      *
      * @param message The message to log.
      */
     void error( String message );
 
     /**
-     * Logs an exception at log level {@code error}.
+     * Logs an error exception.
      *
      * @param t The exception to log.
      */
     void error( Throwable t );
 
     /**
-     * Logs a message and an exception at log level {@code error}.
+     * Logs an error message and exception.
      *
      * @param message The message to log.
      * @param t The exception to log.
@@ -129,28 +129,28 @@ public interface Logger
     void error( String message, Throwable t );
 
     /**
-     * Getter for property {@code fatalEnabled}.
+     * Gets a flag indicating logging fatal messages is enabled.
      *
      * @return {@code true} if logging fatal messages is enabled; {@code false} if logging fatal messages is disabled.
      */
     boolean isFatalEnabled();
 
     /**
-     * Logs a message at log level {@code fatal}.
+     * Logs a fatal message.
      *
      * @param message The message to log.
      */
     void fatal( String message );
 
     /**
-     * Logs an exception at log level {@code fatal}.
+     * Logs a fatal exception.
      *
      * @param t The exception to log.
      */
     void fatal( Throwable t );
 
     /**
-     * Logs a message and an exception at log level {@code fatal}.
+     * Logs a fatal message and exception.
      *
      * @param message The message to log.
      * @param t The exception to log.
@@ -158,28 +158,28 @@ public interface Logger
     void fatal( String message, Throwable t );
 
     /**
-     * Getter for property {@code infoEnabled}.
+     * Gets a flag indicating logging info messages is enabled.
      *
      * @return {@code true} if logging info messages is enabled; {@code false} if logging info messages is disabled.
      */
     boolean isInfoEnabled();
 
     /**
-     * Logs a message at log level {@code info}.
+     * Logs an info message.
      *
      * @param message The message to log.
      */
     void info( String message );
 
     /**
-     * Logs an exception at log level {@code info}.
+     * Logs an info exception.
      *
      * @param t The exception to log.
      */
     void info( Throwable t );
 
     /**
-     * Logs a message and an exception at log level {@code info}.
+     * Logs an info message and exception.
      *
      * @param message The message to log.
      * @param t The exception to log.
@@ -187,28 +187,28 @@ public interface Logger
     void info( String message, Throwable t );
 
     /**
-     * Getter for property {@code traceEnabled}.
+     * Gets a flag indicating logging trace messages is enabled.
      *
      * @return {@code true} if logging trace messages is enabled; {@code false} if logging trace messages is disabled.
      */
     boolean isTraceEnabled();
 
     /**
-     * Logs a message at log level {@code trace}.
+     * Logs a trace message.
      *
      * @param message The message to log.
      */
     void trace( String message );
 
     /**
-     * Logs an exception at log level {@code trace}.
+     * Logs a trace exception.
      *
      * @param t The exception to log.
      */
     void trace( Throwable t );
 
     /**
-     * Logs a message and an exception at log level {@code trace}.
+     * Logs a trace message and exception.
      *
      * @param message The message to log.
      * @param t The exception to log.
@@ -216,7 +216,7 @@ public interface Logger
     void trace( String message, Throwable t );
 
     /**
-     * Getter for property {@code warnEnabled}.
+     * Gets a flag indicating logging warning messages is enabled.
      *
      * @return {@code true} if logging warning messages is enabled; {@code false} if logging warning messages is
      * disabled.
@@ -224,21 +224,21 @@ public interface Logger
     boolean isWarnEnabled();
 
     /**
-     * Logs a message at log level {@code warn}.
+     * Logs a warning message.
      *
      * @param message The message to log.
      */
     void warn( String message );
 
     /**
-     * Logs an exception at log level {@code warn}.
+     * Logs a warning exception.
      *
      * @param t The exception to log.
      */
     void warn( Throwable t );
 
     /**
-     * Logs a message and an exception at log level {@code warn}.
+     * Logs a warning message and exception.
      *
      * @param message The message to log.
      * @param t The exception to log.

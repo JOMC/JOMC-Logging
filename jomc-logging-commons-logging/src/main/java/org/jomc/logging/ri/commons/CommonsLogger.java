@@ -241,11 +241,12 @@ public final class CommonsLogger
     // SECTION-END
     // SECTION-START[CommonsLogger]
     /**
-     * Requests a commons logging logger for the name given by property
-     * {@code name}.
+     * Gets the commons logging logger backing the instance.
      *
-     * @return the commons logging logger for the name given by property
-     * {@code name}.
+     * @return The commons logging logger backing the instance..
+     *
+     * @see #getName()
+     * @see LogFactory#getLog(java.lang.String)
      */
     public Log getLogger()
     {

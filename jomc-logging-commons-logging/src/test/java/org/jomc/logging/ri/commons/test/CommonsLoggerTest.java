@@ -39,7 +39,7 @@ import org.jomc.logging.it.LoggerTest;
 // SECTION-START[Documentation]
 // <editor-fold defaultstate="collapsed" desc=" Generated Documentation ">
 /**
- * Object management and configuration logging system implementation backed by Apache Commons Logging.
+ * Test cases for class {@code org.jomc.logging.ri.commons.CommonsLogger}.
  *
  * <p>
  *   This implementation is identified by identifier {@code <org.jomc.logging.ri.commons.test.CommonsLoggerTest>}.

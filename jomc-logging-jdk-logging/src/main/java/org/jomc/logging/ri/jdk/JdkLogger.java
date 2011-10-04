@@ -239,9 +239,12 @@ public final class JdkLogger
     // SECTION-END
     // SECTION-START[JdkLogger]
     /**
-     * Requests the JDK logger for the name given by property {@code name}.
+     * Gets the JDK logger backing the instance.
      *
-     * @return the JDK logger for the name given by property {@code name}.
+     * @return The JDK logger backing the instance.
+     *
+     * @see #getName()
+     * @see java.util.logging.Logger#getLogger(java.lang.String)
      */
     public java.util.logging.Logger getLogger()
     {

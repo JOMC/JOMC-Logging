@@ -238,9 +238,12 @@ public final class Log4JLogger
     // SECTION-END
     // SECTION-START[Log4JLogger]
     /**
-     * Requests a Log4J logger for the name given by property {@code name}.
+     * Gets the Log4J logger backing the instance.
      *
-     * @return The Log4J logger for the name given by property {@code name}.
+     * @return The Log4J logger backing the instance.
+     *
+     * @see #getName()
+     * @see org.apache.log4j.Logger#getLogger(java.lang.String)
      */
     public org.apache.log4j.Logger getLogger()
     {
