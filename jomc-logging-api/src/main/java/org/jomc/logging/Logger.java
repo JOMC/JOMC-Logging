@@ -73,7 +73,7 @@ public interface Logger
     /**
      * Gets a flag indicating logging debug messages is enabled.
      *
-     * @return {@code true} if logging debug messages is enabled; {@code false} if logging debug messages is disabled.
+     * @return {@code true}, if logging debug messages is enabled; {@code false}, if logging debug messages is disabled.
      */
     boolean isDebugEnabled();
 
@@ -102,7 +102,7 @@ public interface Logger
     /**
      * Gets a flag indicating logging error messages is enabled.
      *
-     * @return {@code true} if logging error messages is enabled; {@code false} if logging error messages is disabled.
+     * @return {@code true}, if logging error messages is enabled; {@code false}, if logging error messages is disabled.
      */
     boolean isErrorEnabled();
 
@@ -131,7 +131,7 @@ public interface Logger
     /**
      * Gets a flag indicating logging fatal messages is enabled.
      *
-     * @return {@code true} if logging fatal messages is enabled; {@code false} if logging fatal messages is disabled.
+     * @return {@code true}, if logging fatal messages is enabled; {@code false}, if logging fatal messages is disabled.
      */
     boolean isFatalEnabled();
 
@@ -160,7 +160,7 @@ public interface Logger
     /**
      * Gets a flag indicating logging info messages is enabled.
      *
-     * @return {@code true} if logging info messages is enabled; {@code false} if logging info messages is disabled.
+     * @return {@code true}, if logging info messages is enabled; {@code false}, if logging info messages is disabled.
      */
     boolean isInfoEnabled();
 
@@ -189,7 +189,7 @@ public interface Logger
     /**
      * Gets a flag indicating logging trace messages is enabled.
      *
-     * @return {@code true} if logging trace messages is enabled; {@code false} if logging trace messages is disabled.
+     * @return {@code true}, if logging trace messages is enabled; {@code false}, if logging trace messages is disabled.
      */
     boolean isTraceEnabled();
 
@@ -218,7 +218,7 @@ public interface Logger
     /**
      * Gets a flag indicating logging warning messages is enabled.
      *
-     * @return {@code true} if logging warning messages is enabled; {@code false} if logging warning messages is
+     * @return {@code true}, if logging warning messages is enabled; {@code false}, if logging warning messages is
      * disabled.
      */
     boolean isWarnEnabled();
