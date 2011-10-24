@@ -69,7 +69,6 @@ public class LoggerTest
 {
     // SECTION-START[Constructors]
     // <editor-fold defaultstate="collapsed" desc=" Generated Constructors ">
-
     /** Creates a new {@code LoggerTest} instance. */
     @javax.annotation.Generated( value = "org.jomc.tools.SourceFileProcessor 1.2-SNAPSHOT", comments = "See http://jomc.sourceforge.net/jomc/1.2/jomc-tools-1.2-SNAPSHOT" )
     public LoggerTest()
@@ -177,7 +176,6 @@ public class LoggerTest
     // SECTION-END
     // SECTION-START[Dependencies]
     // <editor-fold defaultstate="collapsed" desc=" Generated Dependencies ">
-
     /**
      * Gets the {@code <Locale>} dependency.
      * <p>
@@ -194,7 +192,6 @@ public class LoggerTest
         assert _d != null : "'Locale' dependency not found.";
         return _d;
     }
-
     /**
      * Gets the {@code <Logger>} dependency.
      * <p>
@@ -230,7 +227,6 @@ public class LoggerTest
     // SECTION-END
     // SECTION-START[Messages]
     // <editor-fold defaultstate="collapsed" desc=" Generated Messages ">
-
     /**
      * Gets the text of the {@code <Test Implementation Not Found Message>} message.
      * <p><strong>Languages:</strong>
