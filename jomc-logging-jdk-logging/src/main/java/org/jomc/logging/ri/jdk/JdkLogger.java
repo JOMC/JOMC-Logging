@@ -70,7 +70,6 @@ public final class JdkLogger
 {
     // SECTION-START[Constructors]
     // <editor-fold defaultstate="collapsed" desc=" Generated Constructors ">
-
     /** Creates a new {@code JdkLogger} instance. */
     @javax.annotation.Generated( value = "org.jomc.tools.SourceFileProcessor 1.2-SNAPSHOT", comments = "See http://jomc.sourceforge.net/jomc/1.2/jomc-tools-1.2-SNAPSHOT" )
     public JdkLogger()
@@ -283,7 +282,6 @@ public final class JdkLogger
     // SECTION-END
     // SECTION-START[Dependencies]
     // <editor-fold defaultstate="collapsed" desc=" Generated Dependencies ">
-
     /**
      * Gets the {@code <ObjectManagementLogger>} dependency.
      * <p>
@@ -323,7 +321,6 @@ public final class JdkLogger
     // SECTION-END
     // SECTION-START[Properties]
     // <editor-fold defaultstate="collapsed" desc=" Generated Properties ">
-
     /**
      * Gets the value of the {@code <name>} property.
      * @return Name of the component events are logged for.
@@ -336,7 +333,6 @@ public final class JdkLogger
         assert _p != null : "'name' property not found.";
         return _p;
     }
-
     /**
      * Gets the value of the {@code <stackDepth>} property.
      * @return Number of frames between the logger and the frame of the caller.
