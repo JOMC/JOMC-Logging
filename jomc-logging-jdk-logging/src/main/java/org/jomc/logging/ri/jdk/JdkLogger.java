@@ -42,16 +42,19 @@ import java.util.logging.Level;
  * Object management and configuration logging system implementation backed by JDK Logging.
  *
  * <p>
- *   This implementation is identified by identifier {@code <org.jomc.logging.ri.jdk.JdkLogger>}.
+ *   This implementation is identified by {@code <org.jomc.logging.ri.jdk.JdkLogger>}.
+ * </p>
+ * <p>
  *   It provides objects named {@code <JOMC Logging JDK Logging>} of the following specifications:
  *
  *   <ul>
  *     <li>{@code <org.jomc.logging.Logger>} at specification level 1.0.</li>
  *     <li>{@code <org.jomc.spi.Listener>} at specification level 1.0.</li>
  *   </ul>
- *
- *   No state is retained across operations due to flag {@code <stateless>}.
  * </p>
+ * <dl>
+ *   <dt><b>Stateless:</b></dt><dd>No state is retained.</dd>
+ * </dl>
  *
  * @author <a href="mailto:schulte2005@users.sourceforge.net">Christian Schulte</a> 1.0
  * @version 1.1-SNAPSHOT
