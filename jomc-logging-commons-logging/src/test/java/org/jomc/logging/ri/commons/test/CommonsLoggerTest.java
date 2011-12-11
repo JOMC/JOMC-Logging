@@ -42,9 +42,11 @@ import org.jomc.logging.it.LoggerTest;
  * Test cases for class {@code org.jomc.logging.ri.commons.CommonsLogger}.
  *
  * <p>
- *   This implementation is identified by identifier {@code <org.jomc.logging.ri.commons.test.CommonsLoggerTest>}.
- *   It does not provide any specified objects.
+ *   This implementation is identified by {@code <org.jomc.logging.ri.commons.test.CommonsLoggerTest>}.
  * </p>
+ * <dl>
+ *   <dt><b>Stateless:</b></dt><dd>No state is retained.</dd>
+ * </dl>
  *
  * @author <a href="mailto:schulte2005@users.sourceforge.net">Christian Schulte</a> 1.0
  * @version 1.1-SNAPSHOT
@@ -133,6 +135,9 @@ public final class CommonsLoggerTest extends LoggerTest
      *     <li>Deutsch</li>
      *   </ul>
      * </p>
+     * <dl>
+     *   <dt><b>Final:</b></dt><dd>Descendant implementations cannot override this message.</dd>
+     * </dl>
      *
      * @param locale The locale of the message to return.
      * @return The text of the {@code <Test Implementation Not Found Message>} message for {@code locale}.
