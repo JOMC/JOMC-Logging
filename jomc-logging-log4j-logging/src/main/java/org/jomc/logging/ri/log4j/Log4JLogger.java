@@ -53,7 +53,9 @@ import java.util.logging.Level;
  *   </ul>
  * </p>
  * <dl>
- *   <dt><b>Stateless:</b></dt><dd>No state is retained.</dd>
+ *   <dt><b>Abstract:</b></dt><dd>No</dd>
+ *   <dt><b>Final:</b></dt><dd>No</dd>
+ *   <dt><b>Stateless:</b></dt><dd>Yes</dd>
  * </dl>
  *
  * @author <a href="mailto:schulte2005@users.sourceforge.net">Christian Schulte</a> 1.0
@@ -275,6 +277,9 @@ public final class Log4JLogger
      *     </tr>
      *   </table>
      * </p>
+     * <dl>
+     *   <dt><b>Final:</b></dt><dd>No</dd>
+     * </dl>
      * @return Logger object management events are logged with.
      * @throws org.jomc.ObjectManagementException if getting the dependency instance fails.
      */
@@ -291,6 +296,11 @@ public final class Log4JLogger
     // <editor-fold defaultstate="collapsed" desc=" Generated Properties ">
     /**
      * Gets the value of the {@code <name>} property.
+     * <p>
+     *   <dl>
+     *     <dt><b>Final:</b></dt><dd>No</dd>
+     *   </dl>
+     * </p>
      * @return Name of the component events are logged for.
      * @throws org.jomc.ObjectManagementException if getting the property instance fails.
      */
