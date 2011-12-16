@@ -50,10 +50,9 @@ import static org.junit.Assert.fail;
 /**
  * Object management and configuration logging system test suite.
  *
- * <p>
- *   This implementation is identified by {@code <org.jomc.logging.it.LoggerTest>}.
- * </p>
  * <dl>
+ *   <dt><b>Identifier:</b></dt><dd>org.jomc.logging.it.LoggerTest</dd>
+ *   <dt><b>Name:</b></dt><dd>JOMC Logging Test Suite</dd>
  *   <dt><b>Abstract:</b></dt><dd>No</dd>
  *   <dt><b>Final:</b></dt><dd>No</dd>
  *   <dt><b>Stateless:</b></dt><dd>Yes</dd>
