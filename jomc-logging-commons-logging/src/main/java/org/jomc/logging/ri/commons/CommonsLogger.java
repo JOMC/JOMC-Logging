@@ -43,18 +43,10 @@ import org.apache.commons.logging.LogFactory;
 /**
  * Object management and configuration logging system implementation backed by Apache Commons Logging.
  *
- * <p>
- *   This implementation is identified by {@code <org.jomc.logging.ri.commons.CommonsLogger>}.
- * </p>
- * <p>
- *   It provides objects named {@code <JOMC Logging Commons Logging>} of the following specifications:
- *
- *   <ul>
- *     <li>{@code <org.jomc.logging.Logger>} at specification level 1.0.</li>
- *     <li>{@code <org.jomc.spi.Listener>} at specification level 1.0.</li>
- *   </ul>
- * </p>
  * <dl>
+ *   <dt><b>Identifier:</b></dt><dd>org.jomc.logging.ri.commons.CommonsLogger</dd>
+ *   <dt><b>Name:</b></dt><dd>JOMC Logging Commons Logging</dd>
+ *   <dt><b>Implements:</b></dt><dd>org.jomc.logging.Logger@1.0, org.jomc.spi.Listener@1.0</dd></dt>
  *   <dt><b>Abstract:</b></dt><dd>No</dd>
  *   <dt><b>Final:</b></dt><dd>No</dd>
  *   <dt><b>Stateless:</b></dt><dd>Yes</dd>
