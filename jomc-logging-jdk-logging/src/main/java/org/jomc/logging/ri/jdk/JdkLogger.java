@@ -41,18 +41,10 @@ import java.util.logging.Level;
 /**
  * Object management and configuration logging system implementation backed by JDK Logging.
  *
- * <p>
- *   This implementation is identified by {@code <org.jomc.logging.ri.jdk.JdkLogger>}.
- * </p>
- * <p>
- *   It provides objects named {@code <JOMC Logging JDK Logging>} of the following specifications:
- *
- *   <ul>
- *     <li>{@code <org.jomc.logging.Logger>} at specification level 1.0.</li>
- *     <li>{@code <org.jomc.spi.Listener>} at specification level 1.0.</li>
- *   </ul>
- * </p>
  * <dl>
+ *   <dt><b>Identifier:</b></dt><dd>org.jomc.logging.ri.jdk.JdkLogger</dd>
+ *   <dt><b>Name:</b></dt><dd>JOMC Logging JDK Logging</dd>
+ *   <dt><b>Implements:</b></dt><dd>org.jomc.logging.Logger@1.0, org.jomc.spi.Listener@1.0</dd></dt>
  *   <dt><b>Abstract:</b></dt><dd>No</dd>
  *   <dt><b>Final:</b></dt><dd>No</dd>
  *   <dt><b>Stateless:</b></dt><dd>Yes</dd>
