@@ -41,10 +41,9 @@ import org.jomc.logging.it.LoggerTest;
 /**
  * Test cases for class {@code org.jomc.logging.ri.jdk.JdkLogger}.
  *
- * <p>
- *   This implementation is identified by {@code <org.jomc.logging.ri.jdk.test.JdkLoggerTest>}.
- * </p>
  * <dl>
+ *   <dt><b>Identifier:</b></dt><dd>org.jomc.logging.ri.jdk.test.JdkLoggerTest</dd>
+ *   <dt><b>Name:</b></dt><dd>JOMC Logging JDK Logging</dd>
  *   <dt><b>Abstract:</b></dt><dd>No</dd>
  *   <dt><b>Final:</b></dt><dd>No</dd>
  *   <dt><b>Stateless:</b></dt><dd>Yes</dd>
