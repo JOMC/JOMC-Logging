@@ -41,10 +41,9 @@ import org.jomc.logging.it.LoggerTest;
 /**
  * Test cases for class {@code org.jomc.logging.ri.slf4j.Slf4JLogger}.
  *
- * <p>
- *   This implementation is identified by {@code <org.jomc.logging.ri.slf4j.test.Slf4JLoggerTest>}.
- * </p>
  * <dl>
+ *   <dt><b>Identifier:</b></dt><dd>org.jomc.logging.ri.slf4j.test.Slf4JLoggerTest</dd>
+ *   <dt><b>Name:</b></dt><dd>JOMC Logging Slf4J Logging</dd>
  *   <dt><b>Abstract:</b></dt><dd>No</dd>
  *   <dt><b>Final:</b></dt><dd>No</dd>
  *   <dt><b>Stateless:</b></dt><dd>Yes</dd>
