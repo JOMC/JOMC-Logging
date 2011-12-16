@@ -39,25 +39,17 @@ package org.jomc.logging;
 /**
  * Logs events for a specific component.
  *
- * <p>
- *   This specification is identified by {@code <org.jomc.logging.Logger>}.
- * </p>
- * <p>
- *   Use of class {@code ObjectManager} is supported for accessing implementations.
- *   <blockquote><pre>
- * Logger object = ObjectManagerFactory.getObjectManager( getClass().getClassLoader() ).getObject( Logger.class );
- * Logger object = ObjectManagerFactory.getObjectManager( getClass().getClassLoader() ).getObject( Logger.class, "<i>implementation name</i>" );
- *   </pre></blockquote>
- * </p>
  * <dl>
+ *   <dt><b>Identifier:</b></dt><dd>org.jomc.logging.Logger</dd>
  *   <dt><b>Multiplicity:</b></dt><dd>One</dd>
  *   <dt><b>Scope:</b></dt><dd>None</dd>
  * </dl>
  *
  * @author <a href="mailto:schulte2005@users.sourceforge.net">Christian Schulte</a> 1.0
  * @version 1.0
+ * @see org.jomc.ObjectManager#getObject(java.lang.Class) getObject(Logger.class)
+ * @see org.jomc.ObjectManager#getObject(java.lang.Class,java.lang.String) getObject(Logger.class, "<i>implementation name</i>")
  * @see org.jomc.ObjectManagerFactory
- * @see org.jomc.ObjectManager
  */
 // </editor-fold>
 // SECTION-END
