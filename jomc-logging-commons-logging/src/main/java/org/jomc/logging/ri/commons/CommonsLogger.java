@@ -46,7 +46,9 @@ import org.apache.commons.logging.LogFactory;
  * <dl>
  *   <dt><b>Identifier:</b></dt><dd>org.jomc.logging.ri.commons.CommonsLogger</dd>
  *   <dt><b>Name:</b></dt><dd>JOMC Logging Commons Logging</dd>
- *   <dt><b>Implements:</b></dt><dd>org.jomc.logging.Logger@1.0, org.jomc.spi.Listener@1.0</dd></dt>
+ *   <dt><b>Specifications:</b></dt>
+ *     <dd>org.jomc.logging.Logger @ 1.0</dd>
+ *     <dd>org.jomc.spi.Listener @ 1.0</dd>
  *   <dt><b>Abstract:</b></dt><dd>No</dd>
  *   <dt><b>Final:</b></dt><dd>No</dd>
  *   <dt><b>Stateless:</b></dt><dd>Yes</dd>
@@ -291,11 +293,9 @@ public final class CommonsLogger
     // <editor-fold defaultstate="collapsed" desc=" Generated Properties ">
     /**
      * Gets the value of the {@code <name>} property.
-     * <p>
-     *   <dl>
-     *     <dt><b>Final:</b></dt><dd>No</dd>
-     *   </dl>
-     * </p>
+     * <p><dl>
+     *   <dt><b>Final:</b></dt><dd>No</dd>
+     * </dl></p>
      * @return Name of the component events are logged for.
      * @throws org.jomc.ObjectManagementException if getting the property instance fails.
      */
