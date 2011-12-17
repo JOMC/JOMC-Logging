@@ -142,7 +142,6 @@ public final class JdkLoggerTest extends LoggerTest
      *     <dd>Deutsch</dd>
      *   <dt><b>Final:</b></dt><dd>Yes</dd>
      * </dl></p>
-     *
      * @param locale The locale of the message to return.
      * @return The text of the {@code <Test Implementation Not Found Message>} message for {@code locale}.
      * @throws org.jomc.ObjectManagementException if getting the message instance fails.
