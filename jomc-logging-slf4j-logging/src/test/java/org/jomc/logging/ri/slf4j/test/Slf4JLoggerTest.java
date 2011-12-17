@@ -136,15 +136,12 @@ public final class Slf4JLoggerTest extends LoggerTest
     // <editor-fold defaultstate="collapsed" desc=" Generated Messages ">
     /**
      * Gets the text of the {@code <Test Implementation Not Found Message>} message.
-     * <p><strong>Languages:</strong>
-     *   <ul>
-     *     <li>English (default)</li>
-     *     <li>Deutsch</li>
-     *   </ul>
-     * </p>
-     * <dl>
+     * <p><dl>
+     *   <dt><b>Languages:</b></dt>
+     *     <dd>English (default)</dd>
+     *     <dd>Deutsch</dd>
      *   <dt><b>Final:</b></dt><dd>Yes</dd>
-     * </dl>
+     * </dl></p>
      *
      * @param locale The locale of the message to return.
      * @return The text of the {@code <Test Implementation Not Found Message>} message for {@code locale}.
