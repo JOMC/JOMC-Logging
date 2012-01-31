@@ -1942,7 +1942,7 @@
     <surefire.version>2.11</surefire.version>
     <plugintools.version>2.9</plugintools.version> <!-- See http://jira.codehaus.org/browse/MNG-3762 -->
     <plexuscontainers.version>1.5.5</plexuscontainers.version>
-    <wagon.version>1.0</wagon.version>
+    <wagon.version>2.2</wagon.version>
     <slf4j.version>1.6.2</slf4j.version>
     <jomc.version>1.2-SNAPSHOT</jomc.version>
     <jomc.build.version>1.7</jomc.build.version>
