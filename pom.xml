@@ -90,7 +90,7 @@
   <scm>
     <connection>scm:svn:https://jomc.svn.sourceforge.net/svnroot/jomc/jomc-logging/tags/jomc-logging-1.1</connection>
     <developerConnection>scm:svn:https://jomc.svn.sourceforge.net/svnroot/jomc/jomc-logging/tags/jomc-logging-1.1</developerConnection>
-    <url>http://jomc.sourceforge.net/project/sources?jomc-logging/tags/jomc-logging-1.1?jomc-logging/trunk</url>
+    <url>http://jomc.sourceforge.net/project/sources?jomc-logging/tags/jomc-logging-1.1</url>
   </scm>
   <build>
     <extensions>
@@ -1763,7 +1763,7 @@
                 </rules>
               </configuration>
             </plugin>
-            <!-- plugin>
+            <plugin>
               <groupId>org.apache.maven.plugins</groupId>
               <artifactId>maven-changes-plugin</artifactId>
               <executions>
@@ -1773,12 +1773,12 @@
                   <goals>
                     <goal>changes-check</goal>
                   </goals>
-                  <configuration>
+                  <!-- configuration>
                     <skipSnapshots>true</skipSnapshots> See http://jira.codehaus.org/browse/MCHANGES-272
-                  </configuration>
+                  </configuration -->
                 </execution>
               </executions>
-            </plugin -->
+            </plugin>
             <plugin>
               <groupId>org.apache.maven.plugins</groupId>
               <artifactId>maven-deploy-plugin</artifactId>
