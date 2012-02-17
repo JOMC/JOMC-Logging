@@ -39,7 +39,7 @@
   </properties>
   <body>
     <!-- *********************************************************************************************************** -->
-    <release version="1.1">
+    <release version="1.1" date="2012-02-17">
       <action dev="schulte2005" type="fix"><![CDATA[Updated the <code>jomc.xml</code> document to correct
       <code>cvc-complex-type.2.4.a: Invalid content was found starting with element 'dependencies'. One of '{"http://jomc.org/model":messages, WC[##other:"http://jomc.org/model"]}' is expected.</code>.]]>
       </action>
