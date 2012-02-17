@@ -36,7 +36,7 @@
   <artifactId>jomc-logging</artifactId>
   <packaging>pom</packaging>
   <name>JOMC Logging</name>
-  <version>1.1-SNAPSHOT</version>
+  <version>1.2-SNAPSHOT</version>
   <description>JOMC Logging is an application programming interface to logging systems with corresponding reference implementations. This is the parent module of the JOMC Logging artifacts.</description>
   <url>${jomc.artifacts.url}</url>
   <inceptionYear>2005</inceptionYear>
@@ -235,7 +235,7 @@
                 </reportSets>
                 <configuration>
                   <quiet>true</quiet>
-                  <bottom><![CDATA[<table border="0" width="100%"><tr><td align="left">Copyright &#169; {inceptionYear}-{currentYear} {organizationName}. All Rights Reserved.</td><td align="right"><a href="http://sourceforge.net/projects/jomc"><img src="http://sflogo.sourceforge.net/sflogo.php?group_id=257507&type=10" width="80" height="15" border="0" alt="Get JOMC at SourceForge.net. Fast, secure and Free Open Source software downloads"/></a></td></tr></table><small>Please note that this documentation is maintained by non-native english speaking authors. As such, you may encounter phrases or wordings which seem imprecise or may even have a totally different meaning to native english speaking readers than what the individual author was trying to express. If you are a native english speaking reader and find any such phrases or wordings we kindly ask you to send an email to the corresponding author and help us improve this documentation in order to avoid misunderstandings. You will find the authors' email addresses at the top of each class. Please accept our apologies for any inconvenience caused.</small>]]></bottom>
+                  <bottom><![CDATA[<table border="0" width="100%"><tr><td align="left">Copyright &#169; {inceptionYear}-{currentYear} {organizationName}. All Rights Reserved.</td><td align="right"><a href="http://sourceforge.net/projects/jomc"><img src="http://sflogo.sourceforge.net/sflogo.php?group_id=257507&type=10" width="80" height="15" border="0" alt="Get JOMC at SourceForge.net. Fast, secure and Free Open Source software downloads" /></a></td></tr></table><small>Please note that this documentation is maintained by non-native english speaking authors. As such, you may encounter phrases or wordings which seem imprecise or may even have a totally different meaning to native english speaking readers than what the individual author was trying to express. If you are a native english speaking reader and find any such phrases or wordings we kindly ask you to send an email to the corresponding author and help us improve this documentation in order to avoid misunderstandings. You will find the authors' email addresses at the top of each class. Please accept our apologies for any inconvenience caused.</small>]]></bottom>
                   <breakiterator>true</breakiterator>
                   <header><![CDATA[<script type="text/javascript">var _gaq=_gaq||[];_gaq.push(['_setAccount','UA-23230934-1']);_gaq.push(['_trackPageview']);(function(){var ga=document.createElement('script');ga.type='text/javascript';ga.async=true;ga.src=('https:'==document.location.protocol?'https://ssl':'http://www')+'.google-analytics.com/ga.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(ga,s);})();</script>]]></header>
                   <keywords>true</keywords>
@@ -578,7 +578,7 @@
           <version>2.8.1</version>
           <configuration>
             <quiet>true</quiet>
-            <bottom><![CDATA[<table border="0" width="100%"><tr><td align="left">Copyright &#169; {inceptionYear}-{currentYear} {organizationName}. All Rights Reserved.</td><td align="right"><a href="http://sourceforge.net/projects/jomc"><img src="http://sflogo.sourceforge.net/sflogo.php?group_id=257507&type=10" width="80" height="15" border="0" alt="Get JOMC at SourceForge.net. Fast, secure and Free Open Source software downloads"/></a></td></tr></table><small>Please note that this documentation is maintained by non-native english speaking authors. As such, you may encounter phrases or wordings which seem imprecise or may even have a totally different meaning to native english speaking readers than what the individual author was trying to express. If you are a native english speaking reader and find any such phrases or wordings we kindly ask you to send an email to the corresponding author and help us improve this documentation in order to avoid misunderstandings. You will find the authors' email addresses at the top of each class. Please accept our apologies for any inconvenience caused.</small>]]></bottom>
+            <bottom><![CDATA[<table border="0" width="100%"><tr><td align="left">Copyright &#169; {inceptionYear}-{currentYear} {organizationName}. All Rights Reserved.</td><td align="right"><a href="http://sourceforge.net/projects/jomc"><img src="http://sflogo.sourceforge.net/sflogo.php?group_id=257507&type=10" width="80" height="15" border="0" alt="Get JOMC at SourceForge.net. Fast, secure and Free Open Source software downloads" /></a></td></tr></table><small>Please note that this documentation is maintained by non-native english speaking authors. As such, you may encounter phrases or wordings which seem imprecise or may even have a totally different meaning to native english speaking readers than what the individual author was trying to express. If you are a native english speaking reader and find any such phrases or wordings we kindly ask you to send an email to the corresponding author and help us improve this documentation in order to avoid misunderstandings. You will find the authors' email addresses at the top of each class. Please accept our apologies for any inconvenience caused.</small>]]></bottom>
             <breakiterator>true</breakiterator>
             <header><![CDATA[<script type="text/javascript">var _gaq=_gaq||[];_gaq.push(['_setAccount','UA-23230934-1']);_gaq.push(['_trackPageview']);(function(){var ga=document.createElement('script');ga.type='text/javascript';ga.async=true;ga.src=('https:'==document.location.protocol?'https://ssl':'http://www')+'.google-analytics.com/ga.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(ga,s);})();</script>]]></header>
             <keywords>true</keywords>
@@ -1953,12 +1953,12 @@
     <jomc.base.version>1.1</jomc.base.version>
     <jomc.artifacts.url>http://jomc.sourceforge.net/jomc-logging/${jomc.base.version}</jomc.artifacts.url>
     <jomc.artifacts.distribution.url>scp://shell.sourceforge.net/home/project-web/jomc/htdocs/jomc-logging/${jomc.base.version}</jomc.artifacts.distribution.url>
-    <jomc-logging-api.artifact.version>1.1-SNAPSHOT</jomc-logging-api.artifact.version>
-    <jomc-logging-it.artifact.version>1.1-SNAPSHOT</jomc-logging-it.artifact.version>
-    <jomc-logging-commons-logging.artifact.version>1.1-SNAPSHOT</jomc-logging-commons-logging.artifact.version>
-    <jomc-logging-jdk-logging.artifact.version>1.1-SNAPSHOT</jomc-logging-jdk-logging.artifact.version>
-    <jomc-logging-log4j-logging.artifact.version>1.1-SNAPSHOT</jomc-logging-log4j-logging.artifact.version>
-    <jomc-logging-slf4j-logging.artifact.version>1.1-SNAPSHOT</jomc-logging-slf4j-logging.artifact.version>
+    <jomc-logging-api.artifact.version>1.2-SNAPSHOT</jomc-logging-api.artifact.version>
+    <jomc-logging-it.artifact.version>1.2-SNAPSHOT</jomc-logging-it.artifact.version>
+    <jomc-logging-commons-logging.artifact.version>1.2-SNAPSHOT</jomc-logging-commons-logging.artifact.version>
+    <jomc-logging-jdk-logging.artifact.version>1.2-SNAPSHOT</jomc-logging-jdk-logging.artifact.version>
+    <jomc-logging-log4j-logging.artifact.version>1.2-SNAPSHOT</jomc-logging-log4j-logging.artifact.version>
+    <jomc-logging-slf4j-logging.artifact.version>1.2-SNAPSHOT</jomc-logging-slf4j-logging.artifact.version>
     <logger.specification.version>1.0</logger.specification.version>
     <listener.specification.version>1.0</listener.specification.version>
   </properties>
