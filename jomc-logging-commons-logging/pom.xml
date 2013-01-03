@@ -39,7 +39,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.jomc.logging</groupId>
   <artifactId>jomc-logging-commons-logging</artifactId>
-  <name>JOMC Logging Commons Logging</name>
+  <name>JOMC Logging ⁑ Commons Logging</name>
   <description>Object management and configuration logging system implementation backed by Apache Commons Logging.</description>
   <url>${jomc.artifacts.url}/${project.artifactId}-${project.version}</url>
   <build>
@@ -95,8 +95,8 @@
   </dependencies>
   <distributionManagement>
     <site>
-      <id>jomc.sourceforge.net</id>
-      <name>JOMC Site</name>
+      <id>${jomc.artifacts.distribution.id}</id>
+      <name>${jomc.artifacts.distribution.name}</name>
       <url>${jomc.artifacts.distribution.url}/${project.artifactId}-${project.version}</url>
     </site>
   </distributionManagement>

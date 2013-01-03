@@ -99,15 +99,6 @@
       <directoryMode>0755</directoryMode>
       <outputDirectory>/lib/jdk5/endorsed</outputDirectory>
     </fileSet>
-    <fileSet>
-      <directory>${project.build.directory}/jomc-changes</directory>
-      <fileMode>0555</fileMode>
-      <directoryMode>0755</directoryMode>
-      <outputDirectory>/doc</outputDirectory>
-      <includes>
-        <include>**/*-logging*.xhtml</include>
-      </includes>
-    </fileSet>
   </fileSets>
   <dependencySets>
     <dependencySet>

@@ -46,7 +46,7 @@ import org.apache.commons.logging.LogFactory;
  *
  * <dl>
  *   <dt><b>Identifier:</b></dt><dd>org.jomc.logging.ri.commons.CommonsLogger</dd>
- *   <dt><b>Name:</b></dt><dd>JOMC Logging Commons Logging</dd>
+ *   <dt><b>Name:</b></dt><dd>JOMC Logging &#8273; Commons Logging</dd>
  *   <dt><b>Specifications:</b></dt>
  *     <dd>org.jomc.logging.Logger @ 1.0</dd>
  *     <dd>org.jomc.spi.Listener @ 1.0</dd>
@@ -55,8 +55,8 @@ import org.apache.commons.logging.LogFactory;
  *   <dt><b>Stateless:</b></dt><dd>Yes</dd>
  * </dl>
  *
- * @author <a href="mailto:schulte2005@users.sourceforge.net">Christian Schulte</a> 1.0
- * @version 1.1-SNAPSHOT
+ * @author <a href="mailto:cs@schulte.it">Christian Schulte</a> 1.0
+ * @version 1.2-SNAPSHOT
  */
 // </editor-fold>
 // SECTION-END
@@ -258,7 +258,7 @@ public final class CommonsLogger
     /**
      * Gets the {@code <ObjectManagementLogger>} dependency.
      * <p>
-     *   This method returns the {@code <JOMC Logging Commons Logging>} object of the {@code <org.jomc.logging.Logger>} specification at specification level 1.0.
+     *   This method returns the {@code <JOMC Logging ⁑ Commons Logging>} object of the {@code <org.jomc.logging.Logger>} specification at specification level 1.0.
      *   That specification does not apply to any scope. A new object is returned whenever requested and bound to this instance.
      * </p>
      * <p><strong>Properties:</strong>

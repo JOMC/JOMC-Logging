@@ -46,7 +46,7 @@ package org.jomc.logging;
  *   <dt><b>Scope:</b></dt><dd>None</dd>
  * </dl>
  *
- * @author <a href="mailto:schulte2005@users.sourceforge.net">Christian Schulte</a> 1.0
+ * @author <a href="mailto:cs@schulte.it">Christian Schulte</a> 1.0
  * @version 1.0
  * @see org.jomc.ObjectManager#getObject(java.lang.Class) getObject(Logger.class)
  * @see org.jomc.ObjectManager#getObject(java.lang.Class,java.lang.String) getObject(Logger.class, "<i>implementation name</i>")

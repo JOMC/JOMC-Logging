@@ -39,7 +39,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.jomc.logging</groupId>
   <artifactId>jomc-logging-jdk-logging</artifactId>
-  <name>JOMC Logging JDK Logging</name>
+  <name>JOMC Logging ⁑ JDK Logging</name>
   <description>Object management and configuration logging system implementation backed by JDK Logging.</description>
   <url>${jomc.artifacts.url}/${project.artifactId}-${project.version}</url>
   <build>
@@ -90,8 +90,8 @@
   </dependencies>
   <distributionManagement>
     <site>
-      <id>jomc.sourceforge.net</id>
-      <name>JOMC Site</name>
+      <id>${jomc.artifacts.distribution.id}</id>
+      <name>${jomc.artifacts.distribution.name}</name>
       <url>${jomc.artifacts.distribution.url}/${project.artifactId}-${project.version}</url>
     </site>
   </distributionManagement>

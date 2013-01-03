@@ -30,26 +30,34 @@
   $JOMC$
 
 -->
-<project xmlns="http://maven.apache.org/DECORATION/1.0.0"
+<project xmlns="http://maven.apache.org/DECORATION/1.3.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/DECORATION/1.0.0 http://maven.apache.org/xsd/decoration-1.0.0.xsd"
-         name="JOMC Logging">
-  <poweredBy>
-    <logo href="http://sourceforge.net/donate/index.php?group_id=257507" img="http://images.sourceforge.net/images/project-support.jpg" name="Support This Project"/>
-  </poweredBy>
+         xsi:schemaLocation="http://maven.apache.org/DECORATION/1.3.0 http://maven.apache.org/xsd/decoration-1.3.0.xsd">
   <skin>
     <groupId>org.apache.maven.skins</groupId>
-    <artifactId>maven-classic-skin</artifactId>
-    <version>1.1</version>
+    <artifactId>maven-fluido-skin</artifactId>
+    <version>1.3.0</version>
   </skin>
-  <bannerRight>
-    <name>Sourceforge.net</name>
-    <src>http://sflogo.sourceforge.net/sflogo.php?group_id=257507&amp;type=11</src>
-    <href>http://sourceforge.net/projects/jomc</href>
-  </bannerRight>
+  <bannerLeft>
+    <name>JOMC</name>
+    <src>http://www.jomc.org/jomc.org.png</src>
+    <href>http://www.jomc.org</href>
+  </bannerLeft>
+  <poweredBy>
+    <logo name="SCHULTE.IT" href="http://www.schulte.it" img="http://www.schulte.it/resources/schulte.it.png"/>
+  </poweredBy>
+  <googleAdSenseClient>ca-pub-2363332114228707</googleAdSenseClient>
+  <googleAdSenseSlot>0169973943</googleAdSenseSlot>
+  <googleAnalyticsAccountId>UA-23230934-1</googleAnalyticsAccountId>
   <body>
     <head>
-      <script type="text/javascript">
+      <script type="text/javascript"><![CDATA[<!--
+google_ad_client = "ca-pub-2363332114228707";
+/* JOMC */
+google_ad_slot = "0169973943";
+google_ad_width = 728;
+google_ad_height = 90;
+
 var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-23230934-1']);
 _gaq.push(['_trackPageview']);
@@ -59,10 +67,13 @@ _gaq.push(['_trackPageview']);
   ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 })();
+//-->]]>
       </script>
     </head>
     <menu name="JOMC Logging" inherit="top">
       <item name="Home" href="${project.url}/index.html"/>
+      <item name="Download" href="http://www.jomc.org/project/files"/>
+      <item name="Issues" href="http://www.jomc.org/project/issues"/>
     </menu>
     <menu name="Modules">
       <item name="API" href="${project.url}/jomc-logging-api/index.html"/>
@@ -71,14 +82,6 @@ _gaq.push(['_trackPageview']);
       <item name="JDK Logging" href="${project.url}/jomc-logging-jdk-logging/index.html"/>
       <item name="Log4J Logging" href="${project.url}/jomc-logging-log4j-logging/index.html"/>
       <item name="Slf4J Logging" href="${project.url}/jomc-logging-slf4j-logging/index.html"/>
-    </menu>
-    <menu name="Sourceforge" inherit="bottom" inheritAsRef="false">
-      <item name="Home" href="http://jomc.sourceforge.net/project/home"/>
-      <item name="Files" href="http://jomc.sourceforge.net/project/files"/>
-      <item name="Issues" href="http://jomc.sourceforge.net/project/issues"/>
-      <item name="Summary" href="http://jomc.sourceforge.net/project/summary"/>
-      <item name="Support" href="http://jomc.sourceforge.net/project/support"/>
-      <item name="Statistics" href="http://jomc.sourceforge.net/project/statistics"/>
     </menu>
     <menu ref="reports" inherit="bottom" inheritAsRef="false"/>
   </body>

@@ -44,14 +44,14 @@ import org.jomc.logging.it.LoggerTest;
  *
  * <dl>
  *   <dt><b>Identifier:</b></dt><dd>org.jomc.logging.ri.log4j.test.Log4JLoggerTest</dd>
- *   <dt><b>Name:</b></dt><dd>JOMC Logging Log4J Logging</dd>
+ *   <dt><b>Name:</b></dt><dd>JOMC Logging &#8273; Log4J Logging</dd>
  *   <dt><b>Abstract:</b></dt><dd>No</dd>
  *   <dt><b>Final:</b></dt><dd>No</dd>
  *   <dt><b>Stateless:</b></dt><dd>Yes</dd>
  * </dl>
  *
- * @author <a href="mailto:schulte2005@users.sourceforge.net">Christian Schulte</a> 1.0
- * @version 1.1-SNAPSHOT
+ * @author <a href="mailto:cs@schulte.it">Christian Schulte</a> 1.0
+ * @version 1.2-SNAPSHOT
  */
 // </editor-fold>
 // SECTION-END
