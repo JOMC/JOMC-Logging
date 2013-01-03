@@ -83,13 +83,6 @@
                     <type>jar</type>
                     <outputDirectory>${project.build.directory}/jomc-endorsed</outputDirectory>
                   </artifactItem>
-                  <artifactItem>
-                    <groupId>${project.groupId}</groupId>
-                    <artifactId>jomc-logging-it</artifactId>
-                    <type>xhtml</type>
-                    <classifier>changes</classifier>
-                    <outputDirectory>${project.build.directory}/jomc-changes</outputDirectory>
-                  </artifactItem>
                 </artifactItems>
               </configuration>
             </execution>
@@ -165,6 +158,10 @@
       </plugins>
     </pluginManagement>
     <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-dependency-plugin</artifactId>
+      </plugin>
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>appassembler-maven-plugin</artifactId>
