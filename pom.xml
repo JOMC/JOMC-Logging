@@ -1908,7 +1908,7 @@
     <maven.surefire.argLine>-client -Xms32m -Xmx32m -Xss2m -Dfile.encoding=${file.encoding}</maven.surefire.argLine>
     <mojo.findbugs.jvmArgs>-client -Xms32m -Xmx32m -Xss2m -Dfile.encoding=${file.encoding}</mojo.findbugs.jvmArgs>
     <!-- Parent -->
-    <jomc.base.version>1.1</jomc.base.version>
+    <jomc.base.version>1.2</jomc.base.version>
     <jomc.frs.distribution.id>frs.jomc.org</jomc.frs.distribution.id>
     <jomc.frs.distribution.url>dav:http://frs.jomc.org/</jomc.frs.distribution.url>
     <jomc.xml.distribution.id>xml.jomc.org</jomc.xml.distribution.id>
