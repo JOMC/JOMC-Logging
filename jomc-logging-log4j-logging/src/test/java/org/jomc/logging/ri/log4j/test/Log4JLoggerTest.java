@@ -51,7 +51,7 @@ import org.jomc.logging.it.LoggerTest;
  * </dl>
  *
  * @author <a href="mailto:cs@schulte.it">Christian Schulte</a> 1.0
- * @version 1.3-SNAPSHOT
+ * @version 1.3
  */
 // </editor-fold>
 // SECTION-END
