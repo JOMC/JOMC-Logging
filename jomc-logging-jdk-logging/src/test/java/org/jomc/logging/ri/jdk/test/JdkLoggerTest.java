@@ -57,7 +57,7 @@ import org.jomc.logging.it.LoggerTest;
 // SECTION-END
 // SECTION-START[Annotations]
 // <editor-fold defaultstate="collapsed" desc=" Generated Annotations ">
-@javax.annotation.Generated( value = "org.jomc.tools.SourceFileProcessor 1.4", comments = "See http://www.jomc.org/jomc/1.4/jomc-tools-1.4" )
+@javax.annotation.Generated( value = "org.jomc.tools.SourceFileProcessor 1.5", comments = "See http://www.jomc.org/jomc/1.5/jomc-tools-1.5" )
 // </editor-fold>
 // SECTION-END
 public final class JdkLoggerTest extends LoggerTest
@@ -67,7 +67,7 @@ public final class JdkLoggerTest extends LoggerTest
     // SECTION-START[Constructors]
     // <editor-fold defaultstate="collapsed" desc=" Generated Constructors ">
     /** Creates a new {@code JdkLoggerTest} instance. */
-    @javax.annotation.Generated( value = "org.jomc.tools.SourceFileProcessor 1.4", comments = "See http://www.jomc.org/jomc/1.4/jomc-tools-1.4" )
+    @javax.annotation.Generated( value = "org.jomc.tools.SourceFileProcessor 1.5", comments = "See http://www.jomc.org/jomc/1.5/jomc-tools-1.5" )
     public JdkLoggerTest()
     {
         // SECTION-START[Default Constructor]
@@ -91,7 +91,7 @@ public final class JdkLoggerTest extends LoggerTest
      * @throws org.jomc.ObjectManagementException if getting the dependency instance fails.
      */
     @SuppressWarnings("unused")
-    @javax.annotation.Generated( value = "org.jomc.tools.SourceFileProcessor 1.4", comments = "See http://www.jomc.org/jomc/1.4/jomc-tools-1.4" )
+    @javax.annotation.Generated( value = "org.jomc.tools.SourceFileProcessor 1.5", comments = "See http://www.jomc.org/jomc/1.5/jomc-tools-1.5" )
     private java.util.Locale getLocale()
     {
         final java.util.Locale _d = (java.util.Locale) org.jomc.ObjectManagerFactory.getObjectManager( this.getClass().getClassLoader() ).getDependency( this, "Locale" );
@@ -126,7 +126,7 @@ public final class JdkLoggerTest extends LoggerTest
      * @throws org.jomc.ObjectManagementException if getting the dependency instance fails.
      */
     @SuppressWarnings("unused")
-    @javax.annotation.Generated( value = "org.jomc.tools.SourceFileProcessor 1.4", comments = "See http://www.jomc.org/jomc/1.4/jomc-tools-1.4" )
+    @javax.annotation.Generated( value = "org.jomc.tools.SourceFileProcessor 1.5", comments = "See http://www.jomc.org/jomc/1.5/jomc-tools-1.5" )
     private org.jomc.logging.Logger getLogger()
     {
         return (org.jomc.logging.Logger) org.jomc.ObjectManagerFactory.getObjectManager( this.getClass().getClassLoader() ).getDependency( this, "Logger" );
@@ -150,7 +150,7 @@ public final class JdkLoggerTest extends LoggerTest
      * @throws org.jomc.ObjectManagementException if getting the message instance fails.
      */
     @SuppressWarnings("unused")
-    @javax.annotation.Generated( value = "org.jomc.tools.SourceFileProcessor 1.4", comments = "See http://www.jomc.org/jomc/1.4/jomc-tools-1.4" )
+    @javax.annotation.Generated( value = "org.jomc.tools.SourceFileProcessor 1.5", comments = "See http://www.jomc.org/jomc/1.5/jomc-tools-1.5" )
     private String getTestImplementationNotFoundMessage( final java.util.Locale locale )
     {
         final String _m = org.jomc.ObjectManagerFactory.getObjectManager( this.getClass().getClassLoader() ).getMessage( this, "Test Implementation Not Found Message", locale );

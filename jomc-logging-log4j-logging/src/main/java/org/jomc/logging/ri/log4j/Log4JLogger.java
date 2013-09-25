@@ -60,7 +60,7 @@ import java.util.logging.Level;
 // SECTION-END
 // SECTION-START[Annotations]
 // <editor-fold defaultstate="collapsed" desc=" Generated Annotations ">
-@javax.annotation.Generated( value = "org.jomc.tools.SourceFileProcessor 1.4", comments = "See http://www.jomc.org/jomc/1.4/jomc-tools-1.4" )
+@javax.annotation.Generated( value = "org.jomc.tools.SourceFileProcessor 1.5", comments = "See http://www.jomc.org/jomc/1.5/jomc-tools-1.5" )
 // </editor-fold>
 // SECTION-END
 public final class Log4JLogger
@@ -70,7 +70,7 @@ public final class Log4JLogger
     // SECTION-START[Constructors]
     // <editor-fold defaultstate="collapsed" desc=" Generated Constructors ">
     /** Creates a new {@code Log4JLogger} instance. */
-    @javax.annotation.Generated( value = "org.jomc.tools.SourceFileProcessor 1.4", comments = "See http://www.jomc.org/jomc/1.4/jomc-tools-1.4" )
+    @javax.annotation.Generated( value = "org.jomc.tools.SourceFileProcessor 1.5", comments = "See http://www.jomc.org/jomc/1.5/jomc-tools-1.5" )
     public Log4JLogger()
     {
         // SECTION-START[Default Constructor]
@@ -279,7 +279,7 @@ public final class Log4JLogger
      * @throws org.jomc.ObjectManagementException if getting the dependency instance fails.
      */
     @SuppressWarnings("unused")
-    @javax.annotation.Generated( value = "org.jomc.tools.SourceFileProcessor 1.4", comments = "See http://www.jomc.org/jomc/1.4/jomc-tools-1.4" )
+    @javax.annotation.Generated( value = "org.jomc.tools.SourceFileProcessor 1.5", comments = "See http://www.jomc.org/jomc/1.5/jomc-tools-1.5" )
     private org.jomc.logging.Logger getObjectManagementLogger()
     {
         final org.jomc.logging.Logger _d = (org.jomc.logging.Logger) org.jomc.ObjectManagerFactory.getObjectManager( this.getClass().getClassLoader() ).getDependency( this, "ObjectManagementLogger" );
@@ -299,7 +299,7 @@ public final class Log4JLogger
      * @throws org.jomc.ObjectManagementException if getting the property instance fails.
      */
     @SuppressWarnings("unused")
-    @javax.annotation.Generated( value = "org.jomc.tools.SourceFileProcessor 1.4", comments = "See http://www.jomc.org/jomc/1.4/jomc-tools-1.4" )
+    @javax.annotation.Generated( value = "org.jomc.tools.SourceFileProcessor 1.5", comments = "See http://www.jomc.org/jomc/1.5/jomc-tools-1.5" )
     public java.lang.String getName()
     {
         final java.lang.String _p = (java.lang.String) org.jomc.ObjectManagerFactory.getObjectManager( this.getClass().getClassLoader() ).getProperty( this, "name" );
