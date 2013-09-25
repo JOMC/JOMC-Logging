@@ -230,7 +230,7 @@ public final class CommonsLogger
             {
                 this.getObjectManagementLogger().warn( message, throwable );
             }
-            else
+            else if ( level.intValue() < Level.OFF.intValue() )
             {
                 this.getObjectManagementLogger().trace( message, throwable );
             }
