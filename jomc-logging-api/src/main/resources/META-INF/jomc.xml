@@ -33,7 +33,10 @@
 <module xmlns="http://jomc.org/model"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://jomc.org/model http://xml.jomc.org/model/jomc-1.2.xsd"
-        name="${project.name}" version="${project.version}" vendor="${project.organization.name}" modelVersion="1.2">
+        name="${project.name}"
+        modelVersion="1.2"
+        vendor="${project.organization.name}"
+        version="${project.version}">
 
   <documentation defaultLanguage="en">
     <text language="en">${project.description}</text>
@@ -41,20 +44,28 @@
 
   <specifications>
     <!-- *********************************************************************************************************** -->
-    <specification identifier="org.jomc.logging.Logger" class="org.jomc.logging.Logger" classDeclaration="true"
-                   version="${logger.specification.version}" multiplicity="One" vendor="${project.organization.name}"
+    <specification identifier="org.jomc.logging.Logger"
+                   class="org.jomc.logging.Logger"
+                   classDeclaration="true"
+                   vendor="${project.organization.name}"
+                   version="${logger.specification.version}"
+                   multiplicity="One"
                    createDate="2009-07-25T19:56:45Z">
 
       <documentation defaultLanguage="en">
         <text language="en">Logs events for a specific component.</text>
       </documentation>
       <authors>
-        <author name="Christian Schulte" version="1.0" mail="cs@schulte.it"
-                createDate="2005-07-25T19:56:45Z"/>
-
+        <author name="Christian Schulte"
+                mail="cs@schulte.it"
+                version="1.0"
+                createDate="2005-07-25T19:56:45Z">
+        </author>
       </authors>
       <properties>
-        <property name="name" value="org.jomc.logging.Logger">
+        <property name="name"
+                  value="org.jomc.logging.Logger">
+
           <documentation defaultLanguage="en">
             <text language="en">Name of the component events are logged for.</text>
           </documentation>

@@ -46,7 +46,7 @@ import java.util.logging.Level;
  *   <dt><b>Identifier:</b></dt><dd>org.jomc.logging.ri.jdk.JdkLogger</dd>
  *   <dt><b>Name:</b></dt><dd>JOMC Logging ⁑ JDK Logging</dd>
  *   <dt><b>Specifications:</b></dt>
- *     <dd>org.jomc.logging.Logger @ 1.0</dd>
+ *     <dd>org.jomc.logging.Logger @ 1.1</dd>
  *     <dd>org.jomc.spi.Listener @ 1.0</dd>
  *   <dt><b>Abstract:</b></dt><dd>No</dd>
  *   <dt><b>Final:</b></dt><dd>No</dd>
@@ -81,6 +81,26 @@ public final class JdkLogger
     // </editor-fold>
     // SECTION-END
     // SECTION-START[Logger]
+
+    public boolean isConfigEnabled()
+    {
+        return this.getLogger().isLoggable( Level.CONFIG );
+    }
+
+    public void config( final String message )
+    {
+        this.log( Level.CONFIG, message, null );
+    }
+
+    public void config( final Throwable throwable )
+    {
+        this.log( Level.CONFIG, throwable.getMessage(), throwable );
+    }
+
+    public void config( final String message, final Throwable throwable )
+    {
+        this.log( Level.CONFIG, message, throwable );
+    }
 
     public boolean isDebugEnabled()
     {
@@ -208,35 +228,43 @@ public final class JdkLogger
     {
         if ( level != null )
         {
-            if ( level.equals( Level.CONFIG ) || level.equals( Level.FINE ) )
+            if ( level.intValue() <= Level.FINEST.intValue() )
+            {
+                this.getObjectManagementLogger().trace( message, throwable );
+            }
+            else if ( level.intValue() <= Level.FINER.intValue() )
             {
                 this.getObjectManagementLogger().debug( message, throwable );
             }
-            else if ( level.equals( Level.FINER ) || level.equals( Level.FINEST ) )
+            else if ( level.intValue() <= Level.FINE.intValue() )
             {
-                this.getObjectManagementLogger().trace( message, throwable );
+                this.getObjectManagementLogger().debug( message, throwable );
             }
-            else if ( level.equals( Level.INFO ) )
+            else if ( level.intValue() <= Level.CONFIG.intValue() )
+            {
+                this.getObjectManagementLogger().config( message, throwable );
+            }
+            else if ( level.intValue() <= Level.INFO.intValue() )
             {
                 this.getObjectManagementLogger().info( message, throwable );
             }
-            else if ( level.equals( Level.SEVERE ) )
-            {
-                this.getObjectManagementLogger().error( message, throwable );
-            }
-            else if ( level.equals( Level.WARNING ) )
+            else if ( level.intValue() <= Level.WARNING.intValue() )
             {
                 this.getObjectManagementLogger().warn( message, throwable );
             }
+            else if ( level.intValue() <= Level.SEVERE.intValue() )
+            {
+                this.getObjectManagementLogger().error( message, throwable );
+            }
             else if ( level.intValue() < Level.OFF.intValue() )
             {
-                this.getObjectManagementLogger().trace( message, throwable );
+                this.getObjectManagementLogger().fatal( message, throwable );
             }
         }
     }
-
     // SECTION-END
     // SECTION-START[JdkLogger]
+
     /**
      * Gets the JDK logger backing the instance.
      *
@@ -285,7 +313,7 @@ public final class JdkLogger
     /**
      * Gets the {@code <ObjectManagementLogger>} dependency.
      * <p>
-     *   This method returns the {@code <JOMC Logging ⁑ JDK Logging>} object of the {@code <org.jomc.logging.Logger>} specification at specification level 1.0.
+     *   This method returns the {@code <JOMC Logging ⁑ JDK Logging>} object of the {@code <org.jomc.logging.Logger>} specification at specification level 1.1.
      *   That specification does not apply to any scope. A new object is returned whenever requested and bound to this instance.
      * </p>
      * <p><strong>Properties:</strong>

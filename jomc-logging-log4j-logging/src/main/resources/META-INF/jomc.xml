@@ -33,8 +33,10 @@
 <module xmlns="http://jomc.org/model"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://jomc.org/model http://xml.jomc.org/model/jomc-1.2.xsd"
-        name="${project.name}" version="${project.version}" vendor="${project.organization.name}"
-        modelVersion="1.2">
+        name="${project.name}"
+        modelVersion="1.2"
+        vendor="${project.organization.name}"
+        version="${project.version}">
 
   <documentation defaultLanguage="en">
     <text language="en">${project.description}</text>
@@ -43,31 +45,46 @@
   <implementations>
     <!-- *********************************************************************************************************** -->
     <implementation identifier="org.jomc.logging.ri.log4j.Log4JLogger"
-                    class="org.jomc.logging.ri.log4j.Log4JLogger" classDeclaration="true"
-                    name="${project.name}" version="${project.version}" vendor="${project.organization.name}"
-                    stateless="true" createDate="2009-07-25T19:56:45Z">
+                    class="org.jomc.logging.ri.log4j.Log4JLogger"
+                    classDeclaration="true"
+                    name="${project.name}"
+                    vendor="${project.organization.name}"
+                    version="${project.version}"
+                    stateless="true"
+                    createDate="2009-07-25T19:56:45Z">
 
       <documentation defaultLanguage="en">
         <text language="en">${project.description}</text>
       </documentation>
       <authors>
-        <author name="Christian Schulte" version="1.0" mail="cs@schulte.it"
-                createDate="2005-07-25T19:56:45Z"/>
-
+        <author name="Christian Schulte"
+                mail="cs@schulte.it"
+                version="1.0"
+                createDate="2005-07-25T19:56:45Z">
+        </author>
       </authors>
       <specifications>
-        <reference identifier="org.jomc.logging.Logger" version="${logger.specification.version}"/>
-        <reference identifier="org.jomc.spi.Listener" version="${listener.specification.version}"/>
+        <reference identifier="org.jomc.logging.Logger"
+                   version="${logger.specification.version}">
+        </reference>
+        <reference identifier="org.jomc.spi.Listener"
+                   version="${listener.specification.version}">
+        </reference>
       </specifications>
       <dependencies>
-        <dependency name="ObjectManagementLogger" identifier="org.jomc.logging.Logger" version="${logger.specification.version}"
+        <dependency name="ObjectManagementLogger"
+                    identifier="org.jomc.logging.Logger"
+                    version="${logger.specification.version}"
                     implementationName="${project.name}">
 
           <documentation defaultLanguage="en">
             <text language="en">Logger object management events are logged with.</text>
           </documentation>
           <properties>
-            <property name="name" value="org.jomc.ObjectManager" override="true">
+            <property name="name"
+                      value="org.jomc.ObjectManager"
+                      override="true">
+
               <documentation defaultLanguage="en">
                 <text language="en">Name of the logger object management events are logged with.</text>
               </documentation>

@@ -94,6 +94,7 @@ public class LoggerTest
     {
         if ( this.getLogger() != null )
         {
+            this.getLogger().isConfigEnabled();
             this.getLogger().isDebugEnabled();
             this.getLogger().isErrorEnabled();
             this.getLogger().isFatalEnabled();
@@ -116,6 +117,10 @@ public class LoggerTest
     {
         if ( this.getLogger() != null )
         {
+            this.getLogger().config( "TEST" );
+            this.getLogger().config( new Exception() );
+            this.getLogger().config( "TEST", new Exception() );
+
             this.getLogger().debug( "TEST" );
             this.getLogger().debug( new Exception() );
             this.getLogger().debug( "TEST", new Exception() );
@@ -203,7 +208,7 @@ public class LoggerTest
     /**
      * Gets the {@code <Logger>} dependency.
      * <p>
-     *   This method returns any available object of the {@code <org.jomc.logging.Logger>} specification at specification level 1.0.
+     *   This method returns any available object of the {@code <org.jomc.logging.Logger>} specification at specification level 1.1.
      *   That specification does not apply to any scope. A new object is returned whenever requested and bound to this instance.
      * </p>
      * <p><strong>Properties:</strong>

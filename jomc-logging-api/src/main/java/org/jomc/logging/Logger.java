@@ -47,7 +47,7 @@ package org.jomc.logging;
  * </dl>
  *
  * @author <a href="mailto:cs@schulte.it">Christian Schulte</a> 1.0
- * @version 1.0
+ * @version 1.1
  * @see org.jomc.ObjectManager#getObject(java.lang.Class) getObject(Logger.class)
  * @see org.jomc.ObjectManager#getObject(java.lang.Class,java.lang.String) getObject(Logger.class, "<i>implementation name</i>")
  * @see org.jomc.ObjectManagerFactory
@@ -62,6 +62,44 @@ package org.jomc.logging;
 public interface Logger
 {
     // SECTION-START[Logger]
+
+    /**
+     * Gets a flag indicating logging configuration messages is enabled.
+     *
+     * @return {@code true}, if logging configuration messages is enabled; {@code false}, if logging configuration
+     * messages is disabled.
+     *
+     * @since 1.3
+     */
+    boolean isConfigEnabled();
+
+    /**
+     * Logs a configuration message.
+     *
+     * @param message The message to log.
+     *
+     * @since 1.3
+     */
+    void config( String message );
+
+    /**
+     * Logs a configuration exception.
+     *
+     * @param t The exception to log.
+     *
+     * @since 1.3
+     */
+    void config( Throwable t );
+
+    /**
+     * Logs a configuration message and exception.
+     *
+     * @param message The message to log.
+     * @param t The exception to log.
+     *
+     * @since 1.3
+     */
+    void config( String message, Throwable t );
 
     /**
      * Gets a flag indicating logging debug messages is enabled.
