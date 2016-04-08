@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 
-  Copyright (C) Christian Schulte, 2005-206
+  Copyright (C) Christian Schulte <cs@schulte.it>, 2005-206
   All rights reserved.
 
   Redistribution and use in source and binary forms, with or without
@@ -38,7 +38,7 @@
       <directory>${remoteResourcesOutputDirectory}/META-INF</directory>
       <fileMode>0444</fileMode>
       <directoryMode>0755</directoryMode>
-      <outputDirectory>/</outputDirectory>
+      <outputDirectory>jomc-logging-it-${project.version}</outputDirectory>
       <lineEnding>dos</lineEnding>
       <filtered>false</filtered>
       <includes>
@@ -49,7 +49,7 @@
       <directory>src/main/assembly</directory>
       <fileMode>0444</fileMode>
       <directoryMode>0755</directoryMode>
-      <outputDirectory>/</outputDirectory>
+      <outputDirectory>jomc-logging-it-${project.version}</outputDirectory>
       <lineEnding>dos</lineEnding>
       <filtered>true</filtered>
       <includes>
@@ -60,7 +60,7 @@
       <directory>${appassemblerAssembleDirectory}/bin</directory>
       <fileMode>0555</fileMode>
       <directoryMode>0755</directoryMode>
-      <outputDirectory>bin</outputDirectory>
+      <outputDirectory>jomc-logging-it-${project.version}/bin</outputDirectory>
       <includes>
         <include>*.bat</include>
       </includes>
@@ -70,7 +70,7 @@
       <directory>${appassemblerAssembleDirectory}/bin</directory>
       <fileMode>0555</fileMode>
       <directoryMode>0755</directoryMode>
-      <outputDirectory>bin</outputDirectory>
+      <outputDirectory>jomc-logging-it-${project.version}/bin</outputDirectory>
       <excludes>
         <exclude>*.bat</exclude>
       </excludes>
@@ -80,7 +80,7 @@
       <directory>${appassemblerAssembleDirectory}/lib</directory>
       <fileMode>0555</fileMode>
       <directoryMode>0755</directoryMode>
-      <outputDirectory>lib</outputDirectory>
+      <outputDirectory>jomc-logging-it-${project.version}/lib</outputDirectory>
       <excludes>
         <exclude>*.xml</exclude>
         <exclude>*.pom</exclude>
@@ -90,21 +90,21 @@
       <directory>src/main/assembly/etc</directory>
       <fileMode>0444</fileMode>
       <directoryMode>0755</directoryMode>
-      <outputDirectory>etc</outputDirectory>
+      <outputDirectory>jomc-logging-it-${project.version}/etc</outputDirectory>
       <lineEnding>dos</lineEnding>
     </fileSet>
     <fileSet>
       <directory>${project.build.directory}/jomc-endorsed</directory>
       <fileMode>0555</fileMode>
       <directoryMode>0755</directoryMode>
-      <outputDirectory>/lib/jdk5/endorsed</outputDirectory>
+      <outputDirectory>jomc-logging-it-${project.version}/lib/jdk5/endorsed</outputDirectory>
     </fileSet>
   </fileSets>
   <dependencySets>
     <dependencySet>
       <directoryMode>0755</directoryMode>
       <fileMode>0555</fileMode>
-      <outputDirectory>/lib/jdk5/ext</outputDirectory>
+      <outputDirectory>jomc-logging-it-${project.version}/lib/jdk5/ext</outputDirectory>
       <scope>provided</scope>
       <useProjectArtifact>false</useProjectArtifact>
       <useProjectAttachments>false</useProjectAttachments>

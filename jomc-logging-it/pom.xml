@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 
-  Copyright (C) Christian Schulte, 2005-206
+  Copyright (C) Christian Schulte <cs@schulte.it>, 2005-206
   All rights reserved.
 
   Redistribution and use in source and binary forms, with or without
@@ -37,11 +37,10 @@
     <version>1.4-SNAPSHOT</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.jomc.logging</groupId>
   <artifactId>jomc-logging-it</artifactId>
   <name>JOMC Logging ⁑ Test Suite</name>
   <description>Object management and configuration logging system test suite.</description>
-  <url>${jomc.artifacts.url}/${project.artifactId}-${project.version}</url>
+  <url>${jomc.base.url}/${jomc.site.location}/${project.artifactId}-${project.version}</url>
   <build>
     <resources>
       <resource>
@@ -101,8 +100,8 @@
               <configuration>
                 <programs>
                   <program>
+                    <id>test-logger</id>
                     <mainClass>org.jomc.logging.it.LoggerTest</mainClass>
-                    <name>test-logger</name>
                   </program>
                 </programs>
                 <platforms>
@@ -149,8 +148,8 @@
                 <fromDir>${project.build.directory}</fromDir>
                 <includes>*.zip*, *.gz*, *.bz2*</includes>
                 <serverId>${jomc.frs.distribution.id}</serverId>
-                <toDir>jomc-logging-${jomc.base.version}</toDir>
-                <url>${jomc.frs.distribution.url}</url>
+                <toDir>jomc-logging-${project.version}</toDir>
+                <url>${jomc.frs.distribution.base.url}</url>
               </configuration>
             </execution>
           </executions>
@@ -229,9 +228,9 @@
   </dependencies>
   <distributionManagement>
     <site>
-      <id>${jomc.artifacts.distribution.id}</id>
-      <name>${jomc.artifacts.distribution.name}</name>
-      <url>${jomc.artifacts.distribution.url}/${project.artifactId}-${project.version}</url>
+      <id>${jomc.site.distribution.id}</id>
+      <name>${jomc.site.distribution.name}</name>
+      <url>${jomc.site.distribution.base.url}/${jomc.site.location}/${project.artifactId}-${project.version}</url>
     </site>
   </distributionManagement>
   <profiles>

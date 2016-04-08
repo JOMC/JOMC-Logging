@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 
-  Copyright (C) Christian Schulte, 2005-206
+  Copyright (C) Christian Schulte <cs@schulte.it>, 2005-206
   All rights reserved.
 
   Redistribution and use in source and binary forms, with or without
@@ -39,6 +39,7 @@
     <format>tar.bz2</format>
     <format>zip</format>
   </formats>
+  <includeBaseDirectory>false</includeBaseDirectory>
   <componentDescriptors>
     <componentDescriptor>src/main/assembly/bin-component.xml</componentDescriptor>
   </componentDescriptors>
@@ -47,7 +48,7 @@
       <directory>${project.build.directory}/jomc-javadoc</directory>
       <fileMode>0444</fileMode>
       <directoryMode>0755</directoryMode>
-      <outputDirectory>/doc</outputDirectory>
+      <outputDirectory>jomc-logging-it-${project.version}/doc</outputDirectory>
       <filtered>false</filtered>
       <includes>
         <include>**/*.jar</include>
@@ -57,7 +58,7 @@
       <directory>${project.build.directory}/jomc-sources</directory>
       <fileMode>0444</fileMode>
       <directoryMode>0755</directoryMode>
-      <outputDirectory>/doc</outputDirectory>
+      <outputDirectory>jomc-logging-it-${project.version}/doc</outputDirectory>
       <filtered>false</filtered>
       <includes>
         <include>**/*.jar</include>
@@ -67,7 +68,7 @@
       <directory>${project.build.directory}/jomc-site</directory>
       <fileMode>0444</fileMode>
       <directoryMode>0755</directoryMode>
-      <outputDirectory>/doc</outputDirectory>
+      <outputDirectory>jomc-logging-it-${project.version}/doc</outputDirectory>
       <filtered>false</filtered>
       <includes>
         <include>**/*.jar</include>
@@ -77,7 +78,7 @@
       <directory>${project.build.directory}/jomc-project</directory>
       <fileMode>0444</fileMode>
       <directoryMode>0755</directoryMode>
-      <outputDirectory>/src</outputDirectory>
+      <outputDirectory>jomc-logging-it-${project.version}/src</outputDirectory>
       <filtered>false</filtered>
       <includes>
         <include>**/*.jar</include>
